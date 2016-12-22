@@ -1,0 +1,75 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:SFUSat-Radio
+LIBS:SFUSat-Radio-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 8100 2750 0    60   Input ~ 0
+SCLK
+Text HLabel 8100 2900 0    60   Input ~ 0
+MISO
+Text HLabel 8050 3100 0    60   Input ~ 0
+MOSI
+Text HLabel 7950 4650 0    60   Input ~ 0
+GPIO0
+Text HLabel 8000 4900 0    60   Input ~ 0
+GPIO1
+Text HLabel 7950 5150 0    60   Input ~ 0
+GPIO2
+Text HLabel 8000 5400 0    60   Input ~ 0
+GPIO3
+Text HLabel 8000 5650 0    60   Input ~ 0
+GPIO4
+Text HLabel 3150 4100 0    60   Input ~ 0
+CANH
+Text HLabel 3100 4350 0    60   Input ~ 0
+CANL
+Text HLabel 8050 3950 0    60   Input ~ 0
+PWM0
+Text HLabel 8000 5850 0    60   Input ~ 0
+GPIO5
+Text HLabel 8000 6050 0    60   Input ~ 0
+GPIO6
+Text HLabel 8000 6250 0    60   Input ~ 0
+GPIO7
+$EndSCHEMATC
