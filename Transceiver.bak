@@ -29,7 +29,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:SFUSat-Radio
-LIBS:sma
 LIBS:SFUSat-Radio-cache
 EELAYER 25 0
 EELAYER END
@@ -473,17 +472,6 @@ F 3 "" H 8600 4000 50  0000 C CNN
 $EndComp
 $Comp
 L C C?
-U 1 1 5821C907
-P 7800 4600
-F 0 "C?" H 7825 4700 50  0000 L CNN
-F 1 "C" H 7825 4500 50  0000 L CNN
-F 2 "" H 7838 4450 50  0000 C CNN
-F 3 "" H 7800 4600 50  0000 C CNN
-	1    7800 4600
-	-1   0    0    1   
-$EndComp
-$Comp
-L C C?
 U 1 1 5821C90E
 P 5900 4750
 F 0 "C?" H 5925 4850 50  0000 L CNN
@@ -753,13 +741,6 @@ Wire Wire Line
 	8350 3650 8600 3650
 Connection ~ 8600 3650
 Wire Wire Line
-	5350 4050 7000 4050
-Wire Wire Line
-	7000 4050 7000 4450
-Wire Wire Line
-	8600 4450 8600 4300
-Connection ~ 8600 4450
-Wire Wire Line
 	5350 4200 5750 4200
 Wire Wire Line
 	5750 4200 5750 5200
@@ -806,9 +787,6 @@ Wire Wire Line
 Connection ~ 5750 5700
 Wire Wire Line
 	6050 5700 6050 5900
-Wire Wire Line
-	7000 4450 8600 4450
-Connection ~ 7800 4450
 Wire Wire Line
 	4600 4750 4600 4800
 $Comp
@@ -906,5 +884,9 @@ GPIO0
 Text HLabel 3850 4750 3    60   Input ~ 0
 CSN
 Text HLabel 9800 4750 2    60   Input ~ 0
-RF_INTER
+RX
+Text HLabel 9600 4300 2    60   Input ~ 0
+TX
+Wire Wire Line
+	9600 4300 8600 4300
 $EndSCHEMATC

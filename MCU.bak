@@ -29,7 +29,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:SFUSat-Radio
-LIBS:sma
 LIBS:SFUSat-Radio-cache
 EELAYER 25 0
 EELAYER END

@@ -29,7 +29,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:SFUSat-Radio
-LIBS:sma
 LIBS:SFUSat-Radio-cache
 EELAYER 25 0
 EELAYER END
@@ -45,8 +44,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 2300 3100 0    60   Input ~ 0
-RF_INTER
 Text HLabel 6300 3150 2    60   Input ~ 0
 RF_ANT
 Text HLabel 3950 1900 0    60   Input ~ 0
@@ -57,4 +54,8 @@ Text HLabel 4000 1450 0    60   Input ~ 0
 SW_T1
 Text HLabel 4000 1650 0    60   Input ~ 0
 SW_T2
+Text HLabel 1700 2500 0    60   Input ~ 0
+TX
+Text HLabel 1700 2800 0    60   Input ~ 0
+RX
 $EndSCHEMATC
