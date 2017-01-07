@@ -143,8 +143,6 @@ F 3 "" H 4200 1600 50  0000 C CNN
 	1    4200 1600
 	-1   0    0    1   
 $EndComp
-Text GLabel 2000 3450 0    60   Input ~ 0
-3V
 $Comp
 L C C?
 U 1 1 5821C842
@@ -859,14 +857,6 @@ F 3 "" H 1750 2350 50  0000 C CNN
 	1    1750 2350
 	1    0    0    -1  
 $EndComp
-Text GLabel 5500 2000 2    60   Input ~ 0
-3V
-Text GLabel 4850 2150 1    60   Input ~ 0
-3V
-Text GLabel 4300 2050 2    60   Input ~ 0
-3V
-Text GLabel 3300 1400 1    60   Input ~ 0
-3V
 Text HLabel 2800 3300 0    60   Input ~ 0
 RESET
 Text HLabel 2800 3450 0    60   Input ~ 0
@@ -889,4 +879,14 @@ Text HLabel 9600 4300 2    60   Input ~ 0
 TX
 Wire Wire Line
 	9600 4300 8600 4300
+Text HLabel 2000 3450 0    60   Input ~ 0
+Vdd
+Text HLabel 3300 1400 1    60   Input ~ 0
+Vdd
+Text HLabel 4300 2050 2    60   Input ~ 0
+Vdd
+Text HLabel 4850 2150 1    60   Input ~ 0
+Vdd
+Text HLabel 5500 2000 2    60   Input ~ 0
+Vdd
 $EndSCHEMATC

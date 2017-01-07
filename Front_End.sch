@@ -58,4 +58,6 @@ Text HLabel 1700 2500 0    60   Input ~ 0
 TX
 Text HLabel 1700 2800 0    60   Input ~ 0
 RX
+Text HLabel 2700 1450 0    60   Input ~ 0
+Vdd
 $EndSCHEMATC
