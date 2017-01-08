@@ -689,4 +689,8 @@ Wire Wire Line
 	5500 5550 5500 5400
 Text Notes 5550 1450 0    60   ~ 0
 TRX_OPEN is a active open drain when in TX mode, \nhigh impedence when in RX. TRX_SW requirs active \n3V3 high when in TX mode and GND when in RX \nmode (both low impedence)
+Text Notes 850  1450 0    60   ~ 0
+add XOSC to component \nlibrary and to schematic\n
+Text Notes 7200 3350 0    60   ~ 0
+Add SPDT RF switch to component \nlibrary and schematic
 $EndSCHEMATC
