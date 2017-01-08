@@ -889,4 +889,6 @@ Text HLabel 4850 2150 1    60   Input ~ 0
 Vdd
 Text HLabel 5500 2000 2    60   Input ~ 0
 Vdd
+Text HLabel 6000 4050 2    60   Input ~ 0
+TRX_SW
 $EndSCHEMATC
