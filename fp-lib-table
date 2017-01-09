@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name SFUSat-Radio)(type KiCad)(uri "$(KIPRJMOD)\\SFUSat-Radio.pretty")(options "")(descr ""))
+)

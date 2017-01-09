@@ -388,12 +388,12 @@ $EndComp
 $Comp
 L C C?
 U 1 1 5821C9DD
-P 1900 2000
-F 0 "C?" H 1925 2100 50  0000 L CNN
-F 1 "C" H 1925 1900 50  0000 L CNN
-F 2 "" H 1938 1850 50  0000 C CNN
-F 3 "" H 1900 2000 50  0000 C CNN
-	1    1900 2000
+P 1700 2000
+F 0 "C?" V 1550 2000 50  0000 C CNN
+F 1 "22pF" V 1850 2000 50  0000 C CNN
+F 2 "" H 1738 1850 50  0000 C CNN
+F 3 "" H 1700 2000 50  0000 C CNN
+	1    1700 2000
 	0    1    1    0   
 $EndComp
 $Comp
@@ -410,34 +410,34 @@ $EndComp
 $Comp
 L R R?
 U 1 1 5821C9EC
-P 2300 1400
-F 0 "R?" V 2380 1400 50  0000 C CNN
-F 1 "0" V 2300 1400 50  0000 C CNN
-F 2 "" V 2230 1400 50  0000 C CNN
-F 3 "" H 2300 1400 50  0000 C CNN
-	1    2300 1400
+P 1025 1150
+F 0 "R?" V 975 1150 50  0000 C BNN
+F 1 "0" V 1025 1150 50  0000 C CNN
+F 2 "" V 955 1150 50  0000 C CNN
+F 3 "" H 1025 1150 50  0000 C CNN
+	1    1025 1150
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C?
 U 1 1 5821C9F3
-P 1500 1650
-F 0 "C?" H 1525 1750 50  0000 L CNN
-F 1 "C" H 1525 1550 50  0000 L CNN
-F 2 "" H 1538 1500 50  0000 C CNN
-F 3 "" H 1500 1650 50  0000 C CNN
-	1    1500 1650
-	0    1    1    0   
+P 1300 1150
+F 0 "C?" H 1325 1250 50  0000 L CNN
+F 1 "100nF" H 1325 1050 50  0000 L CNN
+F 2 "" H 1338 1000 50  0000 C CNN
+F 3 "" H 1300 1150 50  0000 C CNN
+	1    1300 1150
+	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR018
 U 1 1 5821C9FA
-P 750 2200
-F 0 "#PWR018" H 750 1950 50  0001 C CNN
-F 1 "GND" H 750 2050 50  0000 C CNN
-F 2 "" H 750 2200 50  0000 C CNN
-F 3 "" H 750 2200 50  0000 C CNN
-	1    750  2200
+P 1025 2600
+F 0 "#PWR018" H 1025 2350 50  0001 C CNN
+F 1 "GND" H 1025 2450 50  0000 C CNN
+F 2 "" H 1025 2600 50  0000 C CNN
+F 3 "" H 1025 2600 50  0000 C CNN
+	1    1025 2600
 	1    0    0    -1  
 $EndComp
 Text HLabel 1800 3150 0    60   Input ~ 0
@@ -462,7 +462,7 @@ Text HLabel 10075 4050 2    60   Input ~ 0
 TX
 Text HLabel 1000 3300 0    60   Input ~ 0
 3V3
-Text HLabel 2300 1250 1    60   Input ~ 0
+Text HLabel 1025 900  1    60   Input ~ 0
 3V3
 Text HLabel 3300 1900 2    60   Input ~ 0
 3V3
@@ -549,7 +549,7 @@ F 3 "" H 7000 3950 50  0000 C CNN
 	1    7000 3950
 	0    -1   -1   0   
 $EndComp
-Text HLabel 3700 6125 3    60   Input ~ 0
+Text HLabel 3200 5575 3    60   Input ~ 0
 3V3
 Text HLabel 5100 3300 2    60   Input ~ 0
 3V3
@@ -561,8 +561,8 @@ Text HLabel 5650 5725 3    60   Input ~ 0
 3V3
 Text Notes 5550 1450 0    60   ~ 0
 TRX_OPEN is an active open drain when in TX mode, \nhigh impedence when in RX. TRX_SW requires active \n3V3 high when in TX mode and GND when in RX \nmode (both low impedence)
-Text Notes 850  1450 0    60   ~ 0
-add XOSC to component \nlibrary and to schematic\n
+Text Notes 1550 1100 0    60   ~ 0
+Place decoupling capacitors\nas close as possible to XOSC\n
 Text HLabel 8575 3200 1    60   Input ~ 0
 3V3
 $Comp
@@ -655,13 +655,9 @@ Wire Wire Line
 	3200 1900 3300 1900
 Connection ~ 3200 1900
 Wire Wire Line
-	3050 2300 3050 1750
+	3050 1750 3050 2300
 Wire Wire Line
-	3050 1750 2950 1750
-Wire Wire Line
-	3000 4600 3000 5100
-Wire Wire Line
-	3000 5100 3450 5100
+	2600 1750 3050 1750
 Wire Wire Line
 	3450 5100 3450 4950
 Wire Wire Line
@@ -676,12 +672,6 @@ Wire Wire Line
 	3700 4850 3700 5100
 Wire Wire Line
 	3450 4600 3450 4750
-Wire Wire Line
-	3450 4750 4250 4750
-Wire Wire Line
-	4000 4750 4000 5100
-Wire Wire Line
-	4250 4750 4250 6000
 Connection ~ 4000 4750
 Wire Wire Line
 	4350 3150 4600 3150
@@ -700,9 +690,7 @@ Wire Wire Line
 Wire Wire Line
 	4350 4050 5750 4050
 Wire Wire Line
-	2600 2300 2600 2000
-Wire Wire Line
-	2600 2000 2050 2000
+	2600 2000 2600 2300
 Wire Wire Line
 	5500 5150 5750 5150
 Wire Wire Line
@@ -723,10 +711,6 @@ Wire Wire Line
 Wire Wire Line
 	5650 4050 5650 4450
 Connection ~ 5650 4050
-Wire Wire Line
-	4250 6000 3200 6000
-Wire Wire Line
-	3200 6000 3200 5100
 Connection ~ 3200 5100
 Wire Wire Line
 	5750 1000 6300 1000
@@ -816,8 +800,110 @@ Wire Wire Line
 	5650 5725 5650 5600
 Connection ~ 5650 5600
 Wire Wire Line
-	3700 6125 3700 6000
-Connection ~ 3700 6000
+	3200 5100 3200 5575
 Text Notes 5975 5300 0    60   ~ 0
 Compare this against the reference design
+$Comp
+L KT2520K40000DAW18TAS X?
+U 1 1 58734E44
+P 1025 2050
+F 0 "X?" H 1175 1700 60  0000 L CNN
+F 1 "KT2520K40000DAW18TAS" H 1050 2400 60  0000 L CNN
+F 2 "" H 1725 2300 60  0001 C CNN
+F 3 "" H 1725 2300 60  0001 C CNN
+	1    1025 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	975  2550 1075 2550
+Connection ~ 1025 2550
+Wire Wire Line
+	1025 2550 1025 2600
+Wire Wire Line
+	1850 2000 2600 2000
+Wire Wire Line
+	1025 1000 1025 900 
+Wire Wire Line
+	1025 1300 1025 1550
+Connection ~ 1025 950 
+Wire Wire Line
+	1300 1300 1300 1350
+$Comp
+L GND #PWR?
+U 1 1 5873A98A
+P 1300 950
+F 0 "#PWR?" H 1300 700 50  0001 C CNN
+F 1 "GND" H 1300 800 50  0000 C CNN
+F 2 "" H 1300 950 50  0000 C CNN
+F 3 "" H 1300 950 50  0000 C CNN
+	1    1300 950 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1025 1350 1975 1350
+Connection ~ 1025 1350
+Wire Wire Line
+	1300 1000 1300 950 
+$Comp
+L R R?
+U 1 1 5873B49B
+P 2125 1350
+F 0 "R?" V 2075 1350 50  0000 C BNN
+F 1 "0" V 2125 1350 50  0000 C CNN
+F 2 "" V 2055 1350 50  0000 C CNN
+F 3 "" H 2125 1350 50  0000 C CNN
+F 4 "NOB" V 2175 1350 60  0000 C TNN "Populated"
+	1    2125 1350
+	0    1    1    0   
+$EndComp
+Connection ~ 1300 1350
+Wire Wire Line
+	2275 1350 2600 1350
+Wire Wire Line
+	2600 1350 2600 1750
+Connection ~ 2950 1750
+Wire Wire Line
+	1475 2000 1550 2000
+$Comp
+L R R?
+U 1 1 5873DE02
+P 1700 2400
+F 0 "R?" V 1650 2400 50  0000 C BNN
+F 1 "0" V 1700 2400 50  0000 C CNN
+F 2 "" V 1630 2400 50  0000 C CNN
+F 3 "" H 1700 2400 50  0000 C CNN
+F 4 "NOB" V 1750 2400 60  0000 C TNN "Populated"
+	1    1700 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1950 2000 1950 2400
+Wire Wire Line
+	1950 2400 1850 2400
+Connection ~ 1950 2000
+Wire Wire Line
+	1550 2400 1500 2400
+Wire Wire Line
+	1500 2400 1500 2450
+$Comp
+L GND #PWR?
+U 1 1 5873E01A
+P 1500 2450
+F 0 "#PWR?" H 1500 2200 50  0001 C CNN
+F 1 "GND" H 1500 2300 50  0000 C CNN
+F 2 "" H 1500 2450 50  0000 C CNN
+F 3 "" H 1500 2450 50  0000 C CNN
+	1    1500 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 5100 3450 5100
+Wire Wire Line
+	3000 5100 3000 4600
+Wire Wire Line
+	3450 4750 4000 4750
+Text HLabel 4000 4700 1    60   Input ~ 0
+3V3
+Wire Wire Line
+	4000 4700 4000 5100
 $EndSCHEMATC
