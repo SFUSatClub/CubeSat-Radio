@@ -1,4 +1,4 @@
-update=11/7/2016 1:26:37 PM
+update=2017-01-08 16:07:20 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,6 +25,16 @@ version=1
 NetIExt=net
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
 LibDir=../SFUSat-Radio
@@ -59,14 +69,3 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=SFUSat-Radio
-LibName31=C:/Users/Tobi/Downloads/sma_connectors/library/sma
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
