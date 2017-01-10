@@ -50,4 +50,6 @@ Text HLabel 3750 3300 0    60   Input ~ 0
 3V3
 Text HLabel 3750 3650 0    60   Input ~ 0
 3V6
+Text HLabel 3750 3900 0    60   Input ~ 0
+1V8
 $EndSCHEMATC
