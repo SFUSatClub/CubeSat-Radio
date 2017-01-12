@@ -468,7 +468,7 @@ Text HLabel 3850 2000 1    60   Input ~ 0
 3V3
 Text HLabel 4500 1850 2    60   Input ~ 0
 3V3
-Text HLabel 7000 1000 2    60   Input ~ 0
+Text HLabel 2050 5400 2    60   Input ~ 0
 TRX_SIG
 $Comp
 L BALF-112X-02D3 U?
@@ -553,7 +553,7 @@ Text HLabel 5100 3300 2    60   Input ~ 0
 3V3
 Text Label 4750 3900 0    60   ~ 0
 TRX_OPEN
-Text Label 5750 1000 0    60   ~ 0
+Text Label 800  5400 0    60   ~ 0
 TX_SIG
 Text HLabel 5650 5725 3    60   Input ~ 0
 3V3
@@ -705,7 +705,7 @@ Wire Wire Line
 Connection ~ 5650 4050
 Connection ~ 3200 5100
 Wire Wire Line
-	5750 1000 7000 1000
+	800  5400 2050 5400
 Wire Wire Line
 	5750 5600 5750 5450
 Wire Wire Line

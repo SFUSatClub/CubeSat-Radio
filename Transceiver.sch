@@ -551,8 +551,6 @@ Text HLabel 3200 5575 3    60   Input ~ 0
 3V3
 Text HLabel 5100 3300 2    60   Input ~ 0
 3V3
-Text Label 4750 3900 0    60   ~ 0
-TRX_OPEN
 Text Label 800  5400 0    60   ~ 0
 TX_SIG
 Text HLabel 5650 5725 3    60   Input ~ 0
