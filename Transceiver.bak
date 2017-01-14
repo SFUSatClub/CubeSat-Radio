@@ -452,6 +452,8 @@ Text HLabel 1800 4050 0    60   Input ~ 0
 SCLK
 Text HLabel 2550 4600 3    60   Input ~ 0
 MISO
+Text HLabel 2700 4600 3    60   Input ~ 0
+GPIO0
 Text HLabel 2850 4600 3    60   Input ~ 0
 CSN
 Text HLabel 10075 3550 2    60   Input ~ 0
@@ -468,7 +470,7 @@ Text HLabel 3850 2000 1    60   Input ~ 0
 3V3
 Text HLabel 4500 1850 2    60   Input ~ 0
 3V3
-Text HLabel 2050 5400 2    60   Input ~ 0
+Text HLabel 7000 1000 2    60   Input ~ 0
 TRX_SIG
 $Comp
 L BALF-112X-02D3 U?
@@ -553,10 +555,12 @@ Text HLabel 5100 3300 2    60   Input ~ 0
 3V3
 Text Label 4750 3900 0    60   ~ 0
 TRX_OPEN
-Text Label 800  5400 0    60   ~ 0
-TX_SIG
+Text Label 5750 1000 0    60   ~ 0
+TRX_OPEN
 Text HLabel 5650 5725 3    60   Input ~ 0
 3V3
+Text Notes 5550 1450 0    60   ~ 0
+TRX_OPEN is an active open drain when in TX mode, \nhigh impedence when in RX. TRX_SW requires active \n3V3 high when in TX mode and GND when in RX \nmode (both low impedence)
 Text Notes 1550 1100 0    60   ~ 0
 Place decoupling capacitors\nas close as possible to XOSC\n
 Text HLabel 8575 3200 1    60   Input ~ 0
@@ -594,6 +598,8 @@ F 3 "" H 9825 4050 50  0000 C CNN
 	1    9825 4050
 	0    1    1    0   
 $EndComp
+Text HLabel 8475 3200 1    60   Input ~ 0
+TRX_SIG
 Text Notes 8125 2375 0    60   ~ 0
 TRX_SIG
 Text Notes 8125 2250 0    60   ~ 0
@@ -705,7 +711,7 @@ Wire Wire Line
 Connection ~ 5650 4050
 Connection ~ 3200 5100
 Wire Wire Line
-	800  5400 2050 5400
+	5750 1000 6300 1000
 Wire Wire Line
 	5750 5600 5750 5450
 Wire Wire Line
@@ -900,22 +906,4 @@ Wire Wire Line
 	2350 1750 2350 1350
 Wire Wire Line
 	2350 1350 1850 1350
-Wire Wire Line
-	2700 4600 2700 5050
-Wire Wire Line
-	2700 5050 2050 5050
-Text Label 2050 5050 0    60   ~ 0
-TX_SIG
-Text Label 7700 2950 0    60   ~ 0
-TX_SIG
-Wire Wire Line
-	8500 3200 8450 3200
-Wire Wire Line
-	8450 3200 8450 3050
-Wire Wire Line
-	8450 3050 7700 3050
-Wire Wire Line
-	7700 3050 7700 2950
-Text Notes 7900 3250 0    60   ~ 0
-whats with the pin pitch of this symbol? I cant connect the wire\n
 $EndSCHEMATC
