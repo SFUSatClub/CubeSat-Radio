@@ -442,8 +442,6 @@ F 3 "" H 1025 2600 50  0000 C CNN
 $EndComp
 Text HLabel 1800 3150 0    60   Input ~ 0
 RESET
-Text HLabel 1800 3300 0    60   Input ~ 0
-GPIO3
 Text HLabel 1800 3450 0    60   Input ~ 0
 GPIO2
 Text HLabel 1800 3900 0    60   Input ~ 0
@@ -896,11 +894,7 @@ Wire Wire Line
 	2350 1750 2350 1350
 Wire Wire Line
 	2350 1350 1850 1350
-Wire Wire Line
-	2700 4600 2700 5200
-Wire Wire Line
-	2700 5200 2100 5200
-Text Label 2100 5200 0    60   ~ 0
+Text Label 1350 3300 0    60   ~ 0
 RX0TX1_CFG
 Text Label 5750 1000 0    60   ~ 0
 RX0TX1_CFG
@@ -908,4 +902,8 @@ Wire Wire Line
 	7800 3200 8475 3200
 Text Label 7800 3200 0    60   ~ 0
 RX0TX1_CFG
+Text HLabel 2700 4600 3    60   Input ~ 0
+GPIO0
+Wire Wire Line
+	1800 3300 1350 3300
 $EndSCHEMATC
