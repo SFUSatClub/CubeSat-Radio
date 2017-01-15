@@ -44,7 +44,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 4700 3350 0    60   Input ~ 0
+Text HLabel 3900 2850 0    60   Input ~ 0
 Vin
 Text HLabel 7600 3350 2    60   Input ~ 0
 3V3
@@ -64,22 +64,22 @@ F 3 "" H 6350 2150 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C 10uF
+L C C?
 U 1 1 587706B0
 P 5700 2600
-F 0 "10uF" H 5725 2700 50  0000 L CNN
-F 1 "Cin" H 5725 2500 50  0000 L CNN
+F 0 "C?" H 5725 2700 50  0000 L CNN
+F 1 "10uF" H 5725 2500 50  0000 L CNN
 F 2 "" H 5738 2450 50  0000 C CNN
 F 3 "" H 5700 2600 50  0000 C CNN
 	1    5700 2600
 	1    0    0    -1  
 $EndComp
 $Comp
-L C 0.1uF
+L C C?
 U 1 1 58770789
 P 5450 2600
-F 0 "0.1uF" H 5475 2700 50  0000 L CNN
-F 1 "C" H 5475 2500 50  0000 L CNN
+F 0 "C?" H 5475 2700 50  0000 L CNN
+F 1 "0.1uF" H 5475 2500 50  0000 L CNN
 F 2 "" H 5488 2450 50  0000 C CNN
 F 3 "" H 5450 2600 50  0000 C CNN
 	1    5450 2600
@@ -101,7 +101,7 @@ L C 10uF
 U 1 1 58770AC4
 P 7500 2600
 F 0 "10uF" H 7525 2700 50  0000 L CNN
-F 1 "Cout" H 7525 2500 50  0000 L CNN
+F 1 "10uF" H 7525 2500 50  0000 L CNN
 F 2 "" H 7538 2450 50  0000 C CNN
 F 3 "" H 7500 2600 50  0000 C CNN
 	1    7500 2600
@@ -151,53 +151,23 @@ F 3 "" H 5450 2750 50  0000 C CNN
 	1    5450 2750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4900 2000 5800 2000
-Wire Wire Line
-	5700 2000 5700 2450
-Connection ~ 5700 2000
-Wire Wire Line
-	4700 2300 5800 2300
-Wire Wire Line
-	5450 2300 5450 2450
-Connection ~ 5450 2300
-Wire Wire Line
-	6200 2600 6200 2700
-Wire Wire Line
-	6500 2600 6500 2700
-Wire Wire Line
-	6500 2700 6200 2700
-Wire Wire Line
-	6350 2700 6350 2800
-Connection ~ 6350 2700
-Wire Wire Line
-	6900 2000 7600 2000
-Wire Wire Line
-	7500 2000 7500 2450
-Connection ~ 7500 2000
-Wire Wire Line
-	6900 2300 7100 2300
-Wire Wire Line
-	7100 2300 7100 2400
-Wire Wire Line
-	7100 2750 7100 2700
 $Comp
-L R 285.71
+L R R?
 U 1 1 58770EF4
 P 7100 2550
-F 0 "285.71" V 7180 2550 50  0000 C CNN
-F 1 "R2" V 7100 2550 50  0000 C CNN
+F 0 "R?" V 7180 2550 50  0000 C CNN
+F 1 "285.71" V 7100 2550 50  0000 C CNN
 F 2 "" V 7030 2550 50  0000 C CNN
 F 3 "" H 7100 2550 50  0000 C CNN
 	1    7100 2550
 	1    0    0    -1  
 $EndComp
 $Comp
-L R 1k
+L R R?
 U 1 1 58770EC5
 P 7100 2150
-F 0 "1k" H 7180 2150 50  0000 C CNN
-F 1 "R1" V 7100 2150 50  0000 C CNN
+F 0 "R?" H 7180 2150 50  0000 C CNN
+F 1 "1k" V 7100 2150 50  0000 C CNN
 F 2 "" V 7030 2150 50  0000 C CNN
 F 3 "" H 7100 2150 50  0000 C CNN
 	1    7100 2150
@@ -216,21 +186,6 @@ F 3 "" H 6350 3450 60  0001 C CNN
 	1    6350 3450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4700 3350 5850 3350
-Wire Wire Line
-	4700 3550 5850 3550
-Wire Wire Line
-	6350 3850 6350 4000
-Wire Wire Line
-	6850 3550 6950 3550
-Wire Wire Line
-	6950 3550 6950 3700
-Wire Wire Line
-	6850 3350 7600 3350
-Wire Wire Line
-	7150 3350 7150 3700
-Connection ~ 7150 3350
 $Comp
 L GND #PWR?
 U 1 1 5879D9E2
@@ -276,19 +231,16 @@ F 3 "" H 6950 3850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C 2.2uF
+L C C?
 U 1 1 5879DAAB
 P 7150 3850
-F 0 "2.2uF" H 7175 3950 50  0000 L CNN
-F 1 "C3" H 7175 3750 50  0000 L CNN
+F 0 "C?" H 7175 3950 50  0000 L CNN
+F 1 "2.2uF" H 7175 3750 50  0000 L CNN
 F 2 "" H 7188 3700 50  0000 C CNN
 F 3 "" H 7150 3850 50  0000 C CNN
 	1    7150 3850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5550 3350 5550 3700
-Connection ~ 5550 3350
 $Comp
 L GND #PWR?
 U 1 1 5879E264
@@ -344,9 +296,6 @@ F 3 "" H 5550 5100 50  0000 C CNN
 	1    5550 5100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4900 4550 5850 4550
-Connection ~ 5550 4550
 $Comp
 L C C?
 U 1 1 587A1EB3
@@ -370,11 +319,11 @@ F 3 "" H 6900 5100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C 2.2uF
+L C C?
 U 1 1 587A204E
 P 7150 4950
-F 0 "2.2uF" H 7175 5050 50  0000 L CNN
-F 1 "C3" H 7175 4850 50  0000 L CNN
+F 0 "C?" H 7175 5050 50  0000 L CNN
+F 1 "2.2uF" H 7175 4850 50  0000 L CNN
 F 2 "" H 7188 4800 50  0000 C CNN
 F 3 "" H 7150 4950 50  0000 C CNN
 	1    7150 4950
@@ -391,17 +340,6 @@ F 3 "" H 7150 5100 50  0000 C CNN
 	1    7150 5100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6850 4750 6900 4750
-Wire Wire Line
-	6900 4750 6900 4800
-Wire Wire Line
-	6850 4550 7600 4550
-Wire Wire Line
-	7150 4550 7150 4800
-Connection ~ 7150 4550
-Wire Wire Line
-	4700 4750 5850 4750
 $Comp
 L GND #PWR?
 U 1 1 587A2F8C
@@ -413,19 +351,120 @@ F 3 "" H 6350 5100 50  0000 C CNN
 	1    6350 5100
 	1    0    0    -1  
 $EndComp
+Text Notes 5150 5450 0    60   ~ 0
+C1, C2 optional, can reduce noise, improve PSRR
+Text HLabel 4900 4750 3    60   Input ~ 0
+VDD_1.8_EN
+Text HLabel 4900 3550 3    60   Input ~ 0
+VDD_3.3_EN
+Text HLabel 4900 2300 3    60   Input ~ 0
+VDD_3.6_EN
+$Comp
+L JUMPER JP?
+U 1 1 587BADC1
+P 4400 2300
+F 0 "JP?" H 4400 2450 50  0000 C CNN
+F 1 "JUMPER" H 4400 2220 50  0000 C CNN
+F 2 "" H 4400 2300 50  0000 C CNN
+F 3 "" H 4400 2300 50  0000 C CNN
+	1    4400 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L JUMPER JP?
+U 1 1 587BAE6A
+P 4400 3550
+F 0 "JP?" H 4400 3700 50  0000 C CNN
+F 1 "JUMPER" H 4400 3470 50  0000 C CNN
+F 2 "" H 4400 3550 50  0000 C CNN
+F 3 "" H 4400 3550 50  0000 C CNN
+	1    4400 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L JUMPER JP?
+U 1 1 587BAFA3
+P 4400 4750
+F 0 "JP?" H 4400 4900 50  0000 C CNN
+F 1 "JUMPER" H 4400 4670 50  0000 C CNN
+F 2 "" H 4400 4750 50  0000 C CNN
+F 3 "" H 4400 4750 50  0000 C CNN
+	1    4400 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 2000 5800 2000
+Wire Wire Line
+	5700 2000 5700 2450
+Connection ~ 5700 2000
+Wire Wire Line
+	4700 2300 5800 2300
+Wire Wire Line
+	5450 2300 5450 2450
+Connection ~ 5450 2300
+Wire Wire Line
+	6200 2600 6200 2700
+Wire Wire Line
+	6500 2600 6500 2700
+Wire Wire Line
+	6500 2700 6200 2700
+Wire Wire Line
+	6350 2700 6350 2800
+Connection ~ 6350 2700
+Wire Wire Line
+	6900 2000 7600 2000
+Wire Wire Line
+	7500 2000 7500 2450
+Connection ~ 7500 2000
+Wire Wire Line
+	6900 2300 7100 2300
+Wire Wire Line
+	7100 2300 7100 2400
+Wire Wire Line
+	7100 2750 7100 2700
+Wire Wire Line
+	4700 3550 5850 3550
+Wire Wire Line
+	6350 3850 6350 4000
+Wire Wire Line
+	6850 3550 6950 3550
+Wire Wire Line
+	6950 3550 6950 3700
+Wire Wire Line
+	6850 3350 7600 3350
+Wire Wire Line
+	7150 3350 7150 3700
+Connection ~ 7150 3350
+Wire Wire Line
+	5550 3350 5550 3700
+Connection ~ 5550 3350
+Wire Wire Line
+	4100 4550 5850 4550
+Connection ~ 5550 4550
+Wire Wire Line
+	6850 4750 6900 4750
+Wire Wire Line
+	6900 4750 6900 4800
+Wire Wire Line
+	6850 4550 7600 4550
+Wire Wire Line
+	7150 4550 7150 4800
+Connection ~ 7150 4550
+Wire Wire Line
+	4700 4750 5850 4750
 Wire Wire Line
 	6350 5050 6350 5100
 Wire Wire Line
 	5550 4800 5550 4550
 Wire Wire Line
-	4900 2000 4900 4550
-Connection ~ 4900 3350
-Text Notes 5150 5450 0    60   ~ 0
-C1, C2 optional, can reduce noise, improve PSRR
-Text Notes 4300 2350 0    60   ~ 0
-Ven 3V6
-Text Notes 4300 3600 0    60   ~ 0
-Ven 3V3
-Text Notes 4300 4800 0    60   ~ 0
-Ven 1V8
+	4100 2000 4100 4750
+Connection ~ 4100 3550
+Wire Wire Line
+	4100 3350 5850 3350
+Connection ~ 4100 3350
+Connection ~ 4100 4550
+Connection ~ 4100 2300
+Wire Wire Line
+	4100 2850 3900 2850
+Connection ~ 4100 2850
 $EndSCHEMATC

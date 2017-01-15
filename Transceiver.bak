@@ -452,8 +452,6 @@ Text HLabel 1800 4050 0    60   Input ~ 0
 SCLK
 Text HLabel 2550 4600 3    60   Input ~ 0
 MISO
-Text HLabel 2700 4600 3    60   Input ~ 0
-GPIO0
 Text HLabel 2850 4600 3    60   Input ~ 0
 CSN
 Text HLabel 10075 3550 2    60   Input ~ 0
@@ -553,14 +551,8 @@ Text HLabel 3200 5575 3    60   Input ~ 0
 3V3
 Text HLabel 5100 3300 2    60   Input ~ 0
 3V3
-Text Label 4750 3900 0    60   ~ 0
-TRX_OPEN
-Text Label 5750 1000 0    60   ~ 0
-TRX_OPEN
 Text HLabel 5650 5725 3    60   Input ~ 0
 3V3
-Text Notes 5550 1450 0    60   ~ 0
-TRX_OPEN is an active open drain when in TX mode, \nhigh impedence when in RX. TRX_SW requires active \n3V3 high when in TX mode and GND when in RX \nmode (both low impedence)
 Text Notes 1550 1100 0    60   ~ 0
 Place decoupling capacitors\nas close as possible to XOSC\n
 Text HLabel 8575 3200 1    60   Input ~ 0
@@ -598,8 +590,6 @@ F 3 "" H 9825 4050 50  0000 C CNN
 	1    9825 4050
 	0    1    1    0   
 $EndComp
-Text HLabel 8475 3200 1    60   Input ~ 0
-TRX_SIG
 Text Notes 8125 2375 0    60   ~ 0
 TRX_SIG
 Text Notes 8125 2250 0    60   ~ 0
@@ -711,7 +701,7 @@ Wire Wire Line
 Connection ~ 5650 4050
 Connection ~ 3200 5100
 Wire Wire Line
-	5750 1000 6300 1000
+	5750 1000 7000 1000
 Wire Wire Line
 	5750 5600 5750 5450
 Wire Wire Line
@@ -906,4 +896,16 @@ Wire Wire Line
 	2350 1750 2350 1350
 Wire Wire Line
 	2350 1350 1850 1350
+Wire Wire Line
+	2700 4600 2700 5200
+Wire Wire Line
+	2700 5200 2100 5200
+Text Label 2100 5200 0    60   ~ 0
+RX0TX1_CFG
+Text Label 5750 1000 0    60   ~ 0
+RX0TX1_CFG
+Wire Wire Line
+	7800 3200 8475 3200
+Text Label 7800 3200 0    60   ~ 0
+RX0TX1_CFG
 $EndSCHEMATC

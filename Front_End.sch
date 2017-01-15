@@ -46,7 +46,7 @@ Comment4 ""
 $EndDescr
 Text HLabel 8200 3200 2    60   Input ~ 0
 ANT
-Text HLabel 3800 3700 0    60   Input ~ 0
+Text HLabel 2850 5800 0    60   Input ~ 0
 PA_ADJ
 Text HLabel 6500 4000 2    60   Input ~ 0
 TX
@@ -418,4 +418,61 @@ Wire Notes Line
 	3800 2675 3800 3075
 Wire Wire Line
 	7750 2825 7850 2825
+$Comp
+L JUMPER JP?
+U 1 1 587C256C
+P 2550 6200
+F 0 "JP?" H 2550 6350 50  0000 C CNN
+F 1 "JUMPER" H 2550 6120 50  0000 C CNN
+F 2 "" H 2550 6200 50  0000 C CNN
+F 3 "" H 2550 6200 50  0000 C CNN
+	1    2550 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 587C3C10
+P 2000 6450
+F 0 "R?" V 2080 6450 50  0000 C CNN
+F 1 "R" V 2000 6450 50  0000 C CNN
+F 2 "" V 1930 6450 50  0000 C CNN
+F 3 "" H 2000 6450 50  0000 C CNN
+	1    2000 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 587C3C45
+P 2000 6600
+F 0 "#PWR?" H 2000 6350 50  0001 C CNN
+F 1 "GND" H 2000 6450 50  0000 C CNN
+F 2 "" H 2000 6600 50  0000 C CNN
+F 3 "" H 2000 6600 50  0000 C CNN
+	1    2000 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 6100 2000 6300
+Wire Wire Line
+	2250 6200 2000 6200
+Connection ~ 2000 6200
+Wire Wire Line
+	2850 6200 2850 5800
+Text Label 3800 3700 0    60   ~ 0
+VPC
+Text Label 2850 6000 0    60   ~ 0
+VPC
+Text HLabel 2150 5850 2    60   Input ~ 0
+3V3
+$Comp
+L POT RV?
+U 1 1 587CA745
+P 2000 5850
+F 0 "RV?" H 2000 5750 50  0000 C CNN
+F 1 "POT" H 2000 5850 50  0000 C CNN
+F 2 "" H 2000 5850 50  0000 C CNN
+F 3 "" H 2000 5850 50  0000 C CNN
+	1    2000 5850
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
