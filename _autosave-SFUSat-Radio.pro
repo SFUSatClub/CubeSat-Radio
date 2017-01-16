@@ -1,4 +1,4 @@
-update=1/16/2017 6:17:25 AM
+update=1/16/2017 6:22:49 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -56,5 +56,6 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
+LibName30=SFUSat-Radio
 [general]
 version=1
