@@ -906,4 +906,12 @@ Text HLabel 2700 4600 3    60   Input ~ 0
 GPIO0
 Wire Wire Line
 	1800 3300 1350 3300
+Text Label 4800 3600 0    60   ~ 0
+RF_LNAN
+Text Label 4800 3750 0    60   ~ 0
+RF_LNAP
+Text Label 4800 3900 0    60   ~ 0
+RF_TRX
+Text Label 4800 4050 0    60   ~ 0
+RF_PA
 $EndSCHEMATC
