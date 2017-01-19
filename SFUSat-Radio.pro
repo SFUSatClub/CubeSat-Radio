@@ -1,4 +1,4 @@
-update=13/01/2017 22:42:35
+update=1/16/2017 6:22:49 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,19 +23,9 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
 [eeschema]
 version=1
-LibDir=../SFUSat-Radio
+LibDir=
 [eeschema/libraries]
 LibName1=power
 LibName2=device

@@ -241,7 +241,7 @@ U 1 1 5871C0B1
 P 7450 3200
 F 0 "C29" V 7300 3200 50  0000 C CNN
 F 1 "3pF" V 7600 3200 50  0000 C CNN
-F 2 "" H 7488 3050 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0402" H 7488 3050 50  0001 C CNN
 F 3 "" H 7450 3200 50  0000 C CNN
 	1    7450 3200
 	0    1    1    0   
@@ -252,7 +252,7 @@ U 1 1 5871C0F0
 P 7050 3350
 F 0 "C28" H 7075 3450 50  0000 L CNN
 F 1 "8.2pF" H 7075 3250 50  0000 L CNN
-F 2 "" H 7088 3200 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0402" H 7088 3200 50  0001 C CNN
 F 3 "" H 7050 3350 50  0000 C CNN
 	1    7050 3350
 	1    0    0    -1  
@@ -263,7 +263,7 @@ U 1 1 5871C127
 P 7850 3350
 F 0 "C30" H 7875 3450 50  0000 L CNN
 F 1 "8.2pF" H 7875 3250 50  0000 L CNN
-F 2 "" H 7888 3200 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0402" H 7888 3200 50  0001 C CNN
 F 3 "" H 7850 3350 50  0000 C CNN
 	1    7850 3350
 	1    0    0    -1  
@@ -274,7 +274,7 @@ U 1 1 5871C1AA
 P 7450 2825
 F 0 "L2" V 7400 2825 50  0000 C CNN
 F 1 "12nH" V 7550 2825 50  0000 C CNN
-F 2 "" H 7450 2825 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0402" H 7450 2825 50  0001 C CNN
 F 3 "" H 7450 2825 50  0000 C CNN
 	1    7450 2825
 	0    1    1    0   
@@ -481,7 +481,7 @@ Wire Wire Line
 	3100 6400 2900 6400
 Text Label 2900 6400 0    60   ~ 0
 EN
-Text Notes 2600 4900 0    60   ~ 0
+Text Notes 2100 3600 0    60   ~ 0
 TR and BYP should not be \npulled high if EN is pulled low
 $Comp
 L JS202011SCQN SW3
@@ -554,4 +554,6 @@ Text Notes 3000 7000 0    60   ~ 0
 Select external control of enable\n and VPC or tie internally to high \nor low respective.
 Text Notes 7500 5850 0    60   ~ 0
 RF Shield\n
+Text Notes 5150 6850 0    60   ~ 0
+LNA and PA can be bypassed if\n BYP in pulled HIGH. Good as a \nkill switch to high power output.\n
 $EndSCHEMATC
