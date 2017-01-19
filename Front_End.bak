@@ -46,7 +46,7 @@ Comment4 ""
 $EndDescr
 Text HLabel 8200 3200 2    60   Input ~ 0
 ANT
-Text HLabel 4100 6100 2    60   Input ~ 0
+Text HLabel 4100 6400 2    60   Input ~ 0
 PA_ADJ
 Text HLabel 6500 4000 2    60   Input ~ 0
 TX
@@ -382,7 +382,7 @@ Wire Wire Line
 	3800 3450 4700 3450
 Wire Wire Line
 	4700 3350 3800 3350
-Text HLabel 4100 6350 2    60   Input ~ 0
+Text HLabel 3300 6400 2    60   Input ~ 0
 EN
 Text Notes 3400 2775 0    60   ~ 0
 TRX_SIG
@@ -443,7 +443,7 @@ Wire Wire Line
 Connection ~ 4650 6200
 Text Label 3800 3700 0    60   ~ 0
 VPC
-Text Label 2900 6150 0    60   ~ 0
+Text Label 4350 6300 2    60   ~ 0
 VPC
 Text HLabel 4800 5850 2    60   Input ~ 0
 3V3
@@ -458,28 +458,13 @@ F 3 "" H 4650 5850 50  0000 C CNN
 	1    4650 5850
 	0    1    1    0   
 $EndComp
-$Comp
-L JS202011SCQN SW2
-U 1 1 587E3043
-P 3600 6150
-F 0 "SW2" H 3800 5750 60  0000 C CNN
-F 1 "JS202011SCQN" H 3600 6300 60  0000 C CNN
-F 2 "SFUSat-Radio:JS2020_TH" H 3600 6150 60  0001 C CNN
-F 3 "" H 3600 6150 60  0000 C CNN
-	1    3600 6150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3100 6150 2900 6150
 Wire Wire Line
 	4650 6200 4100 6200
-Text HLabel 4100 6450 2    60   Input ~ 0
+Text HLabel 3300 6200 2    60   Input ~ 0
 3V3
 Text Label 3800 3350 0    60   ~ 0
 EN
-Wire Wire Line
-	3100 6400 2900 6400
-Text Label 2900 6400 0    60   ~ 0
+Text Label 3450 6300 2    60   ~ 0
 EN
 Text Notes 2100 3600 0    60   ~ 0
 TR and BYP should not be \npulled high if EN is pulled low
@@ -556,4 +541,44 @@ Text Notes 7500 5850 0    60   ~ 0
 RF Shield\n
 Text Notes 5150 6850 0    60   ~ 0
 LNA and PA can be bypassed if\n BYP in pulled HIGH. Good as a \nkill switch to high power output.\n
+$Comp
+L CONN_01X03 P?
+U 1 1 5881FCF5
+P 3900 6300
+F 0 "P?" H 3900 6500 50  0000 C CNN
+F 1 "CONN_01X03" V 4000 6300 50  0000 C CNN
+F 2 "" H 3900 6300 50  0000 C CNN
+F 3 "" H 3900 6300 50  0000 C CNN
+	1    3900 6300
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X03 P?
+U 1 1 5881FDBC
+P 3100 6300
+F 0 "P?" H 3100 6500 50  0000 C CNN
+F 1 "CONN_01X03" V 3200 6300 50  0000 C CNN
+F 2 "" H 3100 6300 50  0000 C CNN
+F 3 "" H 3100 6300 50  0000 C CNN
+	1    3100 6300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4100 6300 4350 6300
+Wire Wire Line
+	3300 6300 3450 6300
+$Comp
+L TEST_1P W?
+U 1 1 58821DE8
+P 4300 6050
+F 0 "W?" H 4300 6320 50  0000 C CNN
+F 1 "TEST_1P" H 4300 6250 50  0000 C CNN
+F 2 "" H 4500 6050 50  0000 C CNN
+F 3 "" H 4500 6050 50  0000 C CNN
+	1    4300 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 6050 4300 6200
+Connection ~ 4300 6200
 $EndSCHEMATC

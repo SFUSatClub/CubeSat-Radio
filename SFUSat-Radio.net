@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:/Users/Tobi/Documents/School/SatelliteDesignClub/CubeSat-Radio-v0.1/SFUSat-Radio.sch)
-    (date "1/16/2017 6:33:32 AM")
+    (date "1/18/2017 8:40:44 PM")
     (tool "Eeschema 4.0.1-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -188,6 +188,7 @@
       (tstamp 5821C8A1))
     (comp (ref C14)
       (value 1.8nF)
+      (footprint Capacitors_SMD:C_0402)
       (libsource (lib device) (part C))
       (sheetpath (names /Transceiver/) (tstamps /5821BF4E/))
       (tstamp 5821C8AF))
@@ -253,7 +254,7 @@
       (tstamp 5872F4E3))
     (comp (ref C19)
       (value 47pF)
-      (footprint Capacitors_SMD:C_0201)
+      (footprint Capacitors_SMD:C_0402)
       (libsource (lib device) (part C))
       (sheetpath (names /Transceiver/) (tstamps /5821BF4E/))
       (tstamp 58738289))
@@ -747,12 +748,12 @@
         (pin (num 4) (name NR) (type power_out))
         (pin (num 5) (name OUT) (type power_out)))))
   (libraries
+    (library (logical device)
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib"))
     (library (logical conn)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\conn.lib"))
     (library (logical SFUSat-Radio)
-      (uri C:\Users\Tobi\Documents\School\SatelliteDesignClub\CubeSat-Radio-v0.1\SFUSat-Radio.lib))
-    (library (logical device)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib")))
+      (uri C:\Users\Tobi\Documents\School\SatelliteDesignClub\CubeSat-Radio-v0.1\SFUSat-Radio.lib)))
   (nets
     (net (code 1) (name "Net-(D3-Pad2)")
       (node (ref R3) (pin 2))

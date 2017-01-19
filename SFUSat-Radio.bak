@@ -91,6 +91,7 @@ F2 "Vin" I L 5400 2650 60
 F3 "3V3" I R 6950 3050 60 
 F4 "3V6" I R 6950 2800 60 
 F5 "1V8" I R 6950 3300 60 
+F6 "OP_3V3" I L 5400 2950 60 
 $EndSheet
 Wire Wire Line
 	6950 3050 7400 3050
@@ -147,23 +148,6 @@ Wire Wire Line
 	2150 4800 2450 4800
 Text Label 2450 4800 2    60   ~ 0
 VDD_3.3
-Text Label 2600 6150 2    60   ~ 0
-VDD_3.3
-$Comp
-L JS202011SCQN SW1
-U 1 1 587DE706
-P 1800 6100
-F 0 "SW1" H 2000 5700 60  0000 C CNN
-F 1 "JS202011SCQN" H 1800 6250 60  0000 C CNN
-F 2 "SFUSat-Radio:JS2020_TH" H 1800 6100 60  0001 C CNN
-F 3 "" H 1800 6100 60  0000 C CNN
-	1    1800 6100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2300 6150 2600 6150
-Text Notes 1150 6850 0    60   ~ 0
-To use 3.3V supply from CC debugger, \nenable this switch after diabling 3.3V \nregulator switch.
 $Comp
 L 2N7002DW U1
 U 1 1 587E8AE8
@@ -358,10 +342,6 @@ Text Label 3400 5350 0    60   ~ 0
 CSn
 Text Label 3400 5600 0    60   ~ 0
 RESET_N
-Wire Wire Line
-	1300 6100 950  6100
-Text Label 950  6100 0    60   ~ 0
-OP_3.3
 $Comp
 L SMA J1
 U 1 1 5883A1B6
@@ -384,4 +364,8 @@ F 3 "" H 9700 5050 50  0000 C CNN
 	1    9700 5050
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	5400 2950 4900 2950
+Text Label 4900 2950 0    60   ~ 0
+OP_3.3
 $EndSCHEMATC
