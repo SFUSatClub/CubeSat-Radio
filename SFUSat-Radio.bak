@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:SFUSat-Radio-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -160,7 +161,7 @@ F 3 "" H 6350 1600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D1
+L LED-RESCUE-SFUSat-Radio D1
 U 1 1 587E94F9
 P 6950 1250
 F 0 "D1" H 6950 1350 50  0000 C CNN
@@ -193,7 +194,7 @@ F 3 "" H 7250 900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D2
+L LED-RESCUE-SFUSat-Radio D2
 U 1 1 587EC634
 P 7250 1250
 F 0 "D2" H 7250 1350 50  0000 C CNN
@@ -232,7 +233,7 @@ Wire Wire Line
 Wire Wire Line
 	7250 1650 7250 1450
 $Comp
-L LED D3
+L LED-RESCUE-SFUSat-Radio D3
 U 1 1 587F1822
 P 7550 1250
 F 0 "D3" H 7550 1350 50  0000 C CNN
