@@ -3,7 +3,7 @@
   (general
     (links 248)
     (no_connects 0)
-    (area 106.731999 86.030999 156.285001 114.375001)
+    (area 105.809 83.8126 158.338 115.2335)
     (thickness 1.6002)
     (drawings 15)
     (tracks 608)
@@ -14,7 +14,7 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal)
+    (0 F.Cu signal hide)
     (1 In1.Cu power hide)
     (2 In2.Cu power hide)
     (31 B.Cu signal hide)
@@ -54,10 +54,11 @@
     (pad_drill 0.3)
     (pad_to_mask_clearance 0.0762)
     (solder_mask_min_width 0.1016)
+    (pad_to_paste_clearance -0.0762)
     (aux_axis_origin 0 0)
     (visible_elements 7FFEFF7F)
     (pcbplotparams
-      (layerselection 0x00030_80000001)
+      (layerselection 0x00008_00000000)
       (usegerberextensions false)
       (excludeedgelayer true)
       (linewidth 0.100000)
@@ -78,7 +79,7 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
       (outputdirectory ""))
   )
@@ -2605,6 +2606,7 @@
 
   (module SFUSat-Radio:BMI-S-101 (layer F.Cu) (tedit 5886D1C9) (tstamp 58851AA7)
     (at 143.256 106.68)
+    (solder_paste_ratio -0.5)
     (fp_text reference REF** (at 0.1 4.7) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -3170,6 +3172,7 @@
   (module SFUSat-Radio:SMA_EDGE (layer F.Cu) (tedit 588973C8) (tstamp 58897814)
     (at 155.9179 105.5497 180)
     (path /5883A1B6)
+    (solder_paste_ratio -0.5)
     (fp_text reference J1 (at 2.4892 8.37692 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
