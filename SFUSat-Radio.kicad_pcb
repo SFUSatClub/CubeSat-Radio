@@ -50,7 +50,7 @@
     (mod_edge_width 0.15)
     (mod_text_size 1 1)
     (mod_text_width 0.15)
-    (pad_size 5.08 2.415)
+    (pad_size 3.45 3.45)
     (pad_drill 0)
     (pad_to_mask_clearance 0.0762)
     (solder_mask_min_width 0.1016)
@@ -260,7 +260,7 @@
     (add_net /Power/Vin)
   )
 
-  (module SFUSat-Radio:PVQFN-N32 (layer F.Cu) (tedit 58917AD0) (tstamp 587B59B1)
+  (module SFUSat-Radio:PVQFN-N32 (layer F.Cu) (tedit 58917C91) (tstamp 587B59B1)
     (at 119.126 107.188)
     (path /5821BF4E/5821C806)
     (solder_mask_margin 0.05)
