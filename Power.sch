@@ -153,7 +153,7 @@ L R R12
 U 1 1 58770EF4
 P 7650 2550
 F 0 "R12" V 7730 2550 50  0000 C CNN
-F 1 "285.71" V 7650 2550 50  0000 C CNN
+F 1 "286" V 7650 2550 50  0000 C CNN
 F 2 "Resistors_SMD:R_0402" V 7580 2550 50  0001 C CNN
 F 3 "" H 7650 2550 50  0000 C CNN
 	1    7650 2550
@@ -260,6 +260,73 @@ F 3 "" H 5550 3850 50  0000 C CNN
 	1    5550 3850
 	1    0    0    -1  
 $EndComp
+Text HLabel 3500 4000 0    60   Input ~ 0
+OP_3V3
+$Comp
+L CONN_01X03 P4
+U 1 1 588180C4
+P 3700 4100
+F 0 "P4" H 3700 4300 50  0000 C CNN
+F 1 "CONN_01X03" V 3800 4100 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x03" H 3700 4100 50  0001 C CNN
+F 3 "" H 3700 4100 50  0000 C CNN
+	1    3700 4100
+	1    0    0    -1  
+$EndComp
+Text Label 7600 3350 2    60   ~ 0
+REG_3.3
+Text Label 3450 4200 2    60   ~ 0
+REG_3.3
+Text HLabel 2700 4100 0    60   Input ~ 0
+3V3
+Text HLabel 2800 4600 0    60   Input ~ 0
+3V6
+Text HLabel 2800 4800 0    60   Input ~ 0
+3V3
+$Comp
+L TEST_1P W4
+U 1 1 588228DF
+P 3050 4600
+F 0 "W4" H 3050 4870 50  0000 C CNN
+F 1 "TEST_1P" H 3050 4800 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 3250 4600 50  0001 C CNN
+F 3 "" H 3250 4600 50  0000 C CNN
+	1    3050 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L TEST_1P W5
+U 1 1 58822942
+P 3050 4800
+F 0 "W5" H 3050 5070 50  0000 C CNN
+F 1 "TEST_1P" H 3050 5000 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 3250 4800 50  0001 C CNN
+F 3 "" H 3250 4800 50  0000 C CNN
+	1    3050 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L R R6
+U 1 1 58948617
+P 6050 2150
+F 0 "R6" V 6130 2150 50  0000 C CNN
+F 1 "1k" V 6050 2150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 5980 2150 50  0001 C CNN
+F 3 "" H 6050 2150 50  0000 C CNN
+	1    6050 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 58948796
+P 5725 3500
+F 0 "R5" V 5805 3500 50  0000 C CNN
+F 1 "1k" V 5725 3500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 5655 3500 50  0001 C CNN
+F 3 "" H 5725 3500 50  0000 C CNN
+	1    5725 3500
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	4100 2000 6350 2000
 Connection ~ 5700 2000
@@ -296,8 +363,6 @@ Wire Wire Line
 	5550 3350 5550 3700
 Connection ~ 5550 3350
 Wire Wire Line
-	4100 3350 5850 3350
-Wire Wire Line
 	4100 2850 3900 2850
 Connection ~ 4100 2850
 Wire Wire Line
@@ -307,65 +372,13 @@ Wire Wire Line
 Connection ~ 5450 2000
 Wire Wire Line
 	6350 2300 6050 2300
-Wire Wire Line
-	6050 2300 6050 2000
 Connection ~ 6050 2000
-Text HLabel 3500 4000 0    60   Input ~ 0
-OP_3V3
 Wire Wire Line
 	4100 2000 4100 3350
-Wire Wire Line
-	5850 3550 5700 3550
-Wire Wire Line
-	5700 3550 5700 3350
-Connection ~ 5700 3350
-$Comp
-L CONN_01X03 P4
-U 1 1 588180C4
-P 3700 4100
-F 0 "P4" H 3700 4300 50  0000 C CNN
-F 1 "CONN_01X03" V 3800 4100 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x03" H 3700 4100 50  0001 C CNN
-F 3 "" H 3700 4100 50  0000 C CNN
-	1    3700 4100
-	1    0    0    -1  
-$EndComp
-Text Label 7600 3350 2    60   ~ 0
-REG_3.3
-Text Label 3450 4200 2    60   ~ 0
-REG_3.3
 Wire Wire Line
 	3500 4200 3450 4200
 Wire Wire Line
 	3500 4100 2700 4100
-Text HLabel 2700 4100 0    60   Input ~ 0
-3V3
-Text HLabel 2800 4600 0    60   Input ~ 0
-3V6
-Text HLabel 2800 4800 0    60   Input ~ 0
-3V3
-$Comp
-L TEST_1P W4
-U 1 1 588228DF
-P 3050 4600
-F 0 "W4" H 3050 4870 50  0000 C CNN
-F 1 "TEST_1P" H 3050 4800 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 3250 4600 50  0001 C CNN
-F 3 "" H 3250 4600 50  0000 C CNN
-	1    3050 4600
-	0    1    1    0   
-$EndComp
-$Comp
-L TEST_1P W5
-U 1 1 58822942
-P 3050 4800
-F 0 "W5" H 3050 5070 50  0000 C CNN
-F 1 "TEST_1P" H 3050 5000 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 3250 4800 50  0001 C CNN
-F 3 "" H 3250 4800 50  0000 C CNN
-	1    3050 4800
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	2800 4600 3050 4600
 Wire Wire Line
@@ -373,4 +386,11 @@ Wire Wire Line
 Wire Wire Line
 	7450 2000 8150 2000
 Connection ~ 7650 2000
+Wire Wire Line
+	5850 3550 5850 3650
+Wire Wire Line
+	5850 3650 5725 3650
+Wire Wire Line
+	4100 3350 5850 3350
+Connection ~ 5725 3350
 $EndSCHEMATC
