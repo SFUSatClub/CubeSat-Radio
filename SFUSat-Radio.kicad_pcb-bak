@@ -3,7 +3,7 @@
   (general
     (links 261)
     (no_connects 1)
-    (area 105.809 83.584 163.784058 115.2335)
+    (area 106.731999 86.030999 156.285001 114.375001)
     (thickness 1.6002)
     (drawings 19)
     (tracks 635)
@@ -14,12 +14,12 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal)
+    (0 F.Cu signal hide)
     (1 In1.Cu power hide)
     (2 In2.Cu power hide)
     (31 B.Cu signal hide)
     (34 B.Paste user)
-    (35 F.Paste user)
+    (35 F.Paste user hide)
     (36 B.SilkS user)
     (37 F.SilkS user)
     (38 B.Mask user)
