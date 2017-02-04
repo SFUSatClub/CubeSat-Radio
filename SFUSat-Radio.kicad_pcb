@@ -3,7 +3,7 @@
   (general
     (links 261)
     (no_connects 1)
-    (area 106.731999 86.030999 156.285001 114.375001)
+    (area 105.809 83.584 163.784058 115.2335)
     (thickness 1.6002)
     (drawings 19)
     (tracks 635)
@@ -50,7 +50,7 @@
     (mod_edge_width 0.15)
     (mod_text_size 1 1)
     (mod_text_width 0.15)
-    (pad_size 0.22 0.22)
+    (pad_size 2 2.5)
     (pad_drill 0)
     (pad_to_mask_clearance 0.0762)
     (solder_mask_min_width 0.1016)
@@ -518,7 +518,7 @@
       (net 2 GND) (zone_connect 2))
   )
 
-  (module Capacitors_SMD:C_1210_HandSoldering (layer F.Cu) (tedit 58917679) (tstamp 588C26AA)
+  (module Capacitors_SMD:C_1210_HandSoldering (layer F.Cu) (tedit 58963F03) (tstamp 588C26AA)
     (at 137.033 96.0628 270)
     (descr "Capacitor SMD 1210, hand soldering")
     (tags "capacitor 1210")
@@ -540,9 +540,9 @@
     (fp_line (start 3.3 -1.6) (end 3.3 1.6) (layer F.CrtYd) (width 0.05))
     (fp_line (start 1 -1.475) (end -1 -1.475) (layer F.SilkS) (width 0.12))
     (fp_line (start -1 1.475) (end 1 1.475) (layer F.SilkS) (width 0.12))
-    (pad 1 smd rect (at -2 0 270) (size 2 2.5) (layers F.Cu F.Mask)
+    (pad 1 smd rect (at -2 0 270) (size 2 2.5) (layers F.Cu F.Paste F.Mask)
       (net 18 /Front_End/3V6))
-    (pad 2 smd rect (at 2 0 270) (size 2 2.5) (layers F.Cu F.Mask)
+    (pad 2 smd rect (at 2 0 270) (size 2 2.5) (layers F.Cu F.Paste F.Mask)
       (net 2 GND))
     (model Capacitors_SMD.3dshapes/C_1210_HandSoldering.wrl
       (at (xyz 0 0 0))
