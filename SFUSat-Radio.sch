@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:SFUSat-Radio-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,8 +28,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:SFUSat-Radio
-LIBS:SFUSat-Radio-cache
+LIBS:SFUSat
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -127,18 +125,16 @@ $EndComp
 $Comp
 L GND #PWR01
 U 1 1 587CE076
-P 1650 4800
-F 0 "#PWR01" H 1650 4550 50  0001 C CNN
-F 1 "GND" H 1650 4650 50  0000 C CNN
-F 2 "" H 1650 4800 50  0000 C CNN
-F 3 "" H 1650 4800 50  0000 C CNN
-	1    1650 4800
+P 1350 4750
+F 0 "#PWR01" H 1350 4500 50  0001 C CNN
+F 1 "GND" H 1350 4600 50  0000 C CNN
+F 2 "" H 1350 4750 50  0000 C CNN
+F 3 "" H 1350 4750 50  0000 C CNN
+	1    1350 4750
 	0    1    1    0   
 $EndComp
 Text Label 7400 3400 0    60   ~ 0
 VDD_3.3
-Wire Wire Line
-	2150 4800 2450 4800
 Text Label 2450 4800 2    60   ~ 0
 VDD_3.3
 $Comp
@@ -288,23 +284,7 @@ Wire Wire Line
 Wire Wire Line
 	3700 5350 3400 5350
 Wire Wire Line
-	3700 5600 3400 5600
-Wire Wire Line
-	2150 4900 2450 4900
-Wire Wire Line
-	2150 5000 2450 5000
-Wire Wire Line
-	2150 5100 2450 5100
-Wire Wire Line
-	2150 5200 2450 5200
-Wire Wire Line
-	1650 4900 1250 4900
-Wire Wire Line
-	1650 5000 1250 5000
-Wire Wire Line
-	1650 5100 1250 5100
-Wire Wire Line
-	1650 5200 1250 5200
+	3000 5600 3700 5600
 Text Label 2450 5200 2    60   ~ 0
 MISO
 Text Label 2450 5100 2    60   ~ 0
@@ -319,8 +299,6 @@ Text Label 1250 5000 0    60   ~ 0
 CSn
 Text Label 1250 5100 0    60   ~ 0
 RESET_N
-Text Label 1250 5200 0    60   ~ 0
-OP_3.3
 Text Label 3400 3800 0    60   ~ 0
 GPIO0
 Text Label 3400 4050 0    60   ~ 0
@@ -387,4 +365,49 @@ Wire Wire Line
 	4225 2750 4300 2750
 Wire Wire Line
 	4300 2750 4300 2800
+$Comp
+L SPST SW??
+U 1 1 5913F847
+P 2450 5750
+F 0 "SW??" H 2450 6000 60  0000 C CNN
+F 1 "SPST" H 2450 5450 60  0000 C CNN
+F 2 "SFUSat:PTS645SMT" H 2450 5750 60  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/c-k/PTS645SM43SMTR92-LFS/CKN9112CT-ND/1146934" H 2450 5750 60  0001 C CNN
+	1    2450 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 5600 1900 5550
+Wire Wire Line
+	1900 5550 3000 5550
+Wire Wire Line
+	3000 5550 3000 5600
+Text Label 1250 5200 0    60   ~ 0
+OP_3.3
+$Comp
+L GND #PWR?
+U 1 1 59141A1F
+P 1850 5900
+F 0 "#PWR?" H 1850 5650 50  0001 C CNN
+F 1 "GND" H 1850 5750 50  0000 C CNN
+F 2 "" H 1850 5900 50  0000 C CNN
+F 3 "" H 1850 5900 50  0000 C CNN
+	1    1850 5900
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59141AD5
+P 3050 5900
+F 0 "#PWR?" H 3050 5650 50  0001 C CNN
+F 1 "GND" H 3050 5750 50  0000 C CNN
+F 2 "" H 3050 5900 50  0000 C CNN
+F 3 "" H 3050 5900 50  0000 C CNN
+	1    3050 5900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1850 5900 1900 5900
+Wire Wire Line
+	3000 5900 3050 5900
 $EndSCHEMATC
