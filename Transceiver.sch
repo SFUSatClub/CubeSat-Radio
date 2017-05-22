@@ -29,7 +29,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:SFUSat
-LIBS:SFUSat-Radio-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -911,4 +910,6 @@ Wire Wire Line
 	2750 2050 3050 2050
 Wire Wire Line
 	3050 2050 3050 2300
+Entry Bus Bus
+	-1675 6175 -1575 6275
 $EndSCHEMATC
