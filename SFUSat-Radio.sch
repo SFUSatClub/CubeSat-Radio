@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:SFUSat-Radio-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,6 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:SFUSat
+LIBS:SFUSat-Radio-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -48,12 +50,12 @@ S 3700 3550 1500 2300
 U 5821BF4E
 F0 "Transceiver" 60
 F1 "Transceiver.sch" 60
-F2 "RESET" I L 3700 5600 60 
+F2 "~RESET" I L 3700 5600 60 
 F3 "GPIO2" I L 3700 4050 60 
 F4 "MOSI" I L 3700 4850 60 
 F5 "SCLK" I L 3700 4600 60 
 F6 "MISO" I L 3700 5100 60 
-F7 "CSN" I L 3700 5350 60 
+F7 "~CS" I L 3700 5350 60 
 F8 "RX" I R 5200 4600 60 
 F9 "TX" I R 5200 4900 60 
 F10 "3V3" I R 5200 4125 60 
@@ -215,9 +217,9 @@ GPIO0
 Text Label 1250 4900 0    60   ~ 0
 GPIO2
 Text Label 1250 5000 0    60   ~ 0
-CSn
+~CS
 Text Label 1250 5100 0    60   ~ 0
-RESET_N
+~RESET
 Text Label 3400 3800 0    60   ~ 0
 GPIO0
 Text Label 3400 4050 0    60   ~ 0
@@ -229,11 +231,11 @@ MOSI
 Text Label 3400 5100 0    60   ~ 0
 MISO
 Text Label 3400 5350 0    60   ~ 0
-CSn
+~CS
 Text Label 3400 5600 0    60   ~ 0
-RESET_N
+~RESET
 $Comp
-L SMA J1
+L SMA-RESCUE-SFUSat-Radio J1
 U 1 1 5883A1B6
 P 9150 5100
 F 0 "J1" H 9350 4950 60  0000 C CNN
@@ -257,7 +259,7 @@ $EndComp
 Text Label 4900 2950 0    60   ~ 0
 OP_3.3
 $Comp
-L SPST SW?1
+L SPST-RESCUE-SFUSat-Radio SW?1
 U 1 1 5913F847
 P 2450 5750
 F 0 "SW?1" H 2450 6000 60  0000 C CNN

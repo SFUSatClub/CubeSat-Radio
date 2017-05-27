@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:SFUSat-Radio-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,6 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:SFUSat
+LIBS:SFUSat-Radio-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
