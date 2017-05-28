@@ -1,0 +1,8 @@
+PICK AND PLACE COORDINATES
+19. februar 2010
+Reference point is bottom left corner at 1000.00, 1000.00
+Board side: Solder side (bottom)
+Number of components:2     
+P1,         2125.00,    2590.00, 180.000,    SMD_SOCKET_2x10,     
+P2,         3325.00,    2590.00, 180.000,    SMD_SOCKET_2x10,     
+END OF LIST

@@ -1,0 +1,36 @@
+Dear Valued Customer,
+
+
+The hardware layout of the reference design in this ZIP file is designed for both 315 MHz and 433MHz operation. The only difference between the two designs is the component values related to the RF layout.
+
+If you are making a 315MHz design, please use the following bill of material (BOM) for optimum RF performance:
+
+BOM CC1101EM 315MHz Reference Design
+
+C_100N_0402_X5R_K_10           C41
+C_100N_0402_X5R_K_10           C51
+C_10N_0402_X7R_K_25            C111
+C_10N_0402_X7R_K_25            C91
+C_10N_0402_X7R_K_25            C141
+C_12P_0402_NP0_J_50            C122
+C_1U_0805_X7R_K_16             C1
+C_220P_0402_NP0_J_50           C181
+C_220P_0402_NP0_J_50           C125
+C_220P_0402_NP0_J_50           C151
+C_220P_0402_NP0_J_50           C124
+C_12P_0402_NP0_J_50            C81
+C_15P_0402_NP0_J_50            C101
+C_6P8_0402_NP0_J_50            C121
+C_6P8_0402_NP0_J_50            C123
+C_6P8_0402_NP0_J_50            C131
+CC1100                         U1
+L_18N_0402_J                   L122
+L_33N_0402_J                   L131
+L_33N_0402_J                   L123
+L_33N_0402_J                   L121
+L_BEAD_102_0402                L1
+R_56K_0402_F                   R171
+SMA_SMD                        P3
+SMD_SOCKET_2x10                P2
+SMD_SOCKET_2x10                P1
+X_26.000/50/10           			 X1

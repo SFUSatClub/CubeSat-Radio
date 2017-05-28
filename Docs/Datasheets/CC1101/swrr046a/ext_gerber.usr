@@ -1,0 +1,33 @@
+PCB PHOTOPLOTTER DEFINITION FILE
+
+# Ext GERBER RS274-X WITH ABSOLUTE IMPERIAL COORDINATES IN 2.4 FORMAT
+
+FORMAT          3
+
+MACHINE         GERBER RS274-X      # Emulator or controller described in this file
+TYPE            PHOTOHEAD           # Photo plotter output only
+CODE            ASCII               # Alternatives are ISO, EIA or EBCDIC
+UNITS           IMPERIAL            # Output is in 1/1000 inches
+FILEUNITS       IMPERIAL            # All units in this file in 1/1000 inches
+COORDINATES     ABSOLUTE            # Alternative is INCREMENTAL coords
+PRECEEDING      2                   # Gerber coordinate format 2.4
+SUCCEEDING      4
+ZEROS           TRAILING            # Include trailing zeros only
+REPEATS         INCLUDE             # Omit any repeated coordinates
+GCOMMANDS       INCLUDE             # Include G commands
+INITIALISE      OMIT                # No initialisation required
+PARAMETER       37                  # Parameter block identifier %
+ENDBLOCK        42                  # End of block character *
+CRLF            INCLUDE             # Add CR/LF to the disc file
+TERMINATOR      M02                 # End of program command for plotter
+XLOW            0                   # Define table size for plotting
+YLOW            0
+XHIGH           16000
+YHIGH           20000
+SYMBOLALLOC     GENERATE            # Use symbols in the Table or Generate undefined symbols when allocating
+DRAWUNDEFINED   YES                 # attempt to draw undefined symbols
+PPAPERTURES     YES                 # Use power plane apertures
+RS-274-X        YES                 # Use embedded aperture definitions
+CIRCINTERPOL    YES                 # Draw arcs
+HARDWAREFILL    YES                 # Use hardware fill on shapes
+
