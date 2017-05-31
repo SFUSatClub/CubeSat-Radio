@@ -96,7 +96,7 @@ Connection ~ 5050 4500
 Wire Wire Line
 	5500 4500 5500 4650
 Connection ~ 5500 4500
-Text HLabel 4650 2200 0    60   Input ~ 0
+Text HLabel 4350 2200 0    60   Input ~ 0
 3V3
 Text HLabel 6600 2200 2    60   Input ~ 0
 3V6
@@ -229,7 +229,7 @@ Wire Wire Line
 Wire Wire Line
 	4850 2500 4850 2550
 Wire Wire Line
-	4650 2200 5400 2200
+	4350 2200 5400 2200
 Wire Wire Line
 	5300 2900 5400 2900
 Connection ~ 4850 2200
@@ -374,10 +374,6 @@ Wire Wire Line
 	4700 3250 3800 3250
 Wire Wire Line
 	3800 3450 4700 3450
-Wire Wire Line
-	4700 3350 3800 3350
-Text HLabel 3300 6400 2    60   Input ~ 0
-EXT_EN
 Text Notes 3400 2775 0    60   ~ 0
 TRX_SIG
 Text Notes 3400 2650 0    60   ~ 0
@@ -437,44 +433,23 @@ Text Label 3800 3700 0    60   ~ 0
 VPC
 Text Label 4350 6300 2    60   ~ 0
 VPC
-Text HLabel 4800 5850 2    60   Input ~ 0
+Text HLabel 4650 5700 1    60   Input ~ 0
 3V3
 $Comp
 L POT RV1
 U 1 1 587CA745
-P 4650 5850
-F 0 "RV1" H 4650 5750 50  0000 C CNN
-F 1 "POT" H 4650 5850 50  0000 C CNN
-F 2 "SFUSat:TC33_SMD" H 4650 5850 50  0001 C CNN
-F 3 "" H 4650 5850 50  0000 C CNN
-	1    4650 5850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4650 6200 4100 6200
-Text HLabel 3600 5625 2    60   Input ~ 0
-3V3
-Text Label 3800 3350 0    60   ~ 0
-EN
-Text Label 3450 6300 2    60   ~ 0
-EN
-Text Notes 2100 3600 0    60   ~ 0
-TR and BYP should not be \npulled high if EN is pulled low
-$Comp
-L JS202011SCQN SW1
-U 1 1 58828A5A
-P 5900 6150
-F 0 "SW1" H 6100 5750 60  0000 C CNN
-F 1 "JS202011SCQN" H 5900 6300 60  0000 C CNN
-F 2 "SFUSat:JS2020_TH" H 5900 6150 60  0001 C CNN
-F 3 "" H 5900 6150 60  0000 C CNN
-	1    5900 6150
+P 4650 5950
+F 0 "RV1" H 4650 5850 50  0000 C CNN
+F 1 "POT" H 4650 5950 50  0000 C CNN
+F 2 "SFUSat:TC33_SMD" H 4650 5950 50  0001 C CNN
+F 3 "" H 4650 5950 50  0000 C CNN
+	1    4650 5950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5400 6150 5200 6150
-Text Label 5200 6150 0    60   ~ 0
-BYP
+	4650 6200 4100 6200
+Text Notes 2100 3600 0    60   ~ 0
+TR and BYP should not be \npulled high if EN is pulled low
 Text Label 3800 3450 0    60   ~ 0
 BYP
 Text HLabel 6850 5850 2    60   Input ~ 0
@@ -482,12 +457,12 @@ Text HLabel 6850 5850 2    60   Input ~ 0
 $Comp
 L GND #PWR035
 U 1 1 58829BDE
-P 6400 6100
-F 0 "#PWR035" H 6400 5850 50  0001 C CNN
-F 1 "GND" H 6400 5950 50  0000 C CNN
-F 2 "" H 6400 6100 50  0000 C CNN
-F 3 "" H 6400 6100 50  0000 C CNN
-	1    6400 6100
+P 6400 6400
+F 0 "#PWR035" H 6400 6150 50  0001 C CNN
+F 1 "GND" H 6400 6250 50  0000 C CNN
+F 2 "" H 6400 6400 50  0000 C CNN
+F 3 "" H 6400 6400 50  0000 C CNN
+	1    6400 6400
 	0    -1   -1   0   
 $EndComp
 Text Notes 3000 7000 0    60   ~ 0
@@ -505,21 +480,8 @@ F 3 "" H 3900 6300 50  0000 C CNN
 	1    3900 6300
 	-1   0    0    1   
 $EndComp
-$Comp
-L CONN_01X03 P2
-U 1 1 5881FDBC
-P 3100 6300
-F 0 "P2" H 3100 6500 50  0000 C CNN
-F 1 "CONN_01X03" V 3200 6300 50  0000 C CNN
-F 2 "SFUSat:Socket_Strip_Straight_1x03" H 3100 6300 50  0001 C CNN
-F 3 "" H 3100 6300 50  0000 C CNN
-	1    3100 6300
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	4100 6300 4350 6300
-Wire Wire Line
-	3300 6300 3450 6300
 $Comp
 L TEST_1P W2
 U 1 1 58821DE8
@@ -535,17 +497,6 @@ Wire Wire Line
 	4300 6050 4300 6200
 Connection ~ 4300 6200
 $Comp
-L R R5
-U 1 1 58948F89
-P 3300 5925
-F 0 "R5" V 3380 5925 50  0000 C CNN
-F 1 "1k" V 3300 5925 50  0000 C CNN
-F 2 "SFUSat:R_0402" V 3230 5925 50  0001 C CNN
-F 3 "" H 3300 5925 50  0000 C CNN
-	1    3300 5925
-	1    0    0    -1  
-$EndComp
-$Comp
 L R R8
 U 1 1 5894915C
 P 6750 6050
@@ -557,13 +508,9 @@ F 3 "" H 6750 6050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3300 6075 3300 6200
+	2900 5625 3200 5625
 Wire Wire Line
-	3300 5775 3300 5625
-Wire Wire Line
-	3300 5625 3600 5625
-Wire Wire Line
-	6750 6200 6400 6200
+	6300 6200 6750 6200
 Wire Wire Line
 	6750 5900 6750 5850
 Wire Wire Line
@@ -576,4 +523,41 @@ Wire Wire Line
 	7300 2850 7050 2850
 Wire Wire Line
 	7050 2850 7050 3200
+Wire Wire Line
+	4550 3350 4700 3350
+Wire Wire Line
+	4550 3100 4550 3350
+Wire Wire Line
+	4550 2800 4550 2200
+Connection ~ 4550 2200
+$Comp
+L CONN_01X03 P?
+U 1 1 592E3D25
+P 6100 6300
+F 0 "P?" H 6100 6500 50  0000 C CNN
+F 1 "CONN_01X03" V 6200 6300 50  0000 C CNN
+F 2 "SFUSat:Socket_Strip_Straight_1x03" H 6100 6300 50  0001 C CNN
+F 3 "" H 6100 6300 50  0000 C CNN
+	1    6100 6300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6400 6400 6300 6400
+Wire Wire Line
+	6300 6300 6800 6300
+Text Label 6800 6300 0    60   ~ 0
+BYP
+Wire Wire Line
+	4650 5700 4650 5800
+$Comp
+L R R?
+U 1 1 592E46FC
+P 4550 2950
+F 0 "R?" V 4630 2950 50  0000 C CNN
+F 1 "1k" V 4550 2950 50  0000 C CNN
+F 2 "" V 4480 2950 50  0001 C CNN
+F 3 "" H 4550 2950 50  0001 C CNN
+	1    4550 2950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
