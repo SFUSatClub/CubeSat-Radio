@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "E:/Documents/Various Documents/School/SFU Satellite Club/KiCAD/CubeSat-Radio-v0.1/CubeSat-Radio-v0.1/SFUSat-Radio.sch")
-    (date "6/1/2017 20:54:15")
+    (date "6/1/2017 21:12:06")
     (tool "Eeschema 4.0.5")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -131,7 +131,7 @@
       (footprint SFUSat:Socket_Strip_Straight_2x05)
       (libsource (lib conn) (part CONN_02X05))
       (sheetpath (names /) (tstamps /))
-      (tstamp 59310FCE))
+      (tstamp 5930FA52))
     (comp (ref C12)
       (value 47pF)
       (footprint SFUSat:C_0402)
@@ -829,12 +829,12 @@
         (pin (num 4) (name NR) (type power_out))
         (pin (num 5) (name OUT) (type power_out)))))
   (libraries
-    (library (logical device)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib"))
     (library (logical conn)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\conn.lib"))
     (library (logical SFUSat)
-      (uri KiCad-Lib\SFUSat.lib)))
+      (uri KiCad-Lib\SFUSat.lib))
+    (library (logical device)
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib")))
   (nets
     (net (code 1) (name "Net-(J1-Pad15A)")
       (node (ref J1) (pin 15A)))
