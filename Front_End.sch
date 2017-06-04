@@ -559,4 +559,60 @@ Wire Wire Line
 Connection ~ 4650 6200
 Wire Wire Line
 	4650 6550 4650 6600
+$Comp
+L PESD5Zx D?
+U 1 1 59355F94
+P 3875 4050
+F 0 "D?" H 3975 3850 60  0000 C CNN
+F 1 "PESD5Zx" H 3625 4150 60  0000 C CNN
+F 2 "" H 3875 4050 60  0001 C CNN
+F 3 "https://www.digikey.ca/product-detail/en/nexperia-usa-inc/PESD5Z3.3,115/1727-5814-1-ND/2697434" H 3875 4050 60  0001 C CNN
+	1    3875 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 593560DF
+P 3875 4425
+F 0 "#PWR?" H 3875 4175 50  0001 C CNN
+F 1 "GND" H 3875 4275 50  0000 C CNN
+F 2 "" H 3875 4425 50  0000 C CNN
+F 3 "" H 3875 4425 50  0000 C CNN
+	1    3875 4425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3875 3750 3875 3700
+Connection ~ 3875 3700
+Wire Wire Line
+	3875 4425 3875 4350
+$Comp
+L PESD5Zx D?
+U 1 1 59357741
+P 4950 6100
+F 0 "D?" H 5050 5900 60  0000 C CNN
+F 1 "PESD5Zx" H 4700 6200 60  0000 C CNN
+F 2 "" H 4950 6100 60  0001 C CNN
+F 3 "https://www.digikey.ca/product-detail/en/nexperia-usa-inc/PESD5Z3.3,115/1727-5814-1-ND/2697434" H 4950 6100 60  0001 C CNN
+	1    4950 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59357BB8
+P 4950 6475
+F 0 "#PWR?" H 4950 6225 50  0001 C CNN
+F 1 "GND" H 4950 6325 50  0000 C CNN
+F 2 "" H 4950 6475 50  0000 C CNN
+F 3 "" H 4950 6475 50  0000 C CNN
+	1    4950 6475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 6475 4950 6400
+Wire Wire Line
+	4950 5800 4950 5750
+Wire Wire Line
+	4950 5750 4650 5750
+Connection ~ 4650 5750
 $EndSCHEMATC

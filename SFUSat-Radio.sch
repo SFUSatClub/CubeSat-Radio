@@ -71,7 +71,6 @@ F5 "PA_ADJ" I L 6050 5450 60
 F6 "3V3" I R 8100 4600 60 
 F7 "3V6" I R 8100 4800 60 
 F8 "TRX_SIG" I L 6050 5250 60 
-F9 "EN" I L 6050 5550 60 
 $EndSheet
 $Sheet
 S 5400 2550 1550 1100
@@ -318,8 +317,6 @@ Wire Wire Line
 	7250 1650 6800 1650
 Wire Wire Line
 	6800 1450 6950 1450
-Wire Wire Line
-	4225 2650 5400 2650
 Connection ~ 7400 4125
 Wire Wire Line
 	7400 3050 7400 4125
@@ -475,4 +472,200 @@ F 3 "" H 1900 3800 50  0000 C CNN
 	1    1900 5000
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1200 1000 725  1000
+Wire Wire Line
+	1200 900  725  900 
+Wire Wire Line
+	1200 1100 725  1100
+Wire Wire Line
+	1200 1200 725  1200
+Wire Wire Line
+	1200 1300 725  1300
+Wire Wire Line
+	1200 1400 725  1400
+Wire Wire Line
+	1100 4000 1200 4000
+Wire Wire Line
+	2300 4000 2375 4000
+Wire Wire Line
+	2300 3900 2350 3900
+Wire Wire Line
+	2350 3900 2350 4000
+Connection ~ 2350 4000
+Wire Wire Line
+	2300 900  2350 900 
+Wire Wire Line
+	2325 900  2325 1000
+Wire Wire Line
+	2325 1000 2300 1000
+Connection ~ 2325 900 
+Text Label 725  900  0    60   ~ 0
+SCLK
+Text Label 725  1000 0    60   ~ 0
+MOSI
+Text Label 725  1100 0    60   ~ 0
+MISO
+Text Label 725  1200 0    60   ~ 0
+~CS
+Text Label 725  1300 0    60   ~ 0
+GPIO0
+Text Label 725  1400 0    60   ~ 0
+PA_ADJ
+Wire Wire Line
+	6050 5450 5625 5450
+Text Label 5625 5450 0    60   ~ 0
+PA_ADJ
+Text Label 2375 1100 0    60   ~ 0
+VCC_5.0
+Text Label 2425 3700 0    60   ~ 0
+VCC_5.0
+Wire Wire Line
+	2300 3700 2425 3700
+Wire Wire Line
+	2375 1100 2300 1100
+Text Label 5175 2650 2    60   ~ 0
+VCC_5.0
+Wire Wire Line
+	5400 2650 5175 2650
+$Comp
+L PESD5Zx D?
+U 1 1 59347ADB
+P 1950 5875
+F 0 "D?" H 2050 5675 60  0000 C CNN
+F 1 "PESD5Zx" H 1700 5975 60  0000 C CNN
+F 2 "" H 1950 5875 60  0001 C CNN
+F 3 "https://www.digikey.ca/product-detail/en/nexperia-usa-inc/PESD5Z3.3,115/1727-5814-1-ND/2697434" H 1950 5875 60  0001 C CNN
+	1    1950 5875
+	0    -1   -1   0   
+$EndComp
+$Comp
+L PESD5Zx D?
+U 1 1 5934868C
+P 1950 6200
+F 0 "D?" H 2050 6000 60  0000 C CNN
+F 1 "PESD5Zx" H 1700 6300 60  0000 C CNN
+F 2 "" H 1950 6200 60  0001 C CNN
+F 3 "https://www.digikey.ca/product-detail/en/nexperia-usa-inc/PESD5Z3.3,115/1727-5814-1-ND/2697434" H 1950 6200 60  0001 C CNN
+	1    1950 6200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L PESD5Zx D?
+U 1 1 59348775
+P 1950 6500
+F 0 "D?" H 2050 6300 60  0000 C CNN
+F 1 "PESD5Zx" H 1700 6600 60  0000 C CNN
+F 2 "" H 1950 6500 60  0001 C CNN
+F 3 "https://www.digikey.ca/product-detail/en/nexperia-usa-inc/PESD5Z3.3,115/1727-5814-1-ND/2697434" H 1950 6500 60  0001 C CNN
+	1    1950 6500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L PESD5Zx D?
+U 1 1 5934A65B
+P 1950 6850
+F 0 "D?" H 2050 6650 60  0000 C CNN
+F 1 "PESD5Zx" H 1700 6950 60  0000 C CNN
+F 2 "" H 1950 6850 60  0001 C CNN
+F 3 "https://www.digikey.ca/product-detail/en/nexperia-usa-inc/PESD5Z3.3,115/1727-5814-1-ND/2697434" H 1950 6850 60  0001 C CNN
+	1    1950 6850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L PESD5Zx D?
+U 1 1 5934A8D7
+P 1950 7200
+F 0 "D?" H 2050 7000 60  0000 C CNN
+F 1 "PESD5Zx" H 1700 7300 60  0000 C CNN
+F 2 "" H 1950 7200 60  0001 C CNN
+F 3 "https://www.digikey.ca/product-detail/en/nexperia-usa-inc/PESD5Z3.3,115/1727-5814-1-ND/2697434" H 1950 7200 60  0001 C CNN
+	1    1950 7200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5934B507
+P 2325 5875
+F 0 "#PWR?" H 2325 5625 50  0001 C CNN
+F 1 "GND" H 2325 5725 50  0000 C CNN
+F 2 "" H 2325 5875 50  0001 C CNN
+F 3 "" H 2325 5875 50  0001 C CNN
+	1    2325 5875
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5934B821
+P 2325 6200
+F 0 "#PWR?" H 2325 5950 50  0001 C CNN
+F 1 "GND" H 2325 6050 50  0000 C CNN
+F 2 "" H 2325 6200 50  0001 C CNN
+F 3 "" H 2325 6200 50  0001 C CNN
+	1    2325 6200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5934BDC4
+P 2325 6500
+F 0 "#PWR?" H 2325 6250 50  0001 C CNN
+F 1 "GND" H 2325 6350 50  0000 C CNN
+F 2 "" H 2325 6500 50  0001 C CNN
+F 3 "" H 2325 6500 50  0001 C CNN
+	1    2325 6500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5934BE86
+P 2325 6850
+F 0 "#PWR?" H 2325 6600 50  0001 C CNN
+F 1 "GND" H 2325 6700 50  0000 C CNN
+F 2 "" H 2325 6850 50  0001 C CNN
+F 3 "" H 2325 6850 50  0001 C CNN
+	1    2325 6850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5934C416
+P 2325 7200
+F 0 "#PWR?" H 2325 6950 50  0001 C CNN
+F 1 "GND" H 2325 7050 50  0000 C CNN
+F 2 "" H 2325 7200 50  0001 C CNN
+F 3 "" H 2325 7200 50  0001 C CNN
+	1    2325 7200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1650 5875 1000 5875
+Wire Wire Line
+	1000 6200 1650 6200
+Wire Wire Line
+	1000 6500 1650 6500
+Wire Wire Line
+	1650 6850 1000 6850
+Wire Wire Line
+	1000 7200 1650 7200
+Text Label 1000 5875 0    60   ~ 0
+OP_3.3
+Text Label 1000 6200 0    60   ~ 0
+SCLK
+Text Label 1000 6500 0    60   ~ 0
+MISO
+Text Label 1000 6850 0    60   ~ 0
+MOSI
+Text Label 1000 7200 0    60   ~ 0
+~CS
+Wire Wire Line
+	2250 5875 2325 5875
+Wire Wire Line
+	2325 6200 2250 6200
+Wire Wire Line
+	2250 6500 2325 6500
+Wire Wire Line
+	2325 6850 2250 6850
+Wire Wire Line
+	2250 7200 2325 7200
 $EndSCHEMATC
