@@ -373,7 +373,7 @@ TRX_SIG
 Wire Wire Line
 	4700 3250 3800 3250
 Wire Wire Line
-	3800 3450 4700 3450
+	3575 3450 4700 3450
 Text Notes 3400 2775 0    60   ~ 0
 TRX_SIG
 Text Notes 3400 2650 0    60   ~ 0
@@ -616,4 +616,30 @@ Wire Wire Line
 Wire Wire Line
 	4950 5750 4650 5750
 Connection ~ 4650 5750
+$Comp
+L PESD5Zx D?
+U 1 1 593A5631
+P 3575 3825
+F 0 "D?" H 3675 3625 60  0000 C CNN
+F 1 "PESD5Zx" H 3325 3925 60  0000 C CNN
+F 2 "SFUSat:PESD57zx" H 3575 3825 60  0001 C CNN
+F 3 "https://www.digikey.ca/product-detail/en/nexperia-usa-inc/PESD5Z3.3,115/1727-5814-1-ND/2697434" H 3575 3825 60  0001 C CNN
+	1    3575 3825
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 593A57B1
+P 3575 4200
+F 0 "#PWR?" H 3575 3950 50  0001 C CNN
+F 1 "GND" H 3575 4050 50  0000 C CNN
+F 2 "" H 3575 4200 50  0000 C CNN
+F 3 "" H 3575 4200 50  0000 C CNN
+	1    3575 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3575 3450 3575 3525
+Wire Wire Line
+	3575 4125 3575 4200
 $EndSCHEMATC
