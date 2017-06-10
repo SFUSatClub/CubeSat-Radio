@@ -1,0 +1,14 @@
+Fabrication Instructions by PCBWay.com
+Copper layers: 2 layers
+Prepreg: "Normal" FR-4
+FR4 temperature grade: 130 - 140C
+FR4 Dielectric constant: assumed 4.6
+Prepreg thickness: 1.6mm
+Minimum track spacing: 6mil/0.1524mm
+Minimum drill size: 0.3mm
+Soldermask color: Green
+Silkscreen color: White
+Gold fingers: No
+Surface finish: HASL with lead
+Via process: Vias not covered
+Copper thickness: 1 oz.
