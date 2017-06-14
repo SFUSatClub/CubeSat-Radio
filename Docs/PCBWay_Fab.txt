@@ -10,5 +10,5 @@ Soldermask color: Green
 Silkscreen color: White
 Gold fingers: No
 Surface finish: HASL with lead
-Via process: Vias not covered
+Via process: Tented Vias
 Copper thickness: 1 oz.
