@@ -1,14 +1,23 @@
-Fabrication Instructions by PCBWay.com
+Fabrication Instructions for PCBWay.com
 Copper layers: 2 layers
+Size: 90.17mmX95.89mm
+Quantity: 5
 Prepreg: Kingboard FR-4
 FR4 temperature grade: 130 - 140C
 FR4 Dielectric constant: 3.8
-Prepreg thickness: 0.4mm
+Prepreg thickness: 0.6mm
 Minimum track spacing: 6mil/0.1524mm
 Minimum drill size: 0.3mm
-Soldermask color: Green
-Silkscreen color: White
+Soldermask color: White
+Silkscreen color: Black
 Gold fingers: No
 Surface finish: HASL with lead
 Via process: Tented Vias
 Copper thickness: 1 oz.
+Stencil type: Non-framework
+Stencil size: Custom 190mmX290mm
+Stencil side: Top
+Stencil Quantity: 1
+Stencil Thickness: 0.10mm
+Existing fiducials: none
+Electropolishing: no
