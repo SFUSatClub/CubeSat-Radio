@@ -1,8 +1,8 @@
 Fabrication Instructions by PCBWay.com
 Copper layers: 2 layers
-Prepreg: "Normal" FR-4
+Prepreg: Kingboard FR-4
 FR4 temperature grade: 130 - 140C
-FR4 Dielectric constant: assumed 4.3
+FR4 Dielectric constant: 3.8
 Prepreg thickness: 0.4mm
 Minimum track spacing: 6mil/0.1524mm
 Minimum drill size: 0.3mm
