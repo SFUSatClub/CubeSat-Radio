@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 7
 Title ""
 Date ""
 Rev ""
@@ -590,4 +590,22 @@ F 3 "" H 2350 900 50  0001 C CNN
 	1    2350 900 
 	0    -1   -1   0   
 $EndComp
+$Sheet
+S 9400 2150 1050 650 
+U 5A585941
+F0 "LNA" 60
+F1 "LNA.sch" 60
+$EndSheet
+$Sheet
+S 9450 1100 950  650 
+U 5A585E42
+F0 "PA" 60
+F1 "PA.sch" 60
+$EndSheet
+$Sheet
+S 8300 1700 850  600 
+U 5A589287
+F0 "Diplexer" 60
+F1 "Diplexer.sch" 60
+$EndSheet
 $EndSCHEMATC
