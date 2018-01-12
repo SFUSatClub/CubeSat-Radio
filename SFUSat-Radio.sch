@@ -29,7 +29,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:SFUSat
-LIBS:SFUSat-Radio-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -608,4 +607,6 @@ U 5A589287
 F0 "Diplexer" 60
 F1 "Diplexer.sch" 60
 $EndSheet
+Text Notes 4100 2825 2    60   ~ 0
+Microstrip Width: 0.32mm
 $EndSCHEMATC
