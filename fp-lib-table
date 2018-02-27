@@ -1,3 +1,6 @@
 (fp_lib_table
   (lib (name SFUSat)(type KiCad)(uri ${KIPRJMOD}/KiCad-Lib/SFUSat.pretty)(options "")(descr ""))
+  (lib (name SFUSat-cap)(type KiCad)(uri ${KIPRJMOD}/KiCad-Lib/SFUSat-cap.pretty)(options "")(descr ""))
+  (lib (name SFUSat-res)(type KiCad)(uri ${KIPRJMOD}/KiCad-Lib/SFUSat-res.pretty)(options "")(descr ""))
+  (lib (name SFUSat-ind)(type KiCad)(uri ${KIPRJMOD}/KiCad-Lib/SFUSat-ind.pretty)(options "")(descr ""))
 )

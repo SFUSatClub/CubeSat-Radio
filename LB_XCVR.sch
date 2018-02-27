@@ -29,11 +29,12 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:SFUSat
+LIBS:SFUSat-Radio-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 6
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -309,6 +310,7 @@ F 0 "X1" V 1600 3725 60  0000 L CNN
 F 1 "NX3225GA" H 1600 3350 60  0000 C TNN
 F 2 "SFUSat:NX3225GA" H 1600 3550 60  0001 C CNN
 F 3 "" H 1600 3550 60  0001 C CNN
+F 4 "26MHz" V 1600 3550 60  0001 C CNN "Frequency"
 	1    1600 3550
 	0    1    1    0   
 $EndComp

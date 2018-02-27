@@ -1,4 +1,4 @@
-update=6/1/2017 21:01:34
+update=Mon 26 Feb 2018 03:57:55 PM PST
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,3 +59,6 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=KiCad-Lib/SFUSat
+LibName31=KiCad-Lib/SFUSat-cap
+LibName32=KiCad-Lib/SFUSat-ind
+LibName33=KiCad-Lib/SFUSat-res
