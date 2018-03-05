@@ -140,9 +140,7 @@ F 3 "" H 5975 4025 50  0000 C CNN
 $EndComp
 Connection ~ 6425 3025
 Wire Wire Line
-	6125 3025 6425 3025
-Wire Wire Line
-	6425 3025 6725 3025
+	6125 3025 6725 3025
 Wire Wire Line
 	4975 3775 5075 3775
 Wire Wire Line
@@ -165,4 +163,36 @@ Text HLabel 4975 3975 0    54   Input ~ 0
 G2
 Text HLabel 6725 3025 2    54   Input ~ 0
 3V3
+$Comp
+L TEST_1P J?
+U 1 1 5AD72D99
+P 5025 3700
+AR Path="/5AC903D9/5AD72D99" Ref="J?"  Part="1" 
+AR Path="/5AC9A534/5AD72D99" Ref="J?"  Part="1" 
+F 0 "J?" H 5025 3970 50  0000 C CNN
+F 1 "TEST_1P" H 5025 3900 50  0000 C CNN
+F 2 "SFUSat:Measurement_Point_Round-SMD-Pad_Big" H 5225 3700 50  0001 C CNN
+F 3 "" H 5225 3700 50  0001 C CNN
+	1    5025 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P J?
+U 1 1 5AD72E22
+P 5025 4050
+AR Path="/5AC903D9/5AD72E22" Ref="J?"  Part="1" 
+AR Path="/5AC9A534/5AD72E22" Ref="J?"  Part="1" 
+F 0 "J?" H 5025 4320 50  0000 C CNN
+F 1 "TEST_1P" H 5025 4250 50  0000 C CNN
+F 2 "SFUSat:Measurement_Point_Round-SMD-Pad_Big" H 5225 4050 50  0001 C CNN
+F 3 "" H 5225 4050 50  0001 C CNN
+	1    5025 4050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5025 3700 5025 3775
+Connection ~ 5025 3775
+Wire Wire Line
+	5025 3975 5025 4050
+Connection ~ 5025 3975
 $EndSCHEMATC

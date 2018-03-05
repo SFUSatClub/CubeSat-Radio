@@ -1896,4 +1896,78 @@ F 25 "Jumper" H 3100 7975 50  0001 C CNN "Tolerance"
 	1    3100 7975
 	0    1    1    0   
 $EndComp
+$Comp
+L TEST_1P J?
+U 1 1 5AD70F8B
+P 4875 2250
+F 0 "J?" H 4875 2520 50  0000 C CNN
+F 1 "TEST_1P" H 4875 2450 50  0000 C CNN
+F 2 "SFUSat:Measurement_Point_Round-SMD-Pad_Big" H 5075 2250 50  0001 C CNN
+F 3 "" H 5075 2250 50  0001 C CNN
+	1    4875 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L TEST_1P J?
+U 1 1 5AD79A73
+P 4875 2575
+F 0 "J?" H 4875 2845 50  0000 C CNN
+F 1 "TEST_1P" H 4875 2775 50  0000 C CNN
+F 2 "SFUSat:Measurement_Point_Round-SMD-Pad_Big" H 5075 2575 50  0001 C CNN
+F 3 "" H 5075 2575 50  0001 C CNN
+	1    4875 2575
+	0    1    1    0   
+$EndComp
+$Comp
+L TEST_1P J?
+U 1 1 5AD79F8B
+P 4875 1925
+F 0 "J?" H 4875 2195 50  0000 C CNN
+F 1 "TEST_1P" H 4875 2125 50  0000 C CNN
+F 2 "SFUSat:Measurement_Point_Round-SMD-Pad_Big" H 5075 1925 50  0001 C CNN
+F 3 "" H 5075 1925 50  0001 C CNN
+	1    4875 1925
+	0    1    1    0   
+$EndComp
+$Comp
+L TEST_1P J?
+U 1 1 5AD7A1DC
+P 4875 1600
+F 0 "J?" H 4875 1870 50  0000 C CNN
+F 1 "TEST_1P" H 4875 1800 50  0000 C CNN
+F 2 "SFUSat:Measurement_Point_Round-SMD-Pad_Big" H 5075 1600 50  0001 C CNN
+F 3 "" H 5075 1600 50  0001 C CNN
+	1    4875 1600
+	0    1    1    0   
+$EndComp
+Text Label 4875 1600 2    60   ~ 0
+3V6
+Text Label 4875 1925 2    60   ~ 0
+3V3
+Text Label 4875 2250 2    60   ~ 0
+3V1
+Text Label 4875 2575 2    60   ~ 0
+5V0
+$Comp
+L TEST_1P J?
+U 1 1 5AD837C6
+P 4875 2925
+F 0 "J?" H 4875 3195 50  0000 C CNN
+F 1 "TEST_1P" H 4875 3125 50  0000 C CNN
+F 2 "SFUSat:Measurement_Point_Round-SMD-Pad_Big" H 5075 2925 50  0001 C CNN
+F 3 "" H 5075 2925 50  0001 C CNN
+	1    4875 2925
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5AD83A23
+P 4875 2925
+F 0 "#PWR?" H 4875 2675 50  0001 C CNN
+F 1 "GND" H 4875 2775 50  0000 C CNN
+F 2 "" H 4875 2925 50  0001 C CNN
+F 3 "" H 4875 2925 50  0001 C CNN
+	1    4875 2925
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
