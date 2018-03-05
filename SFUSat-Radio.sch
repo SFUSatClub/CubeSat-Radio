@@ -37,7 +37,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 9
 Title ""
 Date ""
 Rev ""
@@ -57,8 +57,6 @@ F3 "3V3" I R 6950 3050 60
 F4 "3V6" I R 6950 2800 60 
 F5 "OP_3V3" I L 5400 2950 60 
 $EndSheet
-Text Label 7400 3400 0    60   ~ 0
-VDD_3.3
 Text Label 2450 4800 2    60   ~ 0
 VDD_3.3
 $Comp
@@ -171,8 +169,6 @@ F 3 "" H 7550 1450 50  0000 C CNN
 	1    7550 1450
 	1    0    0    -1  
 $EndComp
-Text Label 5450 5250 0    60   ~ 0
-RX0TX1
 Text Label 5500 1500 0    60   ~ 0
 RX0TX1
 Text Label 7100 750  0    60   ~ 0
@@ -191,18 +187,6 @@ Text Label 1250 5000 0    60   ~ 0
 ~CS
 Text Label 1250 5100 0    60   ~ 0
 ~RESET
-Text Label 3250 3800 0    60   ~ 0
-LB_GPIO0
-Text Label 3250 4050 0    60   ~ 0
-LB_GPIO2
-Text Label 3300 4600 0    60   ~ 0
-LB_SCLK
-Text Label 3300 4850 0    60   ~ 0
-LB_MOSI
-Text Label 3300 5100 0    60   ~ 0
-LB_MISO
-Text Label 3400 5350 0    60   ~ 0
-LB_~CS
 $Comp
 L SMA J6
 U 1 1 5883A1B6
@@ -262,18 +246,6 @@ Wire Wire Line
 	1650 5200 1250 5200
 Wire Wire Line
 	5400 2950 4900 2950
-Wire Wire Line
-	3700 5350 3400 5350
-Wire Wire Line
-	3300 5100 3700 5100
-Wire Wire Line
-	3300 4850 3700 4850
-Wire Wire Line
-	3300 4600 3700 4600
-Wire Wire Line
-	3250 4050 3700 4050
-Wire Wire Line
-	3250 3800 3700 3800
 Connection ~ 7250 750 
 Wire Wire Line
 	6950 750  7550 750 
@@ -285,29 +257,6 @@ Wire Wire Line
 	7250 1650 6800 1650
 Wire Wire Line
 	6800 1450 6950 1450
-Connection ~ 7400 4125
-Wire Wire Line
-	7400 3050 7400 4125
-Wire Wire Line
-	8300 4125 8300 4600
-Wire Wire Line
-	5200 4125 8300 4125
-Wire Wire Line
-	5200 5250 6050 5250
-Wire Wire Line
-	8450 4800 8100 4800
-Wire Wire Line
-	8450 2800 8450 4800
-Wire Wire Line
-	6950 2800 8450 2800
-Wire Wire Line
-	8300 4600 8100 4600
-Wire Wire Line
-	6950 3050 7400 3050
-Wire Wire Line
-	6050 4900 5200 4900
-Wire Wire Line
-	5200 4600 6050 4600
 Wire Wire Line
 	9100 5200 9850 5200
 $Comp
@@ -475,7 +424,7 @@ MOSI
 Text Label 725  1100 0    60   ~ 0
 MISO
 Text Label 725  1200 0    60   ~ 0
-~CS
+~LB_CS
 Text Label 725  1300 0    60   ~ 0
 GPIO0
 Text Label 725  1400 0    60   ~ 0
@@ -532,9 +481,6 @@ Wire Wire Line
 Wire Wire Line
 	7850 1400 7850 1450
 Wire Wire Line
-	8200 750  8200 2800
-Connection ~ 8200 2800
-Wire Wire Line
 	5900 1700 5500 1700
 Text Label 5500 1700 0    60   ~ 0
 GPIO0
@@ -580,29 +526,16 @@ F4 "IN" I L 4075 10600 60
 F5 "OUT" I R 5025 10600 60 
 $EndSheet
 $Sheet
-S 7950 5000 850  600 
+S 7950 5000 600  375 
 U 5A589287
 F0 "Diplexer" 60
 F1 "Diplexer.sch" 60
+F2 "LB" I L 7950 5100 60 
+F3 "UB" I L 7950 5275 60 
+F4 "Mixed" I R 8550 5175 60 
 $EndSheet
 Text Notes 4100 2825 2    60   ~ 0
 Microstrip Width: 0.32mm
-$Sheet
-S 3700 3550 1500 2300
-U 5821BF4E
-F0 "LB_XCVR" 60
-F1 "LB_XCVR.sch" 60
-F2 "3V3" I R 5200 4125 60 
-F3 "TRX_SIG" I R 5200 5250 60 
-F4 "LB_MOSI" I L 3700 4850 60 
-F5 "LB_SCLK" I L 3700 4600 60 
-F6 "LB_MISO" I L 3700 5100 60 
-F7 "LB_~CS" I L 3700 5350 60 
-F8 "LB_RX" I R 5200 4600 60 
-F9 "LB_TX" I R 5200 4900 60 
-F10 "LB_GPIO0" I L 3700 3800 60 
-F11 "LB_GPIO2" I L 3700 4050 60 
-$EndSheet
 $Comp
 L SMA J?
 U 1 1 5A99BA84
@@ -1386,4 +1319,149 @@ Text Notes 4200 12200 0    60   ~ 0
 Copy eval board BOM
 Text Notes 10425 5275 0    60   ~ 0
 to antenna
+Text Notes 8525 1200 0    60   ~ 0
+LED List:\n3V3 On\n3V6 On\n5V0 On\nUB Transmitting\nLB Transmitting\nPacket Ready
+$Sheet
+S 5500 6650 575  500 
+U 5AA2D803
+F0 "RF_SPDT" 60
+F1 "RF_SPDT.sch" 60
+F2 "3V3" I L 5500 6750 60 
+F3 "A" I L 5500 7075 60 
+F4 "B1" I R 6075 6750 60 
+F5 "B2" I R 6075 7075 60 
+F6 "CTRL" I L 5500 6875 60 
+$EndSheet
+Text Notes 5375 6225 0    60   ~ 0
+CTRL
+Text Notes 5375 6100 0    60   ~ 0
+TX/RX Truth Table
+Text Notes 5825 6225 0    60   ~ 0
+Path
+Text Notes 5375 6350 0    60   ~ 0
+0
+Text Notes 5375 6500 0    60   ~ 0
+1\n
+Text Notes 5825 6350 0    60   ~ 0
+B1
+Text Notes 5825 6500 0    60   ~ 0
+B2
+Wire Notes Line
+	5350 6375 6225 6375
+Wire Notes Line
+	5350 6250 6225 6250
+Wire Notes Line
+	6225 6525 5350 6525
+Wire Notes Line
+	5350 6125 6225 6125
+Wire Notes Line
+	5350 6000 6225 6000
+Wire Notes Line
+	6225 6000 6225 6525
+Wire Notes Line
+	5350 6525 5350 6000
+Wire Notes Line
+	5775 6125 5775 6525
+$Comp
+L 0433BM15A0001 U101
+U 1 1 5AA384BB
+P -850 10375
+F 0 "U101" H -700 10075 60  0000 L CNN
+F 1 "0433BM15A0001" H -850 10675 60  0000 C CNN
+F 2 "SFUSat:U_0805-6" H -650 10475 60  0001 C CNN
+F 3 "https://www.mouser.com/ds/2/611/0433BM15A0001-253534.pdf" H -650 10475 60  0001 C CNN
+F 4 "609-0433BM15A0001E" H -850 10375 60  0001 C CNN "Mouser"
+	1    -850 10375
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5AA384C2
+P -850 10950
+F 0 "#PWR?" H -850 10700 50  0001 C CNN
+F 1 "GND" H -850 10800 50  0000 C CNN
+F 2 "" H -850 10950 50  0000 C CNN
+F 3 "" H -850 10950 50  0000 C CNN
+	1    -850 10950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-950 10825 -750 10825
+Connection ~ -850 10825
+Wire Wire Line
+	-850 10825 -850 10950
+$Sheet
+S -2350 10100 925  975 
+U 5AA44392
+F0 "CC1101" 60
+F1 "CC1101.sch" 60
+F2 "MOSI" I L -2350 10325 60 
+F3 "SCLK" I L -2350 10700 60 
+F4 "MISO" I L -2350 10450 60 
+F5 "~CS" I L -2350 10575 60 
+F6 "3V3" I L -2350 10175 60 
+F7 "GDO0" I L -2350 10875 60 
+F8 "GDO2" I L -2350 11000 60 
+F9 "RF_N" I R -1425 10225 60 
+F10 "RF_P" I R -1425 10325 60 
+$EndSheet
+Wire Wire Line
+	-1300 10225 -1425 10225
+Wire Wire Line
+	-1425 10325 -1300 10325
+Text Notes -1650 9900 0    60   ~ 0
+REF 10*
+$Comp
+L 0433BM15A0001 U111
+U 1 1 5AA7236F
+P -800 11975
+F 0 "U111" H -650 11675 60  0000 L CNN
+F 1 "0915BM15A0001E" H -800 12275 60  0000 C CNN
+F 2 "SFUSat:U_0805-6" H -600 12075 60  0001 C CNN
+F 3 "https://www.mouser.com/ds/2/611/0915BM15A0001-242333.pdf" H -600 12075 60  0001 C CNN
+F 4 "609-0915BM15A0001E" H -800 11975 60  0001 C CNN "Mouser"
+	1    -800 11975
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5AA72375
+P -800 12550
+F 0 "#PWR?" H -800 12300 50  0001 C CNN
+F 1 "GND" H -800 12400 50  0000 C CNN
+F 2 "" H -800 12550 50  0000 C CNN
+F 3 "" H -800 12550 50  0000 C CNN
+	1    -800 12550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-900 12425 -700 12425
+Connection ~ -800 12425
+Wire Wire Line
+	-800 12425 -800 12550
+$Sheet
+S -2300 11700 925  975 
+U 5AA72383
+F0 "CC1101" 60
+F1 "CC1101.sch" 60
+F2 "MOSI" I L -2300 11925 60 
+F3 "SCLK" I L -2300 12300 60 
+F4 "MISO" I L -2300 12050 60 
+F5 "~CS" I L -2300 12175 60 
+F6 "3V3" I L -2300 11775 60 
+F7 "GDO0" I L -2300 12475 60 
+F8 "GDO2" I L -2300 12600 60 
+F9 "RF_N" I R -1375 11825 60 
+F10 "RF_P" I R -1375 11925 60 
+$EndSheet
+Wire Wire Line
+	-1250 11825 -1375 11825
+Wire Wire Line
+	-1375 11925 -1250 11925
+Text Notes -1600 11500 0    60   ~ 0
+REF 11*
+Text Notes 4350 9900 0    60   ~ 0
+REF 2**
+Text Notes 4350 12000 0    60   ~ 0
+REF 3**
 $EndSCHEMATC
