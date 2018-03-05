@@ -1,7 +1,7 @@
 Fabrication Instructions for PCBWay.com
 Copper layers: 4 layers
 Size: 90.17mmX95.89mm
-Quantity: 5
+Quantity: 10
 Minimum track spacing: 6mil/0.1524mm
 Minimum drill size: 0.3mm
 Soldermask color: Green
