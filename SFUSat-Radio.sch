@@ -37,7 +37,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 1 9
+Sheet 1 15
 Title "Digital Transciever Unit with RF Calibration Source"
 Date ""
 Rev "3"
@@ -57,83 +57,6 @@ F3 "3V3" I R 4775 1050 60
 F4 "3V6" I R 4775 925 60 
 F5 "3V1" I R 4775 1175 60 
 $EndSheet
-$Comp
-L 2N7002DW U1
-U 1 1 587E8AE8
-P 6350 1600
-F 0 "U1" H 6550 1350 60  0000 C CNN
-F 1 "2N7002DW" H 6350 1850 60  0000 C CNN
-F 2 "SFUSat:SOT-363" H 6350 1600 60  0001 C CNN
-F 3 "" H 6350 1600 60  0000 C CNN
-	1    6350 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L LED D1
-U 1 1 587E94F9
-P 6950 1250
-F 0 "D1" H 6950 1350 50  0000 C CNN
-F 1 "GREEN" H 6950 1150 50  0000 C CNN
-F 2 "SFUSat:LED_0603" H 6950 1250 50  0001 C CNN
-F 3 "" H 6950 1250 50  0000 C CNN
-	1    6950 1250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L R R1
-U 1 1 587EAD14
-P 6950 900
-F 0 "R1" V 7030 900 50  0000 C CNN
-F 1 "287" V 6950 900 50  0000 C CNN
-F 2 "SFUSat:R_0402" V 6880 900 50  0001 C CNN
-F 3 "" H 6950 900 50  0000 C CNN
-	1    6950 900 
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R2
-U 1 1 587EC56D
-P 7250 900
-F 0 "R2" V 7330 900 50  0000 C CNN
-F 1 "287" V 7250 900 50  0000 C CNN
-F 2 "SFUSat:R_0402" V 7180 900 50  0001 C CNN
-F 3 "" H 7250 900 50  0000 C CNN
-	1    7250 900 
-	1    0    0    -1  
-$EndComp
-$Comp
-L LED D2
-U 1 1 587EC634
-P 7250 1250
-F 0 "D2" H 7250 1350 50  0000 C CNN
-F 1 "GREEN" H 7250 1150 50  0000 C CNN
-F 2 "SFUSat:LED_0603" H 7250 1250 50  0001 C CNN
-F 3 "" H 7250 1250 50  0000 C CNN
-	1    7250 1250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L GND #PWR01
-U 1 1 587EE6E2
-P 6800 1550
-F 0 "#PWR01" H 6800 1300 50  0001 C CNN
-F 1 "GND" H 6800 1400 50  0000 C CNN
-F 2 "" H 6800 1550 50  0000 C CNN
-F 3 "" H 6800 1550 50  0000 C CNN
-	1    6800 1550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L GND #PWR02
-U 1 1 587EE79C
-P 6800 1750
-F 0 "#PWR02" H 6800 1500 50  0001 C CNN
-F 1 "GND" H 6800 1600 50  0000 C CNN
-F 2 "" H 6800 1750 50  0000 C CNN
-F 3 "" H 6800 1750 50  0000 C CNN
-	1    6800 1750
-	0    -1   -1   0   
-$EndComp
 $Comp
 L LED D3
 U 1 1 587F1822
@@ -167,10 +90,6 @@ F 3 "" H 7550 1450 50  0000 C CNN
 	1    7550 1450
 	1    0    0    -1  
 $EndComp
-Text Label 5500 1500 0    60   ~ 0
-RX0TX1
-Text Label 7100 750  0    60   ~ 0
-VDD_3.3
 $Comp
 L SMA J6
 U 1 1 5883A1B6
@@ -193,17 +112,6 @@ F 3 "" H 16600 8550 50  0000 C CNN
 	1    16600 8550
 	1    0    0    -1  
 $EndComp
-Connection ~ 7250 750 
-Wire Wire Line
-	6950 750  7550 750 
-Wire Wire Line
-	5500 1500 5900 1500
-Wire Wire Line
-	7250 1400 7250 1650
-Wire Wire Line
-	7250 1650 6800 1650
-Wire Wire Line
-	6800 1450 6950 1450
 $Comp
 L PC104-8BIT J1
 U 1 1 59239648
@@ -291,12 +199,6 @@ Wire Wire Line
 	3200 2100 3150 2100
 Wire Wire Line
 	16650 8550 16600 8550
-Wire Wire Line
-	6950 1050 6950 1100
-Wire Wire Line
-	6950 1450 6950 1400
-Wire Wire Line
-	7250 1100 7250 1050
 Wire Wire Line
 	7550 1050 7550 1100
 Wire Wire Line
@@ -393,15 +295,9 @@ F 3 "" H 7850 900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7850 750  8200 750 
-Wire Wire Line
 	7850 1050 7850 1100
 Wire Wire Line
 	7850 1400 7850 1450
-Wire Wire Line
-	5900 1700 5500 1700
-Text Label 5500 1700 0    60   ~ 0
-GPIO0
 $Comp
 L GND #PWR011
 U 1 1 593AC435
@@ -1252,10 +1148,8 @@ Text Label 8225 6450 2    60   ~ 0
 3V3
 Wire Wire Line
 	8225 6450 8350 6450
-Text Label 8225 6575 2    60   ~ 0
-RX0TX1
 Text Label 5275 7500 2    60   ~ 0
-RX0TX1
+LB_RX0TX1
 Wire Wire Line
 	5275 7500 5375 7500
 Wire Wire Line
@@ -1291,7 +1185,7 @@ Wire Wire Line
 Wire Wire Line
 	16475 8400 16650 8400
 Wire Wire Line
-	9275 9775 7500 9775
+	7500 9775 9275 9775
 $Comp
 L SMA J?
 U 1 1 5AB5D6FE
@@ -1497,6 +1391,509 @@ F 1 "GND" H 1100 3850 50  0000 C CNN
 F 2 "" H 1100 4000 50  0001 C CNN
 F 3 "" H 1100 4000 50  0001 C CNN
 	1    1100 4000
+	0    1    1    0   
+$EndComp
+$Sheet
+S 1825 7550 525  400 
+U 5AC235B1
+F0 "LB_temp_sense" 54
+F1 "TEMP_SENSE.sch" 54
+F2 "SDA" I L 1825 7775 60 
+F3 "SCL" I L 1825 7875 60 
+F4 "3V3" I L 1825 7625 60 
+F5 "A0" I R 2350 7675 60 
+F6 "A1" I R 2350 7775 60 
+F7 "A2" I R 2350 7875 60 
+$EndSheet
+Text Label 2400 2500 0    54   ~ 0
+SDA
+Text Label 2400 2600 0    54   ~ 0
+SCL
+Wire Wire Line
+	2400 2500 2300 2500
+Wire Wire Line
+	2300 2600 2400 2600
+Text Label 1725 7775 2    54   ~ 0
+SDA
+Text Label 1725 7875 2    54   ~ 0
+SCL
+Wire Wire Line
+	1725 7775 1825 7775
+Wire Wire Line
+	1825 7875 1725 7875
+Text Label 1725 7625 2    60   ~ 0
+3V3
+Wire Wire Line
+	1825 7625 1725 7625
+Wire Wire Line
+	2350 7775 3425 7775
+$Comp
+L R R404
+U 1 1 5AC5049A
+P 3350 7575
+F 0 "R404" V 3430 7575 50  0000 C CNN
+F 1 "DNP" V 3350 7575 50  0000 C CNN
+F 2 "SFUSat-cap:C_0402" V 3280 7575 50  0001 C CNN
+F 3 "" H 3350 7575 50  0001 C CNN
+	1    3350 7575
+	1    0    0    -1  
+$EndComp
+Text Label 2700 7425 2    60   ~ 0
+3V3
+Wire Wire Line
+	2700 7425 3350 7425
+Connection ~ 2875 7425
+Connection ~ 3100 7425
+$Comp
+L GND #PWR?
+U 1 1 5AC545BB
+P 3100 8200
+F 0 "#PWR?" H 3100 7950 50  0001 C CNN
+F 1 "GND" H 3100 8050 50  0000 C CNN
+F 2 "" H 3100 8200 50  0000 C CNN
+F 3 "" H 3100 8200 50  0000 C CNN
+	1    3100 8200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2875 8125 3350 8125
+Connection ~ 3100 8125
+Wire Wire Line
+	3100 8125 3100 8200
+Wire Wire Line
+	2350 7675 2725 7675
+Wire Wire Line
+	2725 7675 2725 7750
+Wire Wire Line
+	2350 7875 2725 7875
+Text Label 5450 10500 2    60   ~ 0
+UB_RX0TX1
+Wire Wire Line
+	5450 10500 5550 10500
+Text Label 8225 6575 2    60   ~ 0
+LB_RX0TX1
+Text Label 14475 6975 2    60   ~ 0
+LB_RX0TX1
+Text Label 6300 750  2    60   ~ 0
+LB_RX0TX1
+Text Label 6300 1275 2    60   ~ 0
+UB_RX0TX1
+Text Label 6300 875  2    60   ~ 0
+PKT_RCV
+$Sheet
+S 6375 650  525  300 
+U 5AC903D9
+F0 "Indecator1" 54
+F1 "indicator.sch" 54
+F2 "G1" I L 6375 750 60 
+F3 "G2" I L 6375 875 60 
+F4 "3V3" I R 6900 775 60 
+$EndSheet
+$Sheet
+S 6375 1175 525  300 
+U 5AC9A534
+F0 "Indecator2" 54
+F1 "indicator.sch" 54
+F2 "G1" I L 6375 1275 60 
+F3 "G2" I L 6375 1400 60 
+F4 "3V3" I R 6900 1300 60 
+$EndSheet
+Text Label 6950 775  0    60   ~ 0
+3V3
+Text Label 6950 1300 0    60   ~ 0
+3V3
+Text Label 7550 675  0    60   ~ 0
+3V3
+Text Label 7850 675  0    60   ~ 0
+3V6
+Wire Wire Line
+	7850 675  7850 750 
+Wire Wire Line
+	7550 675  7550 750 
+Wire Wire Line
+	6900 775  6950 775 
+Wire Wire Line
+	6950 1300 6900 1300
+Wire Wire Line
+	6375 1275 6300 1275
+Wire Wire Line
+	6300 875  6375 875 
+Wire Wire Line
+	6375 750  6300 750 
+$Comp
+L R_0R0_0%_0.063W_0402 R405
+U 1 1 5ACC3CB7
+P 3350 7975
+F 0 "R405" H 3350 8025 50  0000 C BNN
+F 1 "0R" H 3350 7925 50  0000 C TNN
+F 2 "SFUSat-res:R_0402" H 3350 7975 50  0001 C CNN
+F 3 "" H 3350 7975 50  0001 C CNN
+F 4 "Resistors - Chip Resistor - Surface Mount" H 3350 7975 50  0001 C CNN "Categories"
+F 5 "Thick Film" H 3350 7975 50  0001 C CNN "Composition"
+F 6 "-" H 3350 7975 50  0001 C CNN "Failure Rate"
+F 7 "Automotive AEC-Q200, Moisture Resistant" H 3350 7975 50  0001 C CNN "Features"
+F 8 "0.015\" (0.37mm)" H 3350 7975 50  0001 C CNN "Height - Seated (Max)"
+F 9 "Lead free / RoHS Compliant" H 3350 7975 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 10 "Yageo" H 3350 7975 50  0001 C CNN "Manufacturer 1"
+F 11 "AC0402JR-070RL" H 3350 7975 50  0001 C CNN "Manufacturer Part Number 1"
+F 12 "17 Weeks" H 3350 7975 50  0001 C CNN "Manufacturer Standard Lead Time 1"
+F 13 "2" H 3350 7975 50  0001 C CNN "Number of Terminations"
+F 14 "" H 3350 7975 50  0001 C CNN "Operating Temperature"
+F 15 "0402 (1005 Metric)" H 3350 7975 50  0001 C CNN "Package / Case"
+F 16 "Active" H 3350 7975 50  0001 C CNN "Part Status"
+F 17 "0.063W, 1/16W" H 3350 7975 50  0001 C CNN "Power (Watts)"
+F 18 "0 Ohms" H 3350 7975 50  0001 C CNN "Resistance"
+F 19 "AC" H 3350 7975 50  0001 C CNN "Series"
+F 20 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 3350 7975 50  0001 C CNN "Size / Dimension"
+F 21 "Digi-Key" H 3350 7975 50  0001 C CNN "Supplier 1"
+F 22 "0402" H 3350 7975 50  0001 C CNN "Supplier Device Package"
+F 23 "311-0.0LBCT-ND" H 3350 7975 50  0001 C CNN "Supplier Part Number 1"
+F 24 "-" H 3350 7975 50  0001 C CNN "Temperature Coefficient"
+F 25 "Jumper" H 3350 7975 50  0001 C CNN "Tolerance"
+	1    3350 7975
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2725 7750 3425 7750
+Wire Wire Line
+	3425 7800 2725 7800
+Wire Wire Line
+	2725 7800 2725 7875
+Wire Wire Line
+	2875 7725 2875 7825
+Connection ~ 2875 7750
+Wire Wire Line
+	3100 7725 3100 7825
+Connection ~ 3100 7775
+Wire Wire Line
+	3350 7725 3350 7825
+Connection ~ 3350 7800
+Text Notes 2100 7425 0    54   ~ 0
+REF 40*
+$Comp
+L R R?
+U 1 1 5AD004B5
+P 3125 2575
+F 0 "R?" V 3205 2575 50  0000 C CNN
+F 1 "1K0" V 3125 2575 50  0000 C CNN
+F 2 "" V 3055 2575 50  0001 C CNN
+F 3 "" H 3125 2575 50  0001 C CNN
+	1    3125 2575
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5AD03347
+P 3325 2575
+F 0 "R?" V 3405 2575 50  0000 C CNN
+F 1 "1K0" V 3325 2575 50  0000 C CNN
+F 2 "" V 3255 2575 50  0001 C CNN
+F 3 "" H 3325 2575 50  0001 C CNN
+	1    3325 2575
+	1    0    0    -1  
+$EndComp
+Text Label 3375 2425 0    60   ~ 0
+3V3
+Wire Wire Line
+	3125 2425 3375 2425
+Connection ~ 3325 2425
+Text Label 3125 2725 3    54   ~ 0
+SDA
+Text Label 3325 2725 3    54   ~ 0
+SCL
+$Sheet
+S 1825 8550 525  400 
+U 5AD08722
+F0 "UB_temp_sense" 54
+F1 "TEMP_SENSE.sch" 54
+F2 "SDA" I L 1825 8775 60 
+F3 "SCL" I L 1825 8875 60 
+F4 "3V3" I L 1825 8625 60 
+F5 "A0" I R 2350 8675 60 
+F6 "A1" I R 2350 8775 60 
+F7 "A2" I R 2350 8875 60 
+$EndSheet
+Text Label 1725 8775 2    54   ~ 0
+SDA
+Text Label 1725 8875 2    54   ~ 0
+SCL
+Wire Wire Line
+	1725 8775 1825 8775
+Wire Wire Line
+	1825 8875 1725 8875
+Text Label 1725 8625 2    60   ~ 0
+3V3
+Wire Wire Line
+	1825 8625 1725 8625
+Wire Wire Line
+	2350 8775 3425 8775
+$Comp
+L R R414
+U 1 1 5AD08747
+P 3350 8575
+F 0 "R414" V 3430 8575 50  0000 C CNN
+F 1 "DNP" V 3350 8575 50  0000 C CNN
+F 2 "SFUSat-cap:C_0402" V 3280 8575 50  0001 C CNN
+F 3 "" H 3350 8575 50  0001 C CNN
+	1    3350 8575
+	1    0    0    -1  
+$EndComp
+Text Label 2700 8425 2    60   ~ 0
+3V3
+Wire Wire Line
+	2700 8425 3350 8425
+Connection ~ 2875 8425
+Connection ~ 3100 8425
+$Comp
+L GND #PWR?
+U 1 1 5AD08751
+P 3100 9200
+F 0 "#PWR?" H 3100 8950 50  0001 C CNN
+F 1 "GND" H 3100 9050 50  0000 C CNN
+F 2 "" H 3100 9200 50  0000 C CNN
+F 3 "" H 3100 9200 50  0000 C CNN
+	1    3100 9200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2875 9125 3350 9125
+Connection ~ 3100 9125
+Wire Wire Line
+	3100 9125 3100 9200
+Wire Wire Line
+	2350 8675 2725 8675
+Wire Wire Line
+	2725 8675 2725 8750
+Wire Wire Line
+	2350 8875 2725 8875
+$Comp
+L R_0R0_0%_0.063W_0402 R415
+U 1 1 5AD08773
+P 3350 8975
+F 0 "R415" H 3350 9025 50  0000 C BNN
+F 1 "0R" H 3350 8925 50  0000 C TNN
+F 2 "SFUSat-res:R_0402" H 3350 8975 50  0001 C CNN
+F 3 "" H 3350 8975 50  0001 C CNN
+F 4 "Resistors - Chip Resistor - Surface Mount" H 3350 8975 50  0001 C CNN "Categories"
+F 5 "Thick Film" H 3350 8975 50  0001 C CNN "Composition"
+F 6 "-" H 3350 8975 50  0001 C CNN "Failure Rate"
+F 7 "Automotive AEC-Q200, Moisture Resistant" H 3350 8975 50  0001 C CNN "Features"
+F 8 "0.015\" (0.37mm)" H 3350 8975 50  0001 C CNN "Height - Seated (Max)"
+F 9 "Lead free / RoHS Compliant" H 3350 8975 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 10 "Yageo" H 3350 8975 50  0001 C CNN "Manufacturer 1"
+F 11 "AC0402JR-070RL" H 3350 8975 50  0001 C CNN "Manufacturer Part Number 1"
+F 12 "17 Weeks" H 3350 8975 50  0001 C CNN "Manufacturer Standard Lead Time 1"
+F 13 "2" H 3350 8975 50  0001 C CNN "Number of Terminations"
+F 14 "" H 3350 8975 50  0001 C CNN "Operating Temperature"
+F 15 "0402 (1005 Metric)" H 3350 8975 50  0001 C CNN "Package / Case"
+F 16 "Active" H 3350 8975 50  0001 C CNN "Part Status"
+F 17 "0.063W, 1/16W" H 3350 8975 50  0001 C CNN "Power (Watts)"
+F 18 "0 Ohms" H 3350 8975 50  0001 C CNN "Resistance"
+F 19 "AC" H 3350 8975 50  0001 C CNN "Series"
+F 20 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 3350 8975 50  0001 C CNN "Size / Dimension"
+F 21 "Digi-Key" H 3350 8975 50  0001 C CNN "Supplier 1"
+F 22 "0402" H 3350 8975 50  0001 C CNN "Supplier Device Package"
+F 23 "311-0.0LBCT-ND" H 3350 8975 50  0001 C CNN "Supplier Part Number 1"
+F 24 "-" H 3350 8975 50  0001 C CNN "Temperature Coefficient"
+F 25 "Jumper" H 3350 8975 50  0001 C CNN "Tolerance"
+	1    3350 8975
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2725 8750 3425 8750
+Wire Wire Line
+	3425 8800 2725 8800
+Wire Wire Line
+	2725 8800 2725 8875
+Wire Wire Line
+	2875 8725 2875 8825
+Connection ~ 2875 8750
+Wire Wire Line
+	3100 8725 3100 8825
+Connection ~ 3100 8775
+Wire Wire Line
+	3350 8725 3350 8825
+Connection ~ 3350 8800
+Text Notes 2075 8425 0    54   ~ 0
+REF 41*
+$Comp
+L R_0R0_0%_0.063W_0402 R412
+U 1 1 5AD100F9
+P 3100 8575
+F 0 "R412" H 3100 8625 50  0000 C BNN
+F 1 "0R" H 3100 8525 50  0000 C TNN
+F 2 "SFUSat-res:R_0402" H 3100 8575 50  0001 C CNN
+F 3 "" H 3100 8575 50  0001 C CNN
+F 4 "Resistors - Chip Resistor - Surface Mount" H 3100 8575 50  0001 C CNN "Categories"
+F 5 "Thick Film" H 3100 8575 50  0001 C CNN "Composition"
+F 6 "-" H 3100 8575 50  0001 C CNN "Failure Rate"
+F 7 "Automotive AEC-Q200, Moisture Resistant" H 3100 8575 50  0001 C CNN "Features"
+F 8 "0.015\" (0.37mm)" H 3100 8575 50  0001 C CNN "Height - Seated (Max)"
+F 9 "Lead free / RoHS Compliant" H 3100 8575 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 10 "Yageo" H 3100 8575 50  0001 C CNN "Manufacturer 1"
+F 11 "AC0402JR-070RL" H 3100 8575 50  0001 C CNN "Manufacturer Part Number 1"
+F 12 "17 Weeks" H 3100 8575 50  0001 C CNN "Manufacturer Standard Lead Time 1"
+F 13 "2" H 3100 8575 50  0001 C CNN "Number of Terminations"
+F 14 "" H 3100 8575 50  0001 C CNN "Operating Temperature"
+F 15 "0402 (1005 Metric)" H 3100 8575 50  0001 C CNN "Package / Case"
+F 16 "Active" H 3100 8575 50  0001 C CNN "Part Status"
+F 17 "0.063W, 1/16W" H 3100 8575 50  0001 C CNN "Power (Watts)"
+F 18 "0 Ohms" H 3100 8575 50  0001 C CNN "Resistance"
+F 19 "AC" H 3100 8575 50  0001 C CNN "Series"
+F 20 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 3100 8575 50  0001 C CNN "Size / Dimension"
+F 21 "Digi-Key" H 3100 8575 50  0001 C CNN "Supplier 1"
+F 22 "0402" H 3100 8575 50  0001 C CNN "Supplier Device Package"
+F 23 "311-0.0LBCT-ND" H 3100 8575 50  0001 C CNN "Supplier Part Number 1"
+F 24 "-" H 3100 8575 50  0001 C CNN "Temperature Coefficient"
+F 25 "Jumper" H 3100 8575 50  0001 C CNN "Tolerance"
+	1    3100 8575
+	0    1    1    0   
+$EndComp
+$Comp
+L R R413
+U 1 1 5AD1034C
+P 3100 8975
+F 0 "R413" V 3180 8975 50  0000 C CNN
+F 1 "DNP" V 3100 8975 50  0000 C CNN
+F 2 "SFUSat-cap:C_0402" V 3030 8975 50  0001 C CNN
+F 3 "" H 3100 8975 50  0001 C CNN
+	1    3100 8975
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_0R0_0%_0.063W_0402 R411
+U 1 1 5AD10D20
+P 2875 8975
+F 0 "R411" H 2875 9025 50  0000 C BNN
+F 1 "0R" H 2875 8925 50  0000 C TNN
+F 2 "SFUSat-res:R_0402" H 2875 8975 50  0001 C CNN
+F 3 "" H 2875 8975 50  0001 C CNN
+F 4 "Resistors - Chip Resistor - Surface Mount" H 2875 8975 50  0001 C CNN "Categories"
+F 5 "Thick Film" H 2875 8975 50  0001 C CNN "Composition"
+F 6 "-" H 2875 8975 50  0001 C CNN "Failure Rate"
+F 7 "Automotive AEC-Q200, Moisture Resistant" H 2875 8975 50  0001 C CNN "Features"
+F 8 "0.015\" (0.37mm)" H 2875 8975 50  0001 C CNN "Height - Seated (Max)"
+F 9 "Lead free / RoHS Compliant" H 2875 8975 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 10 "Yageo" H 2875 8975 50  0001 C CNN "Manufacturer 1"
+F 11 "AC0402JR-070RL" H 2875 8975 50  0001 C CNN "Manufacturer Part Number 1"
+F 12 "17 Weeks" H 2875 8975 50  0001 C CNN "Manufacturer Standard Lead Time 1"
+F 13 "2" H 2875 8975 50  0001 C CNN "Number of Terminations"
+F 14 "" H 2875 8975 50  0001 C CNN "Operating Temperature"
+F 15 "0402 (1005 Metric)" H 2875 8975 50  0001 C CNN "Package / Case"
+F 16 "Active" H 2875 8975 50  0001 C CNN "Part Status"
+F 17 "0.063W, 1/16W" H 2875 8975 50  0001 C CNN "Power (Watts)"
+F 18 "0 Ohms" H 2875 8975 50  0001 C CNN "Resistance"
+F 19 "AC" H 2875 8975 50  0001 C CNN "Series"
+F 20 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 2875 8975 50  0001 C CNN "Size / Dimension"
+F 21 "Digi-Key" H 2875 8975 50  0001 C CNN "Supplier 1"
+F 22 "0402" H 2875 8975 50  0001 C CNN "Supplier Device Package"
+F 23 "311-0.0LBCT-ND" H 2875 8975 50  0001 C CNN "Supplier Part Number 1"
+F 24 "-" H 2875 8975 50  0001 C CNN "Temperature Coefficient"
+F 25 "Jumper" H 2875 8975 50  0001 C CNN "Tolerance"
+	1    2875 8975
+	0    1    1    0   
+$EndComp
+$Comp
+L R R410
+U 1 1 5AD10F9F
+P 2875 8575
+F 0 "R410" V 2955 8575 50  0000 C CNN
+F 1 "DNP" V 2875 8575 50  0000 C CNN
+F 2 "SFUSat-cap:C_0402" V 2805 8575 50  0001 C CNN
+F 3 "" H 2875 8575 50  0001 C CNN
+	1    2875 8575
+	1    0    0    -1  
+$EndComp
+Text Notes 3575 8775 0    54   ~ 0
+ADDR: 0x4A
+Text Notes 3550 7800 0    54   ~ 0
+ADDR: 0x49
+$Comp
+L R_0R0_0%_0.063W_0402 R400
+U 1 1 5AD2047D
+P 2875 7575
+F 0 "R400" H 2875 7625 50  0000 C BNN
+F 1 "0R" H 2875 7525 50  0000 C TNN
+F 2 "SFUSat-res:R_0402" H 2875 7575 50  0001 C CNN
+F 3 "" H 2875 7575 50  0001 C CNN
+F 4 "Resistors - Chip Resistor - Surface Mount" H 2875 7575 50  0001 C CNN "Categories"
+F 5 "Thick Film" H 2875 7575 50  0001 C CNN "Composition"
+F 6 "-" H 2875 7575 50  0001 C CNN "Failure Rate"
+F 7 "Automotive AEC-Q200, Moisture Resistant" H 2875 7575 50  0001 C CNN "Features"
+F 8 "0.015\" (0.37mm)" H 2875 7575 50  0001 C CNN "Height - Seated (Max)"
+F 9 "Lead free / RoHS Compliant" H 2875 7575 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 10 "Yageo" H 2875 7575 50  0001 C CNN "Manufacturer 1"
+F 11 "AC0402JR-070RL" H 2875 7575 50  0001 C CNN "Manufacturer Part Number 1"
+F 12 "17 Weeks" H 2875 7575 50  0001 C CNN "Manufacturer Standard Lead Time 1"
+F 13 "2" H 2875 7575 50  0001 C CNN "Number of Terminations"
+F 14 "" H 2875 7575 50  0001 C CNN "Operating Temperature"
+F 15 "0402 (1005 Metric)" H 2875 7575 50  0001 C CNN "Package / Case"
+F 16 "Active" H 2875 7575 50  0001 C CNN "Part Status"
+F 17 "0.063W, 1/16W" H 2875 7575 50  0001 C CNN "Power (Watts)"
+F 18 "0 Ohms" H 2875 7575 50  0001 C CNN "Resistance"
+F 19 "AC" H 2875 7575 50  0001 C CNN "Series"
+F 20 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 2875 7575 50  0001 C CNN "Size / Dimension"
+F 21 "Digi-Key" H 2875 7575 50  0001 C CNN "Supplier 1"
+F 22 "0402" H 2875 7575 50  0001 C CNN "Supplier Device Package"
+F 23 "311-0.0LBCT-ND" H 2875 7575 50  0001 C CNN "Supplier Part Number 1"
+F 24 "-" H 2875 7575 50  0001 C CNN "Temperature Coefficient"
+F 25 "Jumper" H 2875 7575 50  0001 C CNN "Tolerance"
+	1    2875 7575
+	0    1    1    0   
+$EndComp
+$Comp
+L R R401
+U 1 1 5AD206FE
+P 2875 7975
+F 0 "R401" V 2955 7975 50  0000 C CNN
+F 1 "DNP" V 2875 7975 50  0000 C CNN
+F 2 "SFUSat-cap:C_0402" V 2805 7975 50  0001 C CNN
+F 3 "" H 2875 7975 50  0001 C CNN
+	1    2875 7975
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R402
+U 1 1 5AD20952
+P 3100 7575
+F 0 "R402" V 3180 7575 50  0000 C CNN
+F 1 "DNP" V 3100 7575 50  0000 C CNN
+F 2 "SFUSat-cap:C_0402" V 3030 7575 50  0001 C CNN
+F 3 "" H 3100 7575 50  0001 C CNN
+	1    3100 7575
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_0R0_0%_0.063W_0402 R403
+U 1 1 5AD20BD1
+P 3100 7975
+F 0 "R403" H 3100 8025 50  0000 C BNN
+F 1 "0R" H 3100 7925 50  0000 C TNN
+F 2 "SFUSat-res:R_0402" H 3100 7975 50  0001 C CNN
+F 3 "" H 3100 7975 50  0001 C CNN
+F 4 "Resistors - Chip Resistor - Surface Mount" H 3100 7975 50  0001 C CNN "Categories"
+F 5 "Thick Film" H 3100 7975 50  0001 C CNN "Composition"
+F 6 "-" H 3100 7975 50  0001 C CNN "Failure Rate"
+F 7 "Automotive AEC-Q200, Moisture Resistant" H 3100 7975 50  0001 C CNN "Features"
+F 8 "0.015\" (0.37mm)" H 3100 7975 50  0001 C CNN "Height - Seated (Max)"
+F 9 "Lead free / RoHS Compliant" H 3100 7975 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 10 "Yageo" H 3100 7975 50  0001 C CNN "Manufacturer 1"
+F 11 "AC0402JR-070RL" H 3100 7975 50  0001 C CNN "Manufacturer Part Number 1"
+F 12 "17 Weeks" H 3100 7975 50  0001 C CNN "Manufacturer Standard Lead Time 1"
+F 13 "2" H 3100 7975 50  0001 C CNN "Number of Terminations"
+F 14 "" H 3100 7975 50  0001 C CNN "Operating Temperature"
+F 15 "0402 (1005 Metric)" H 3100 7975 50  0001 C CNN "Package / Case"
+F 16 "Active" H 3100 7975 50  0001 C CNN "Part Status"
+F 17 "0.063W, 1/16W" H 3100 7975 50  0001 C CNN "Power (Watts)"
+F 18 "0 Ohms" H 3100 7975 50  0001 C CNN "Resistance"
+F 19 "AC" H 3100 7975 50  0001 C CNN "Series"
+F 20 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 3100 7975 50  0001 C CNN "Size / Dimension"
+F 21 "Digi-Key" H 3100 7975 50  0001 C CNN "Supplier 1"
+F 22 "0402" H 3100 7975 50  0001 C CNN "Supplier Device Package"
+F 23 "311-0.0LBCT-ND" H 3100 7975 50  0001 C CNN "Supplier Part Number 1"
+F 24 "-" H 3100 7975 50  0001 C CNN "Temperature Coefficient"
+F 25 "Jumper" H 3100 7975 50  0001 C CNN "Tolerance"
+	1    3100 7975
 	0    1    1    0   
 $EndComp
 $EndSCHEMATC

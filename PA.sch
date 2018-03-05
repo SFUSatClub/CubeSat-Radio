@@ -37,7 +37,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 9
+Sheet 7 15
 Title ""
 Date ""
 Rev ""
@@ -1003,4 +1003,10 @@ Connection ~ 3700 3800
 Connection ~ 3800 3800
 Wire Wire Line
 	3600 3875 3600 3800
+$Sheet
+S 5925 2700 750  525 
+U 5AC22D6C
+F0 "Temperature_Sensor" 118
+F1 "TEMP_SENSE.sch" 118
+$EndSheet
 $EndSCHEMATC
