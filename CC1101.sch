@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:SFUSat-Radio-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -493,11 +494,12 @@ OP_3.3
 Text Label 8600 3200 0    60   ~ 0
 VDD_3.3
 $Comp
-L Conn_01x03 J?
+L CONN_01X03 J?
 U 1 1 5ABB51CC
 P 8300 3200
 AR Path="/5AA44392/5ABB51CC" Ref="J?"  Part="1" 
 AR Path="/5AA72383/5ABB51CC" Ref="J?"  Part="1" 
+AR Path="/5ABB51CC" Ref="J?"  Part="1" 
 F 0 "J?" H 8300 3400 50  0000 C CNN
 F 1 "Conn_01x03" H 8300 3000 50  0000 C CNN
 F 2 "Socket_Strips:Socket_Strip_Straight_1x03_Pitch2.54mm" H 8300 3200 50  0001 C CNN

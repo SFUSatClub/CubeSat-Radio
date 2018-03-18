@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:SFUSat-Radio-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -93,27 +94,27 @@ $EndComp
 $Comp
 L SMA J6
 U 1 1 5883A1B6
-P 16950 8450
-F 0 "J6" H 17000 8250 60  0000 C TNN
-F 1 "SMA" H 17000 8600 60  0000 C BNN
-F 2 "SFUSat:SMA-Vert-TH" H 16950 8450 60  0001 C CNN
-F 3 "" H 16950 8450 60  0000 C CNN
-	1    16950 8450
+P 18300 8450
+F 0 "J6" H 18350 8250 60  0000 C TNN
+F 1 "SMA" H 18350 8600 60  0000 C BNN
+F 2 "SFUSat:SMA-Vert-TH" H 18300 8450 60  0001 C CNN
+F 3 "" H 18300 8450 60  0000 C CNN
+	1    18300 8450
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR04
 U 1 1 5883A521
-P 16600 8550
-F 0 "#PWR04" H 16600 8300 50  0001 C CNN
-F 1 "GND" H 16600 8400 50  0000 C CNN
-F 2 "" H 16600 8550 50  0000 C CNN
-F 3 "" H 16600 8550 50  0000 C CNN
-	1    16600 8550
+P 17950 8550
+F 0 "#PWR04" H 17950 8300 50  0001 C CNN
+F 1 "GND" H 17950 8400 50  0000 C CNN
+F 2 "" H 17950 8550 50  0000 C CNN
+F 3 "" H 17950 8550 50  0000 C CNN
+	1    17950 8550
 	1    0    0    -1  
 $EndComp
 $Comp
-L PC104-8BIT J1
+L PC104-8BIT-RESCUE-SFUSat-Radio J1
 U 1 1 59239648
 P 1750 2500
 F 0 "J1" H 2000 850 60  0000 C CNN
@@ -198,7 +199,7 @@ Wire Wire Line
 Wire Wire Line
 	3200 2100 3150 2100
 Wire Wire Line
-	16650 8550 16600 8550
+	18000 8550 17950 8550
 Wire Wire Line
 	7550 1050 7550 1100
 Wire Wire Line
@@ -340,13 +341,13 @@ F4 "IN" I L 10375 7550 60
 F5 "OUT" I R 11325 7550 60 
 $EndSheet
 $Sheet
-S 15875 8225 600  375 
+S 18250 5925 600  375 
 U 5A589287
 F0 "Diplexer" 60
 F1 "Diplexer.sch" 60
-F2 "LB" I L 15875 8325 60 
-F3 "UB" I L 15875 8500 60 
-F4 "Mixed" I R 16475 8400 60 
+F2 "LB" I L 18250 6025 60 
+F3 "UB" I L 18250 6200 60 
+F4 "Mixed" I R 18850 6100 60 
 $EndSheet
 $Comp
 L GND #PWR024
@@ -959,7 +960,7 @@ Text Notes 11500 9500 0    60   ~ 0
 strange pkg
 Text Notes 10500 9050 0    60   ~ 0
 Copy eval board BOM
-Text Notes 17225 8475 0    60   ~ 0
+Text Notes 18575 8475 0    60   ~ 0
 to antenna
 Text Notes 8525 1200 0    60   ~ 0
 LED List:\n3V3 On\n3V6 On\n5V0 On\nUB Transmitting\nLB Transmitting\nPacket Ready
@@ -1183,7 +1184,7 @@ Wire Wire Line
 Wire Wire Line
 	10300 9575 10375 9575
 Wire Wire Line
-	16475 8400 16650 8400
+	18850 6100 19025 6100
 Wire Wire Line
 	7500 9775 9275 9775
 $Comp
@@ -1472,7 +1473,7 @@ Wire Wire Line
 	5450 10500 5550 10500
 Text Label 8225 6575 2    60   ~ 0
 LB_RX0TX1
-Text Label 14475 6975 2    60   ~ 0
+Text Label 16600 10000 2    60   ~ 0
 LB_RX0TX1
 Text Label 6300 750  2    60   ~ 0
 LB_RX0TX1
@@ -1970,4 +1971,170 @@ F 3 "" H 4875 2925 50  0001 C CNN
 	1    4875 2925
 	0    1    1    0   
 $EndComp
+$Comp
+L SKY13345-368LF U?
+U 1 1 5AADCA71
+P 16550 8400
+F 0 "U?" H 16250 8725 50  0000 L BNN
+F 1 "SKY13345-368LF" H 15675 7775 50  0000 L TNN
+F 2 "SFUSat:12-UFQFN-PAD" H 16550 8400 50  0001 C CNN
+F 3 "" H 16550 8400 50  0001 C CNN
+F 4 "RF/IF and RFID - RF Switches" H 16550 8400 50  0001 C CNN "Categories"
+F 5 "SP3T" H 16550 8400 50  0001 C CNN "Circuit"
+F 6 "DC Blocked" H 16550 8400 50  0001 C CNN "Features"
+F 7 "100MHz" H 16550 8400 50  0001 C CNN "Frequency - Lower"
+F 8 "3.5GHz" H 16550 8400 50  0001 C CNN "Frequency - Upper"
+F 9 "57dBm (typ)" H 16550 8400 50  0001 C CNN "IIP3"
+F 10 "50 Ohm" H 16550 8400 50  0001 C CNN "Impedance"
+F 11 "0.55dB @ 2.5GHz" H 16550 8400 50  0001 C CNN "Insertion Loss @ Frequency"
+F 12 "35dB @ 2.5GHz (typ)" H 16550 8400 50  0001 C CNN "Isolation @ Frequency"
+F 13 "Lead free / RoHS Compliant" H 16550 8400 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 14 "Skyworks Solutions Inc." H 16550 8400 50  0001 C CNN "Manufacturer 1"
+F 15 "SKY13345-368LF" H 16550 8400 50  0001 C CNN "Manufacturer Part Number 1"
+F 16 "16 Weeks" H 16550 8400 50  0001 C CNN "Manufacturer Standard Lead Time 1"
+F 17 "-40°C ~ 85°C" H 16550 8400 50  0001 C CNN "Operating Temperature"
+F 18 "-" H 16550 8400 50  0001 C CNN "P1dB"
+F 19 "12-UFQFN Exposed Pad" H 16550 8400 50  0001 C CNN "Package / Case"
+F 20 "Active" H 16550 8400 50  0001 C CNN "Part Status"
+F 21 "802.11b/g Bluetooth" H 16550 8400 50  0001 C CNN "RF Type"
+F 22 "-" H 16550 8400 50  0001 C CNN "Series"
+F 23 "Digi-Key" H 16550 8400 50  0001 C CNN "Supplier 1"
+F 24 "12-QFN (2x2)" H 16550 8400 50  0001 C CNN "Supplier Device Package"
+F 25 "863-1450-1-ND" H 16550 8400 50  0001 C CNN "Supplier Part Number 1"
+F 26 "Reflective" H 16550 8400 50  0001 C CNN "Topology"
+F 27 "2.5 V ~ 5.5 V" H 16550 8400 50  0001 C CNN "Voltage - Supply"
+	1    16550 8400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	17050 8400 18000 8400
+$Comp
+L GND #PWR?
+U 1 1 5AAE914E
+P 16350 9300
+F 0 "#PWR?" H 16350 9050 50  0001 C CNN
+F 1 "GND" H 16350 9150 50  0000 C CNN
+F 2 "" H 16350 9300 50  0000 C CNN
+F 3 "" H 16350 9300 50  0000 C CNN
+	1    16350 9300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16350 9200 16750 9200
+Connection ~ 16650 9200
+Connection ~ 16550 9200
+Connection ~ 16450 9200
+Wire Wire Line
+	16350 9200 16350 9300
+$Comp
+L CD4555BPWR U?
+U 1 1 5AAEF9C5
+P 17100 10400
+F 0 "U?" H 16900 11025 50  0000 L BNN
+F 1 "CD4555BPWR" H 17125 9875 50  0000 L TNN
+F 2 "SFUSat:TSSOP-16" H 17100 10400 50  0001 C CNN
+F 3 "" H 17100 9750 50  0001 C CNN
+F 4 "4555" H 17100 10400 50  0001 C CNN "Base Part Number"
+F 5 "Integrated Circuits (ICs) - Logic - Signal Switches, Multiplexers, Decoders" H 17100 10400 50  0001 C CNN "Categories"
+F 6 "1 x 2:4" H 17100 10400 50  0001 C CNN "Circuit"
+F 7 "6.8mA, 6.8mA" H 17100 10400 50  0001 C CNN "Current - Output High, Low"
+F 8 "2" H 17100 10400 50  0001 C CNN "Independent Circuits"
+F 9 "Lead free / RoHS Compliant" H 17100 10400 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 10 "Texas Instruments" H 17100 10400 50  0001 C CNN "Manufacturer 1"
+F 11 "CD4555BPWR" H 17100 10400 50  0001 C CNN "Manufacturer Part Number 1"
+F 12 "6 Weeks" H 17100 10400 50  0001 C CNN "Manufacturer Standard Lead Time 1"
+F 13 "Surface Mount" H 17100 10400 50  0001 C CNN "Mounting Type"
+F 14 "-55°C ~ 125°C" H 17100 10400 50  0001 C CNN "Operating Temperature"
+F 15 "16-TSSOP (0.173\", 4.40mm Width)" H 17100 10400 50  0001 C CNN "Package / Case"
+F 16 "Active" H 17100 10400 50  0001 C CNN "Part Status"
+F 17 "4000B" H 17100 10400 50  0001 C CNN "Series"
+F 18 "Digi-Key" H 17100 10400 50  0001 C CNN "Supplier 1"
+F 19 "16-TSSOP" H 17100 10400 50  0001 C CNN "Supplier Device Package"
+F 20 "296-31540-1-ND" H 17100 10400 50  0001 C CNN "Supplier Part Number 1"
+F 21 "Decoder/Demultiplexer" H 17100 10400 50  0001 C CNN "Type"
+F 22 "3 V ~ 18 V" H 17100 10400 50  0001 C CNN "Voltage - Supply"
+F 23 "Dual Supply" H 17100 10400 50  0001 C CNN "Voltage Supply Source"
+	1    17100 10400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5AAF1FA7
+P 16600 10700
+F 0 "#PWR?" H 16600 10450 50  0001 C CNN
+F 1 "GND" H 16600 10550 50  0000 C CNN
+F 2 "" H 16600 10700 50  0000 C CNN
+F 3 "" H 16600 10700 50  0000 C CNN
+	1    16600 10700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16700 10200 16600 10200
+Wire Wire Line
+	16600 10200 16600 10700
+Wire Wire Line
+	16700 10600 16600 10600
+Connection ~ 16600 10600
+$Comp
+L GND #PWR?
+U 1 1 5AAF6DF2
+P 17100 11200
+F 0 "#PWR?" H 17100 10950 50  0001 C CNN
+F 1 "GND" H 17100 11050 50  0000 C CNN
+F 2 "" H 17100 11200 50  0000 C CNN
+F 3 "" H 17100 11200 50  0000 C CNN
+	1    17100 11200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17100 11200 17100 11100
+Text Label 16550 7900 2    60   ~ 0
+3V3
+Text Label 17100 9600 2    60   ~ 0
+3V3
+NoConn ~ 16700 10500
+NoConn ~ 16700 10400
+NoConn ~ 17500 10400
+NoConn ~ 17500 10500
+NoConn ~ 17500 10600
+NoConn ~ 17500 10700
+Wire Wire Line
+	16600 10000 16700 10000
+Text Label 16600 10100 2    60   ~ 0
+UB_RX0TX1
+Wire Wire Line
+	16700 10100 16600 10100
+Text Label 16050 8300 2    60   ~ 0
+LB_HP_RX
+Text Label 16050 8400 2    60   ~ 0
+LB_HP_TX
+Text Label 16050 8500 2    60   ~ 0
+UB_HP_TX
+NoConn ~ 17500 10300
+Wire Wire Line
+	17500 10200 17600 10200
+Wire Wire Line
+	17500 10100 17600 10100
+Wire Wire Line
+	17500 10000 17600 10000
+Text Label 17600 10000 0    60   ~ 0
+V1
+Text Label 17600 10100 0    60   ~ 0
+V2
+Text Label 17600 10200 0    60   ~ 0
+V3
+Text Label 17150 8600 0    60   ~ 0
+V1
+Text Label 17150 8700 0    60   ~ 0
+V2
+Text Label 17150 8800 0    60   ~ 0
+V3
+Wire Wire Line
+	17150 8600 17050 8600
+Wire Wire Line
+	17050 8700 17150 8700
+Wire Wire Line
+	17150 8800 17050 8800
+Text Notes 17550 9750 0    60   ~ 0
+Draw the truth table!\nNote that the state of one band affects\nthe other...
 $EndSCHEMATC

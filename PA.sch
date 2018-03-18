@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:SFUSat-Radio-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -50,7 +51,7 @@ $EndDescr
 Text Notes 475  805  0    250  ~ 0
 PA
 $Comp
-L RF6886 U201
+L RF6886-RESCUE-SFUSat-Radio U201
 U 1 1 5A587750
 P 3600 3100
 AR Path="/5A585E42/5A587750" Ref="U201"  Part="1" 
