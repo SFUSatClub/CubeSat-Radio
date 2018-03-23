@@ -38,7 +38,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 10 15
+Sheet 10 14
 Title ""
 Date ""
 Rev ""
@@ -90,7 +90,7 @@ U 1 1 592A885A
 P 4750 5775
 AR Path="/5AA44392/592A885A" Ref="C106"  Part="1" 
 AR Path="/5AA72383/592A885A" Ref="C116"  Part="1" 
-F 0 "C106" H 4775 5875 50  0000 L CNN
+F 0 "C116" H 4775 5875 50  0000 L CNN
 F 1 "100nF" H 4775 5675 50  0000 L CNN
 F 2 "SFUSat:C_0402" H 4788 5625 50  0001 C CNN
 F 3 "" H 4750 5775 50  0000 C CNN
@@ -116,7 +116,7 @@ U 1 1 592ACE93
 P 5950 4900
 AR Path="/5AA44392/592ACE93" Ref="R100"  Part="1" 
 AR Path="/5AA72383/592ACE93" Ref="R110"  Part="1" 
-F 0 "R100" H 6000 4900 50  0000 L CNN
+F 0 "R110" H 6000 4900 50  0000 L CNN
 F 1 "56k" V 5950 4900 50  0000 C CNN
 F 2 "SFUSat:R_0402" V 5880 4900 50  0001 C CNN
 F 3 "" H 5950 4900 50  0000 C CNN
@@ -155,7 +155,7 @@ U 1 1 592A69DC
 P 2000 4150
 AR Path="/5AA44392/592A69DC" Ref="X100"  Part="1" 
 AR Path="/5AA72383/592A69DC" Ref="X110"  Part="1" 
-F 0 "X100" V 2000 4325 60  0000 L CNN
+F 0 "X110" V 2000 4325 60  0000 L CNN
 F 1 "NX3225GA" H 2000 3950 60  0000 C TNN
 F 2 "SFUSat:NX3225GA" H 2000 4150 60  0001 C CNN
 F 3 "" H 2000 4150 60  0001 C CNN
@@ -169,7 +169,7 @@ U 1 1 592A70F9
 P 1550 3850
 AR Path="/5AA44392/592A70F9" Ref="C101"  Part="1" 
 AR Path="/5AA72383/592A70F9" Ref="C111"  Part="1" 
-F 0 "C101" V 1700 3850 50  0000 C CNN
+F 0 "C111" V 1700 3850 50  0000 C CNN
 F 1 "12pF" V 1400 3850 50  0000 C CNN
 F 2 "SFUSat:C_0402" H 1588 3700 50  0001 C CNN
 F 3 "" H 1550 3850 50  0000 C CNN
@@ -182,7 +182,7 @@ U 1 1 592A730F
 P 1550 4450
 AR Path="/5AA44392/592A730F" Ref="C102"  Part="1" 
 AR Path="/5AA72383/592A730F" Ref="C112"  Part="1" 
-F 0 "C102" V 1700 4450 50  0000 C CNN
+F 0 "C112" V 1700 4450 50  0000 C CNN
 F 1 "15pF" V 1400 4450 50  0000 C CNN
 F 2 "SFUSat:C_0402" H 1588 4300 50  0001 C CNN
 F 3 "" H 1550 4450 50  0000 C CNN
@@ -221,7 +221,7 @@ U 1 1 592F0537
 P 3675 2875
 AR Path="/5AA44392/592F0537" Ref="C105"  Part="1" 
 AR Path="/5AA72383/592F0537" Ref="C115"  Part="1" 
-F 0 "C105" V 3825 2875 50  0000 C CNN
+F 0 "C115" V 3825 2875 50  0000 C CNN
 F 1 "100nF" V 3525 2875 50  0000 C CNN
 F 2 "SFUSat:C_0402" H 3713 2725 50  0001 C CNN
 F 3 "" H 3675 2875 50  0000 C CNN
@@ -260,7 +260,7 @@ U 1 1 592F1742
 P 3675 2425
 AR Path="/5AA44392/592F1742" Ref="C104"  Part="1" 
 AR Path="/5AA72383/592F1742" Ref="C114"  Part="1" 
-F 0 "C104" V 3825 2425 50  0000 C CNN
+F 0 "C114" V 3825 2425 50  0000 C CNN
 F 1 "220pF" V 3525 2425 50  0000 C CNN
 F 2 "SFUSat:C_0402" H 3713 2275 50  0001 C CNN
 F 3 "" H 3675 2425 50  0000 C CNN
@@ -273,7 +273,7 @@ U 1 1 592F1748
 P 3675 2000
 AR Path="/5AA44392/592F1748" Ref="C103"  Part="1" 
 AR Path="/5AA72383/592F1748" Ref="C113"  Part="1" 
-F 0 "C103" V 3825 2000 50  0000 C CNN
+F 0 "C113" V 3825 2000 50  0000 C CNN
 F 1 "100nF" V 3525 2000 50  0000 C CNN
 F 2 "SFUSat:C_0402" H 3713 1850 50  0001 C CNN
 F 3 "" H 3675 2000 50  0000 C CNN
@@ -312,7 +312,7 @@ U 1 1 592F1E93
 P 5325 2875
 AR Path="/5AA44392/592F1E93" Ref="C107"  Part="1" 
 AR Path="/5AA72383/592F1E93" Ref="C117"  Part="1" 
-F 0 "C107" V 5175 2875 50  0000 C CNN
+F 0 "C117" V 5175 2875 50  0000 C CNN
 F 1 "100nF" V 5475 2875 50  0000 C CNN
 F 2 "SFUSat:C_0402" H 5363 2725 50  0001 C CNN
 F 3 "" H 5325 2875 50  0000 C CNN
@@ -325,7 +325,7 @@ U 1 1 592F1E99
 P 5325 3300
 AR Path="/5AA44392/592F1E99" Ref="C100"  Part="1" 
 AR Path="/5AA72383/592F1E99" Ref="C110"  Part="1" 
-F 0 "C100" V 5175 3300 50  0000 C CNN
+F 0 "C110" V 5175 3300 50  0000 C CNN
 F 1 "100nF" V 5475 3300 50  0000 C CNN
 F 2 "SFUSat:C_0402" H 5363 3150 50  0001 C CNN
 F 3 "" H 5325 3300 50  0000 C CNN
@@ -423,72 +423,57 @@ Wire Wire Line
 	5850 4450 6000 4450
 Wire Wire Line
 	5850 4350 6000 4350
-Text Label 8850 2025 2    60   ~ 0
+Text Label 8850 1950 2    60   ~ 0
 VDD_3.3
-Text Label 8850 2425 2    60   ~ 0
+Text Label 8850 2350 2    60   ~ 0
 MISO
-Text Label 8850 2325 2    60   ~ 0
+Text Label 8850 2250 2    60   ~ 0
 MOSI
-Text Label 8850 2225 2    60   ~ 0
+Text Label 8850 2150 2    60   ~ 0
 SCLK
-Text Label 8850 2125 2    60   ~ 0
+Text Label 8850 2050 2    60   ~ 0
 GPIO0
-Text Label 7650 2125 0    60   ~ 0
+Text Label 7650 2050 0    60   ~ 0
 GPIO2
-Text Label 7650 2225 0    60   ~ 0
+Text Label 7650 2150 0    60   ~ 0
 ~CS
-Text Label 7650 2325 0    60   ~ 0
+Text Label 7650 2250 0    60   ~ 0
 ~RESET
-Text Label 7650 2425 0    60   ~ 0
+Text Label 7650 2350 0    60   ~ 0
 OP_3.3
 $Comp
 L GND #PWR?
 U 1 1 5AAD2BB4
-P 7650 2025
+P 7650 1950
 AR Path="/5AA44392/5AAD2BB4" Ref="#PWR?"  Part="1" 
 AR Path="/5AA72383/5AAD2BB4" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 7650 1775 50  0001 C CNN
-F 1 "GND" H 7650 1875 50  0000 C CNN
-F 2 "" H 7650 2025 50  0000 C CNN
-F 3 "" H 7650 2025 50  0000 C CNN
-	1    7650 2025
+F 0 "#PWR?" H 7650 1700 50  0001 C CNN
+F 1 "GND" H 7650 1800 50  0000 C CNN
+F 2 "" H 7650 1950 50  0000 C CNN
+F 3 "" H 7650 1950 50  0000 C CNN
+	1    7650 1950
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7650 2025 8050 2025
+	7650 1950 8050 1950
 Wire Wire Line
-	8550 2425 8850 2425
+	8550 2350 8850 2350
 Wire Wire Line
-	8850 2325 8550 2325
+	8850 2250 8550 2250
 Wire Wire Line
-	8550 2225 8850 2225
+	8550 2150 8850 2150
 Wire Wire Line
-	8850 2125 8550 2125
+	8850 2050 8550 2050
 Wire Wire Line
-	8550 2025 8850 2025
+	8550 1950 8850 1950
 Wire Wire Line
-	7650 2125 8050 2125
+	7650 2050 8050 2050
 Wire Wire Line
-	7650 2225 8050 2225
+	7650 2150 8050 2150
 Wire Wire Line
-	7650 2325 8050 2325
+	7650 2250 8050 2250
 Wire Wire Line
-	8050 2425 7650 2425
-$Comp
-L CONN_02X05 J?
-U 1 1 5AAD2BC4
-P 8300 2225
-AR Path="/5AA44392/5AAD2BC4" Ref="J?"  Part="1" 
-AR Path="/5AA72383/5AAD2BC4" Ref="J?"  Part="1" 
-F 0 "J?" H 8300 2525 50  0000 C CNN
-F 1 "CONN_02X05" H 8300 1925 50  0000 C CNN
-F 2 "SFUSat:Socket_Strip_Straight_2x05" H 8300 1025 50  0001 C CNN
-F 3 "" H 8300 1025 50  0000 C CNN
-F 4 "S9169-ND" H 8300 2225 60  0001 C CNN "Digikey"
-F 5 "SBH11-PBPC-D05-ST-BK" H 8300 2225 60  0001 C CNN "PN"
-	1    8300 2225
-	1    0    0    -1  
-$EndComp
+	8050 2350 7650 2350
 Text Label 8600 3100 0    60   ~ 0
 OP_3.3
 Text Label 8600 3200 0    60   ~ 0
@@ -515,13 +500,13 @@ Wire Wire Line
 	8500 3200 8600 3200
 Wire Wire Line
 	8500 3300 8600 3300
-Text Notes 8925 2000 0    60   ~ 0
-Reguired Power for Debugger operation
-Text Notes 6675 2425 0    60   ~ 0
+Text Notes 8925 1925 0    60   ~ 0
+Required Power for Debugger operation
+Text Notes 6675 2350 0    60   ~ 0
 Optional 3V3 source
-Text Notes 7000 2325 0    60   ~ 0
+Text Notes 7000 2250 0    60   ~ 0
 Unconnected
-Text Notes 8925 2550 0    60   ~ 0
+Text Notes 8925 2475 0    60   ~ 0
 MISO, MOSI, and SCLK signal are the same for\n both upper and lower band CC1101. Care must\n be taken to prevent interference when \nmultiple masters are connected.
 Text Label 3100 5100 2    60   ~ 0
 GPIO2
@@ -541,4 +526,58 @@ Text Notes 9075 3325 0    60   ~ 0
 This sub-circuit can use either power \nprovided by the Debugger or from \nthe onboard regulator. VDD_3.3 is \nthe power rail for this circuit.
 Text Notes 8025 3750 0    60   ~ 0
 If the debugger power supply is used,\n the radio must only be operated through \nthe u.fl debug ports adjasent to the balun.
+$Comp
+L CONN_02X05_SHRD U?
+U 1 1 5AB496AE
+P 8250 2150
+AR Path="/5AA72383/5AB496AE" Ref="U?"  Part="1" 
+AR Path="/5AA44392/5AB496AE" Ref="U?"  Part="1" 
+F 0 "U?" H 8250 2450 50  0000 C BNN
+F 1 "CONN_02X05_SHRD" H 8300 1850 50  0000 C TNN
+F 2 "SFUSat:Socket_Strip_Straight_2x05" H 8150 2350 50  0001 C CNN
+F 3 "" H 8250 2150 50  0001 C CNN
+F 4 "-" H 8250 2150 50  0001 C CNN "Applications"
+F 5 "Connectors, Interconnects - Rectangular Connectors - Headers, Male Pins" H 8250 2150 50  0001 C CNN "Categories"
+F 6 "Header" H 8250 2150 50  0001 C CNN "Connector Type"
+F 7 "Gold" H 8250 2150 50  0001 C CNN "Contact Finish - Mating"
+F 8 "Gold" H 8250 2150 50  0001 C CNN "Contact Finish - Post"
+F 9 "Flash" H 8250 2150 50  0001 C CNN "Contact Finish Thickness - Mating"
+F 10 "Flash" H 8250 2150 50  0001 C CNN "Contact Finish Thickness - Post"
+F 11 "-" H 8250 2150 50  0001 C CNN "Contact Length - Mating"
+F 12 "0.118\" (3.00mm)" H 8250 2150 50  0001 C CNN "Contact Length - Post"
+F 13 "Brass" H 8250 2150 50  0001 C CNN "Contact Material"
+F 14 "Square" H 8250 2150 50  0001 C CNN "Contact Shape"
+F 15 "Male Pin" H 8250 2150 50  0001 C CNN "Contact Type"
+F 16 "3A" H 8250 2150 50  0001 C CNN "Current Rating"
+F 17 "Push-Pull" H 8250 2150 50  0001 C CNN "Fastening Type"
+F 18 "Keying Slot" H 8250 2150 50  0001 C CNN "Features"
+F 19 "-" H 8250 2150 50  0001 C CNN "Ingress Protection"
+F 20 "Black" H 8250 2150 50  0001 C CNN "Insulation Color"
+F 21 "0.358\" (9.10mm)" H 8250 2150 50  0001 C CNN "Insulation Height"
+F 22 "Polybutylene Terephthalate (PBT)" H 8250 2150 50  0001 C CNN "Insulation Material"
+F 23 "Lead free / RoHS Compliant" H 8250 2150 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 24 "Sullins Connector Solutions" H 8250 2150 50  0001 C CNN "Manufacturer 1"
+F 25 "SBH11-PBPC-D05-ST-BK" H 8250 2150 50  0001 C CNN "Manufacturer Part Number 1"
+F 26 "4 Weeks" H 8250 2150 50  0001 C CNN "Manufacturer Standard Lead Time 1"
+F 27 "9.65mm, 11.2mm, 13.35mm, 18.35mm" H 8250 2150 50  0001 C CNN "Mated Stacking Heights"
+F 28 "UL94 V-0" H 8250 2150 50  0001 C CNN "Material Flammability Rating"
+F 29 "Through Hole" H 8250 2150 50  0001 C CNN "Mounting Type"
+F 30 "10" H 8250 2150 50  0001 C CNN "Number of Positions"
+F 31 "All" H 8250 2150 50  0001 C CNN "Number of Positions Loaded"
+F 32 "2" H 8250 2150 50  0001 C CNN "Number of Rows"
+F 33 "-40°C ~ 105°C" H 8250 2150 50  0001 C CNN "Operating Temperature"
+F 34 "-" H 8250 2150 50  0001 C CNN "Overall Contact Length"
+F 35 "Active" H 8250 2150 50  0001 C CNN "Part Status"
+F 36 "0.100\" (2.54mm)" H 8250 2150 50  0001 C CNN "Pitch - Mating"
+F 37 "0.100\" (2.54mm)" H 8250 2150 50  0001 C CNN "Row Spacing - Mating"
+F 38 "SBH11" H 8250 2150 50  0001 C CNN "Series"
+F 39 "Shrouded - 4 Wall" H 8250 2150 50  0001 C CNN "Shrouding"
+F 40 "Board to Board or Cable" H 8250 2150 50  0001 C CNN "Style"
+F 41 "Digi-Key" H 8250 2150 50  0001 C CNN "Supplier 1"
+F 42 "S9169-ND" H 8250 2150 50  0001 C CNN "Supplier Part Number 1"
+F 43 "Solder" H 8250 2150 50  0001 C CNN "Termination"
+F 44 "-" H 8250 2150 50  0001 C CNN "Voltage Rating"
+	1    8250 2150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -38,7 +38,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 1 15
+Sheet 1 14
 Title "Digital Transciever Unit with RF Calibration Source"
 Date ""
 Rev "3"
@@ -114,7 +114,7 @@ F 3 "" H 17950 8550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PC104-8BIT-RESCUE-SFUSat-Radio J1
+L PC104-8BIT J1
 U 1 1 59239648
 P 1750 2500
 F 0 "J1" H 2000 850 60  0000 C CNN
@@ -295,15 +295,6 @@ F2 "3V6" I L 10375 7250 60
 F3 "3V1" I L 10375 7350 60 
 F4 "IN" I L 10375 7550 60 
 F5 "OUT" I R 11325 7550 60 
-$EndSheet
-$Sheet
-S 18250 5925 600  375 
-U 5A589287
-F0 "Diplexer" 60
-F1 "Diplexer.sch" 60
-F2 "LB" I L 18250 6025 60 
-F3 "UB" I L 18250 6200 60 
-F4 "Mixed" I R 18850 6100 60 
 $EndSheet
 $Comp
 L GND #PWR024
@@ -915,8 +906,6 @@ Text Label 9175 6300 0    60   ~ 0
 LB_LP_RX
 Text Label 12050 6075 0    60   ~ 0
 LB_HP_RX
-Text Notes 13975 6700 0    60   ~ 0
-Need another SPDT switch, bu this one needs to handle 2W
 Text Notes 5325 5600 0    118  ~ 0
 435Mhz Lower Band (LB)
 Text Notes 5400 8750 0    118  ~ 0
@@ -1845,8 +1834,6 @@ Wire Wire Line
 	10300 7250 10375 7250
 Wire Wire Line
 	10300 7350 10375 7350
-Wire Wire Line
-	18850 6100 19025 6100
 Wire Wire Line
 	5275 6675 5375 6675
 Wire Wire Line

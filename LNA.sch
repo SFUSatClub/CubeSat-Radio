@@ -38,7 +38,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 15
+Sheet 3 14
 Title ""
 Date ""
 Rev ""
@@ -355,9 +355,7 @@ F 6 "81-GRM1555C1H560JA1D" V 6100 4425 60  0001 C CNN "Mouser"
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5175 2800 5175 2900
-Wire Wire Line
-	5175 2900 5175 3025
+	5175 2800 5175 3025
 Wire Wire Line
 	5175 2425 5175 2500
 Wire Wire Line
@@ -366,39 +364,25 @@ Connection ~ 3975 3875
 Wire Wire Line
 	4400 3875 4525 3875
 Wire Wire Line
-	3850 3875 3975 3875
-Wire Wire Line
-	3975 3875 4100 3875
+	3850 3875 4100 3875
 Connection ~ 3975 4550
 Wire Wire Line
 	3975 4050 3975 3875
 Wire Wire Line
-	3975 4350 3975 4550
-Wire Wire Line
-	3975 4550 3975 4675
+	3975 4350 3975 4675
 Connection ~ 6325 2900
 Connection ~ 5950 2900
 Connection ~ 4675 2900
 Connection ~ 5175 2900
 Wire Wire Line
-	4300 2900 4675 2900
-Wire Wire Line
-	4675 2900 5175 2900
-Wire Wire Line
-	5175 2900 5950 2900
-Wire Wire Line
-	5950 2900 6325 2900
-Wire Wire Line
-	6325 2900 6700 2900
+	4300 2900 6700 2900
 Wire Wire Line
 	3550 3875 3425 3875
 Connection ~ 4350 4550
 Wire Wire Line
 	4525 4550 4525 4200
 Wire Wire Line
-	3975 4550 4350 4550
-Wire Wire Line
-	4350 4550 4525 4550
+	3975 4550 4525 4550
 Wire Wire Line
 	4350 4675 4350 4550
 Wire Wire Line
@@ -414,9 +398,7 @@ Wire Wire Line
 Connection ~ 5950 4100
 Connection ~ 5950 4200
 Wire Wire Line
-	5950 3325 5950 4100
-Wire Wire Line
-	5950 4100 5950 4200
+	5950 3325 5950 4200
 Wire Wire Line
 	5175 3450 5175 3325
 Wire Wire Line
@@ -441,11 +423,7 @@ Connection ~ 6800 4200
 Wire Wire Line
 	5825 4100 5950 4100
 Wire Wire Line
-	5825 4200 5950 4200
-Wire Wire Line
-	5950 4200 6800 4200
-Wire Wire Line
-	6800 4200 7375 4200
+	5825 4200 7375 4200
 Wire Wire Line
 	6800 4425 6800 4200
 Wire Wire Line

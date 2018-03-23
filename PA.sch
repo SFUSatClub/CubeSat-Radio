@@ -38,7 +38,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 15
+Sheet 7 14
 Title ""
 Date ""
 Rev ""
@@ -51,7 +51,7 @@ $EndDescr
 Text Notes 475  805  0    250  ~ 0
 PA
 $Comp
-L RF6886-RESCUE-SFUSat-Radio U201
+L RF6886 U201
 U 1 1 5A587750
 P 3600 3100
 AR Path="/5A585E42/5A587750" Ref="U201"  Part="1" 
