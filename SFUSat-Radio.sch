@@ -944,10 +944,10 @@ SCL
 Text Label 1725 7625 2    60   ~ 0
 3V3
 $Comp
-L R R404
+L R R604
 U 1 1 5AC5049A
 P 3350 7575
-F 0 "R404" V 3430 7575 50  0000 C CNN
+F 0 "R604" V 3430 7575 50  0000 C CNN
 F 1 "DNP" V 3350 7575 50  0000 C CNN
 F 2 "SFUSat-cap:C_0402" V 3280 7575 50  0001 C CNN
 F 3 "" H 3350 7575 50  0001 C CNN
@@ -1006,10 +1006,10 @@ Text Label 7550 675  0    60   ~ 0
 Text Label 7850 675  0    60   ~ 0
 3V6
 $Comp
-L R_0R0_0%_0.063W_0402 R405
+L R_0R0_0%_0.063W_0402 R605
 U 1 1 5ACC3CB7
 P 3350 7975
-F 0 "R405" H 3350 8025 50  0000 C BNN
+F 0 "R605" H 3350 8025 50  0000 C BNN
 F 1 "0R" H 3350 7925 50  0000 C TNN
 F 2 "SFUSat-res:R_0402" H 3350 7975 50  0001 C CNN
 F 3 "" H 3350 7975 50  0001 C CNN
@@ -1023,23 +1023,22 @@ F 10 "Yageo" H 3350 7975 50  0001 C CNN "Manufacturer 1"
 F 11 "AC0402JR-070RL" H 3350 7975 50  0001 C CNN "Manufacturer Part Number 1"
 F 12 "17 Weeks" H 3350 7975 50  0001 C CNN "Manufacturer Standard Lead Time 1"
 F 13 "2" H 3350 7975 50  0001 C CNN "Number of Terminations"
-F 14 "" H 3350 7975 50  0001 C CNN "Operating Temperature"
-F 15 "0402 (1005 Metric)" H 3350 7975 50  0001 C CNN "Package / Case"
-F 16 "Active" H 3350 7975 50  0001 C CNN "Part Status"
-F 17 "0.063W, 1/16W" H 3350 7975 50  0001 C CNN "Power (Watts)"
-F 18 "0 Ohms" H 3350 7975 50  0001 C CNN "Resistance"
-F 19 "AC" H 3350 7975 50  0001 C CNN "Series"
-F 20 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 3350 7975 50  0001 C CNN "Size / Dimension"
-F 21 "Digi-Key" H 3350 7975 50  0001 C CNN "Supplier 1"
-F 22 "0402" H 3350 7975 50  0001 C CNN "Supplier Device Package"
-F 23 "311-0.0LBCT-ND" H 3350 7975 50  0001 C CNN "Supplier Part Number 1"
-F 24 "-" H 3350 7975 50  0001 C CNN "Temperature Coefficient"
-F 25 "Jumper" H 3350 7975 50  0001 C CNN "Tolerance"
+F 14 "0402 (1005 Metric)" H 3350 7975 50  0001 C CNN "Package / Case"
+F 15 "Active" H 3350 7975 50  0001 C CNN "Part Status"
+F 16 "0.063W, 1/16W" H 3350 7975 50  0001 C CNN "Power (Watts)"
+F 17 "0 Ohms" H 3350 7975 50  0001 C CNN "Resistance"
+F 18 "AC" H 3350 7975 50  0001 C CNN "Series"
+F 19 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 3350 7975 50  0001 C CNN "Size / Dimension"
+F 20 "Digi-Key" H 3350 7975 50  0001 C CNN "Supplier 1"
+F 21 "0402" H 3350 7975 50  0001 C CNN "Supplier Device Package"
+F 22 "311-0.0LBCT-ND" H 3350 7975 50  0001 C CNN "Supplier Part Number 1"
+F 23 "-" H 3350 7975 50  0001 C CNN "Temperature Coefficient"
+F 24 "Jumper" H 3350 7975 50  0001 C CNN "Tolerance"
 	1    3350 7975
 	0    1    1    0   
 $EndComp
 Text Notes 2100 7425 0    54   ~ 0
-REF 40*
+REF 60*
 $Comp
 L R R?
 U 1 1 5AD004B5
@@ -1087,10 +1086,10 @@ SCL
 Text Label 1725 8625 2    60   ~ 0
 3V3
 $Comp
-L R R414
+L R R614
 U 1 1 5AD08747
 P 3350 8575
-F 0 "R414" V 3430 8575 50  0000 C CNN
+F 0 "R614" V 3430 8575 50  0000 C CNN
 F 1 "DNP" V 3350 8575 50  0000 C CNN
 F 2 "SFUSat-cap:C_0402" V 3280 8575 50  0001 C CNN
 F 3 "" H 3350 8575 50  0001 C CNN
@@ -1111,10 +1110,10 @@ F 3 "" H 3100 9200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_0R0_0%_0.063W_0402 R415
+L R_0R0_0%_0.063W_0402 R615
 U 1 1 5AD08773
 P 3350 8975
-F 0 "R415" H 3350 9025 50  0000 C BNN
+F 0 "R615" H 3350 9025 50  0000 C BNN
 F 1 "0R" H 3350 8925 50  0000 C TNN
 F 2 "SFUSat-res:R_0402" H 3350 8975 50  0001 C CNN
 F 3 "" H 3350 8975 50  0001 C CNN
@@ -1128,28 +1127,27 @@ F 10 "Yageo" H 3350 8975 50  0001 C CNN "Manufacturer 1"
 F 11 "AC0402JR-070RL" H 3350 8975 50  0001 C CNN "Manufacturer Part Number 1"
 F 12 "17 Weeks" H 3350 8975 50  0001 C CNN "Manufacturer Standard Lead Time 1"
 F 13 "2" H 3350 8975 50  0001 C CNN "Number of Terminations"
-F 14 "" H 3350 8975 50  0001 C CNN "Operating Temperature"
-F 15 "0402 (1005 Metric)" H 3350 8975 50  0001 C CNN "Package / Case"
-F 16 "Active" H 3350 8975 50  0001 C CNN "Part Status"
-F 17 "0.063W, 1/16W" H 3350 8975 50  0001 C CNN "Power (Watts)"
-F 18 "0 Ohms" H 3350 8975 50  0001 C CNN "Resistance"
-F 19 "AC" H 3350 8975 50  0001 C CNN "Series"
-F 20 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 3350 8975 50  0001 C CNN "Size / Dimension"
-F 21 "Digi-Key" H 3350 8975 50  0001 C CNN "Supplier 1"
-F 22 "0402" H 3350 8975 50  0001 C CNN "Supplier Device Package"
-F 23 "311-0.0LBCT-ND" H 3350 8975 50  0001 C CNN "Supplier Part Number 1"
-F 24 "-" H 3350 8975 50  0001 C CNN "Temperature Coefficient"
-F 25 "Jumper" H 3350 8975 50  0001 C CNN "Tolerance"
+F 14 "0402 (1005 Metric)" H 3350 8975 50  0001 C CNN "Package / Case"
+F 15 "Active" H 3350 8975 50  0001 C CNN "Part Status"
+F 16 "0.063W, 1/16W" H 3350 8975 50  0001 C CNN "Power (Watts)"
+F 17 "0 Ohms" H 3350 8975 50  0001 C CNN "Resistance"
+F 18 "AC" H 3350 8975 50  0001 C CNN "Series"
+F 19 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 3350 8975 50  0001 C CNN "Size / Dimension"
+F 20 "Digi-Key" H 3350 8975 50  0001 C CNN "Supplier 1"
+F 21 "0402" H 3350 8975 50  0001 C CNN "Supplier Device Package"
+F 22 "311-0.0LBCT-ND" H 3350 8975 50  0001 C CNN "Supplier Part Number 1"
+F 23 "-" H 3350 8975 50  0001 C CNN "Temperature Coefficient"
+F 24 "Jumper" H 3350 8975 50  0001 C CNN "Tolerance"
 	1    3350 8975
 	0    1    1    0   
 $EndComp
 Text Notes 2075 8425 0    54   ~ 0
-REF 41*
+REF 61*
 $Comp
-L R_0R0_0%_0.063W_0402 R412
+L R_0R0_0%_0.063W_0402 R612
 U 1 1 5AD100F9
 P 3100 8575
-F 0 "R412" H 3100 8625 50  0000 C BNN
+F 0 "R612" H 3100 8625 50  0000 C BNN
 F 1 "0R" H 3100 8525 50  0000 C TNN
 F 2 "SFUSat-res:R_0402" H 3100 8575 50  0001 C CNN
 F 3 "" H 3100 8575 50  0001 C CNN
@@ -1163,26 +1161,25 @@ F 10 "Yageo" H 3100 8575 50  0001 C CNN "Manufacturer 1"
 F 11 "AC0402JR-070RL" H 3100 8575 50  0001 C CNN "Manufacturer Part Number 1"
 F 12 "17 Weeks" H 3100 8575 50  0001 C CNN "Manufacturer Standard Lead Time 1"
 F 13 "2" H 3100 8575 50  0001 C CNN "Number of Terminations"
-F 14 "" H 3100 8575 50  0001 C CNN "Operating Temperature"
-F 15 "0402 (1005 Metric)" H 3100 8575 50  0001 C CNN "Package / Case"
-F 16 "Active" H 3100 8575 50  0001 C CNN "Part Status"
-F 17 "0.063W, 1/16W" H 3100 8575 50  0001 C CNN "Power (Watts)"
-F 18 "0 Ohms" H 3100 8575 50  0001 C CNN "Resistance"
-F 19 "AC" H 3100 8575 50  0001 C CNN "Series"
-F 20 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 3100 8575 50  0001 C CNN "Size / Dimension"
-F 21 "Digi-Key" H 3100 8575 50  0001 C CNN "Supplier 1"
-F 22 "0402" H 3100 8575 50  0001 C CNN "Supplier Device Package"
-F 23 "311-0.0LBCT-ND" H 3100 8575 50  0001 C CNN "Supplier Part Number 1"
-F 24 "-" H 3100 8575 50  0001 C CNN "Temperature Coefficient"
-F 25 "Jumper" H 3100 8575 50  0001 C CNN "Tolerance"
+F 14 "0402 (1005 Metric)" H 3100 8575 50  0001 C CNN "Package / Case"
+F 15 "Active" H 3100 8575 50  0001 C CNN "Part Status"
+F 16 "0.063W, 1/16W" H 3100 8575 50  0001 C CNN "Power (Watts)"
+F 17 "0 Ohms" H 3100 8575 50  0001 C CNN "Resistance"
+F 18 "AC" H 3100 8575 50  0001 C CNN "Series"
+F 19 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 3100 8575 50  0001 C CNN "Size / Dimension"
+F 20 "Digi-Key" H 3100 8575 50  0001 C CNN "Supplier 1"
+F 21 "0402" H 3100 8575 50  0001 C CNN "Supplier Device Package"
+F 22 "311-0.0LBCT-ND" H 3100 8575 50  0001 C CNN "Supplier Part Number 1"
+F 23 "-" H 3100 8575 50  0001 C CNN "Temperature Coefficient"
+F 24 "Jumper" H 3100 8575 50  0001 C CNN "Tolerance"
 	1    3100 8575
 	0    1    1    0   
 $EndComp
 $Comp
-L R R413
+L R R613
 U 1 1 5AD1034C
 P 3100 8975
-F 0 "R413" V 3180 8975 50  0000 C CNN
+F 0 "R613" V 3180 8975 50  0000 C CNN
 F 1 "DNP" V 3100 8975 50  0000 C CNN
 F 2 "SFUSat-cap:C_0402" V 3030 8975 50  0001 C CNN
 F 3 "" H 3100 8975 50  0001 C CNN
@@ -1190,10 +1187,10 @@ F 3 "" H 3100 8975 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_0R0_0%_0.063W_0402 R411
+L R_0R0_0%_0.063W_0402 R611
 U 1 1 5AD10D20
 P 2875 8975
-F 0 "R411" H 2875 9025 50  0000 C BNN
+F 0 "R611" H 2875 9025 50  0000 C BNN
 F 1 "0R" H 2875 8925 50  0000 C TNN
 F 2 "SFUSat-res:R_0402" H 2875 8975 50  0001 C CNN
 F 3 "" H 2875 8975 50  0001 C CNN
@@ -1207,26 +1204,25 @@ F 10 "Yageo" H 2875 8975 50  0001 C CNN "Manufacturer 1"
 F 11 "AC0402JR-070RL" H 2875 8975 50  0001 C CNN "Manufacturer Part Number 1"
 F 12 "17 Weeks" H 2875 8975 50  0001 C CNN "Manufacturer Standard Lead Time 1"
 F 13 "2" H 2875 8975 50  0001 C CNN "Number of Terminations"
-F 14 "" H 2875 8975 50  0001 C CNN "Operating Temperature"
-F 15 "0402 (1005 Metric)" H 2875 8975 50  0001 C CNN "Package / Case"
-F 16 "Active" H 2875 8975 50  0001 C CNN "Part Status"
-F 17 "0.063W, 1/16W" H 2875 8975 50  0001 C CNN "Power (Watts)"
-F 18 "0 Ohms" H 2875 8975 50  0001 C CNN "Resistance"
-F 19 "AC" H 2875 8975 50  0001 C CNN "Series"
-F 20 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 2875 8975 50  0001 C CNN "Size / Dimension"
-F 21 "Digi-Key" H 2875 8975 50  0001 C CNN "Supplier 1"
-F 22 "0402" H 2875 8975 50  0001 C CNN "Supplier Device Package"
-F 23 "311-0.0LBCT-ND" H 2875 8975 50  0001 C CNN "Supplier Part Number 1"
-F 24 "-" H 2875 8975 50  0001 C CNN "Temperature Coefficient"
-F 25 "Jumper" H 2875 8975 50  0001 C CNN "Tolerance"
+F 14 "0402 (1005 Metric)" H 2875 8975 50  0001 C CNN "Package / Case"
+F 15 "Active" H 2875 8975 50  0001 C CNN "Part Status"
+F 16 "0.063W, 1/16W" H 2875 8975 50  0001 C CNN "Power (Watts)"
+F 17 "0 Ohms" H 2875 8975 50  0001 C CNN "Resistance"
+F 18 "AC" H 2875 8975 50  0001 C CNN "Series"
+F 19 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 2875 8975 50  0001 C CNN "Size / Dimension"
+F 20 "Digi-Key" H 2875 8975 50  0001 C CNN "Supplier 1"
+F 21 "0402" H 2875 8975 50  0001 C CNN "Supplier Device Package"
+F 22 "311-0.0LBCT-ND" H 2875 8975 50  0001 C CNN "Supplier Part Number 1"
+F 23 "-" H 2875 8975 50  0001 C CNN "Temperature Coefficient"
+F 24 "Jumper" H 2875 8975 50  0001 C CNN "Tolerance"
 	1    2875 8975
 	0    1    1    0   
 $EndComp
 $Comp
-L R R410
+L R R610
 U 1 1 5AD10F9F
 P 2875 8575
-F 0 "R410" V 2955 8575 50  0000 C CNN
+F 0 "R610" V 2955 8575 50  0000 C CNN
 F 1 "DNP" V 2875 8575 50  0000 C CNN
 F 2 "SFUSat-cap:C_0402" V 2805 8575 50  0001 C CNN
 F 3 "" H 2875 8575 50  0001 C CNN
@@ -1238,10 +1234,10 @@ ADDR: 0x4A
 Text Notes 3550 7800 0    54   ~ 0
 ADDR: 0x49
 $Comp
-L R_0R0_0%_0.063W_0402 R400
+L R_0R0_0%_0.063W_0402 R600
 U 1 1 5AD2047D
 P 2875 7575
-F 0 "R400" H 2875 7625 50  0000 C BNN
+F 0 "R600" H 2875 7625 50  0000 C BNN
 F 1 "0R" H 2875 7525 50  0000 C TNN
 F 2 "SFUSat-res:R_0402" H 2875 7575 50  0001 C CNN
 F 3 "" H 2875 7575 50  0001 C CNN
@@ -1255,26 +1251,25 @@ F 10 "Yageo" H 2875 7575 50  0001 C CNN "Manufacturer 1"
 F 11 "AC0402JR-070RL" H 2875 7575 50  0001 C CNN "Manufacturer Part Number 1"
 F 12 "17 Weeks" H 2875 7575 50  0001 C CNN "Manufacturer Standard Lead Time 1"
 F 13 "2" H 2875 7575 50  0001 C CNN "Number of Terminations"
-F 14 "" H 2875 7575 50  0001 C CNN "Operating Temperature"
-F 15 "0402 (1005 Metric)" H 2875 7575 50  0001 C CNN "Package / Case"
-F 16 "Active" H 2875 7575 50  0001 C CNN "Part Status"
-F 17 "0.063W, 1/16W" H 2875 7575 50  0001 C CNN "Power (Watts)"
-F 18 "0 Ohms" H 2875 7575 50  0001 C CNN "Resistance"
-F 19 "AC" H 2875 7575 50  0001 C CNN "Series"
-F 20 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 2875 7575 50  0001 C CNN "Size / Dimension"
-F 21 "Digi-Key" H 2875 7575 50  0001 C CNN "Supplier 1"
-F 22 "0402" H 2875 7575 50  0001 C CNN "Supplier Device Package"
-F 23 "311-0.0LBCT-ND" H 2875 7575 50  0001 C CNN "Supplier Part Number 1"
-F 24 "-" H 2875 7575 50  0001 C CNN "Temperature Coefficient"
-F 25 "Jumper" H 2875 7575 50  0001 C CNN "Tolerance"
+F 14 "0402 (1005 Metric)" H 2875 7575 50  0001 C CNN "Package / Case"
+F 15 "Active" H 2875 7575 50  0001 C CNN "Part Status"
+F 16 "0.063W, 1/16W" H 2875 7575 50  0001 C CNN "Power (Watts)"
+F 17 "0 Ohms" H 2875 7575 50  0001 C CNN "Resistance"
+F 18 "AC" H 2875 7575 50  0001 C CNN "Series"
+F 19 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 2875 7575 50  0001 C CNN "Size / Dimension"
+F 20 "Digi-Key" H 2875 7575 50  0001 C CNN "Supplier 1"
+F 21 "0402" H 2875 7575 50  0001 C CNN "Supplier Device Package"
+F 22 "311-0.0LBCT-ND" H 2875 7575 50  0001 C CNN "Supplier Part Number 1"
+F 23 "-" H 2875 7575 50  0001 C CNN "Temperature Coefficient"
+F 24 "Jumper" H 2875 7575 50  0001 C CNN "Tolerance"
 	1    2875 7575
 	0    1    1    0   
 $EndComp
 $Comp
-L R R401
+L R R601
 U 1 1 5AD206FE
 P 2875 7975
-F 0 "R401" V 2955 7975 50  0000 C CNN
+F 0 "R601" V 2955 7975 50  0000 C CNN
 F 1 "DNP" V 2875 7975 50  0000 C CNN
 F 2 "SFUSat-cap:C_0402" V 2805 7975 50  0001 C CNN
 F 3 "" H 2875 7975 50  0001 C CNN
@@ -1282,10 +1277,10 @@ F 3 "" H 2875 7975 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R402
+L R R602
 U 1 1 5AD20952
 P 3100 7575
-F 0 "R402" V 3180 7575 50  0000 C CNN
+F 0 "R602" V 3180 7575 50  0000 C CNN
 F 1 "DNP" V 3100 7575 50  0000 C CNN
 F 2 "SFUSat-cap:C_0402" V 3030 7575 50  0001 C CNN
 F 3 "" H 3100 7575 50  0001 C CNN
@@ -1293,10 +1288,10 @@ F 3 "" H 3100 7575 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_0R0_0%_0.063W_0402 R403
+L R_0R0_0%_0.063W_0402 R603
 U 1 1 5AD20BD1
 P 3100 7975
-F 0 "R403" H 3100 8025 50  0000 C BNN
+F 0 "R603" H 3100 8025 50  0000 C BNN
 F 1 "0R" H 3100 7925 50  0000 C TNN
 F 2 "SFUSat-res:R_0402" H 3100 7975 50  0001 C CNN
 F 3 "" H 3100 7975 50  0001 C CNN
@@ -1310,18 +1305,17 @@ F 10 "Yageo" H 3100 7975 50  0001 C CNN "Manufacturer 1"
 F 11 "AC0402JR-070RL" H 3100 7975 50  0001 C CNN "Manufacturer Part Number 1"
 F 12 "17 Weeks" H 3100 7975 50  0001 C CNN "Manufacturer Standard Lead Time 1"
 F 13 "2" H 3100 7975 50  0001 C CNN "Number of Terminations"
-F 14 "" H 3100 7975 50  0001 C CNN "Operating Temperature"
-F 15 "0402 (1005 Metric)" H 3100 7975 50  0001 C CNN "Package / Case"
-F 16 "Active" H 3100 7975 50  0001 C CNN "Part Status"
-F 17 "0.063W, 1/16W" H 3100 7975 50  0001 C CNN "Power (Watts)"
-F 18 "0 Ohms" H 3100 7975 50  0001 C CNN "Resistance"
-F 19 "AC" H 3100 7975 50  0001 C CNN "Series"
-F 20 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 3100 7975 50  0001 C CNN "Size / Dimension"
-F 21 "Digi-Key" H 3100 7975 50  0001 C CNN "Supplier 1"
-F 22 "0402" H 3100 7975 50  0001 C CNN "Supplier Device Package"
-F 23 "311-0.0LBCT-ND" H 3100 7975 50  0001 C CNN "Supplier Part Number 1"
-F 24 "-" H 3100 7975 50  0001 C CNN "Temperature Coefficient"
-F 25 "Jumper" H 3100 7975 50  0001 C CNN "Tolerance"
+F 14 "0402 (1005 Metric)" H 3100 7975 50  0001 C CNN "Package / Case"
+F 15 "Active" H 3100 7975 50  0001 C CNN "Part Status"
+F 16 "0.063W, 1/16W" H 3100 7975 50  0001 C CNN "Power (Watts)"
+F 17 "0 Ohms" H 3100 7975 50  0001 C CNN "Resistance"
+F 18 "AC" H 3100 7975 50  0001 C CNN "Series"
+F 19 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 3100 7975 50  0001 C CNN "Size / Dimension"
+F 20 "Digi-Key" H 3100 7975 50  0001 C CNN "Supplier 1"
+F 21 "0402" H 3100 7975 50  0001 C CNN "Supplier Device Package"
+F 22 "311-0.0LBCT-ND" H 3100 7975 50  0001 C CNN "Supplier Part Number 1"
+F 23 "-" H 3100 7975 50  0001 C CNN "Temperature Coefficient"
+F 24 "Jumper" H 3100 7975 50  0001 C CNN "Tolerance"
 	1    3100 7975
 	0    1    1    0   
 $EndComp
