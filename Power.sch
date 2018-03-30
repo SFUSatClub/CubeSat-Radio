@@ -1880,9 +1880,11 @@ Connection ~ 7500 2075
 Text HLabel 9550 2075 2    60   Input ~ 0
 3V3
 $Comp
-L Conn_01x02 J26
+L CONN_01X02 J26
 U 1 1 5ABDDBFF
 P 7025 1800
+AR Path="/5ABDDBFF" Ref="J26"  Part="1" 
+AR Path="/586B9E11/5ABDDBFF" Ref="J26"  Part="1" 
 F 0 "J26" H 7025 1900 50  0000 C CNN
 F 1 "Conn_01x02" H 7025 1600 50  0000 C CNN
 F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 7025 1800 50  0001 C CNN
@@ -1906,9 +1908,11 @@ Do we need this diode?
 Text HLabel 4475 4375 0    60   Input ~ 0
 EN_3V6
 $Comp
-L Conn_01x02 J25
+L CONN_01X02 J25
 U 1 1 5ABE9392
 P 4400 3975
+AR Path="/5ABE9392" Ref="J25"  Part="1" 
+AR Path="/586B9E11/5ABE9392" Ref="J25"  Part="1" 
 F 0 "J25" H 4400 4075 50  0000 C CNN
 F 1 "Conn_01x02" H 4400 3775 50  0000 C CNN
 F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 4400 3975 50  0001 C CNN
