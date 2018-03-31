@@ -32,12 +32,13 @@ LIBS:SFUSat
 LIBS:SFUSat-cap
 LIBS:SFUSat-ind
 LIBS:SFUSat-res
+LIBS:SFUSat-power
 LIBS:SFUSat-Radio-cache
 EELAYER 25 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 1 12
+Sheet 1 15
 Title "Digital Transciever Unit with RF Calibration Source"
 Date ""
 Rev "3"
@@ -47,16 +48,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Sheet
-S 4175 825  600  450 
-U 586B9E11
-F0 "Power" 60
-F1 "Power.sch" 60
-F2 "Vin" I L 4175 925 60 
-F3 "3V3" I R 4775 1050 60 
-F4 "3V6" I R 4775 925 60 
-F5 "3V1" I R 4775 1175 60 
-$EndSheet
 $Comp
 L LED D3
 U 1 1 587F1822
@@ -686,16 +677,8 @@ Text Label 5300 7500 2    60   ~ 0
 LB_RX0TX1
 Text Label 10850 5925 2    60   ~ 0
 5V0
-Text Label 4875 1300 0    60   ~ 0
-5V0
-Text Label 4875 1075 0    60   ~ 0
-3V3
-Text Label 4875 1175 0    60   ~ 0
-3V1
 Text Label 10325 7350 2    60   ~ 0
 3V1
-Text Label 4875 925  0    60   ~ 0
-3V6
 Text Label 10325 7250 2    60   ~ 0
 3V6
 Text Label 10300 9550 2    60   ~ 0
@@ -861,7 +844,7 @@ Text Label 9200 7125 0    60   ~ 0
 LB_LP_TX
 Text Label 9200 6300 0    60   ~ 0
 LB_LP_RX
-Text Label 12075 6075 0    60   ~ 0
+Text Label 11900 6075 0    60   ~ 0
 LB_HP_RX
 Text Notes 5350 5600 0    118  ~ 0
 435Mhz Lower Band (LB)
@@ -1782,7 +1765,7 @@ Wire Wire Line
 Wire Wire Line
 	8100 9750 8100 9550
 Wire Wire Line
-	11575 6075 12675 6075
+	11575 6075 11900 6075
 Wire Notes Line
 	5175 8400 15250 8400
 Wire Wire Line
@@ -1831,9 +1814,9 @@ Wire Wire Line
 Wire Wire Line
 	2725 7750 3425 7750
 Wire Wire Line
-	3425 7800 2725 7800
+	2725 7800 3425 7800
 Wire Wire Line
-	2725 7800 2725 7875
+	2725 7875 2725 7800
 Wire Wire Line
 	2875 7725 2875 7825
 Connection ~ 2875 7750
@@ -1872,9 +1855,9 @@ Wire Wire Line
 Wire Wire Line
 	2725 8750 3425 8750
 Wire Wire Line
-	3425 8800 2725 8800
+	2725 8800 3425 8800
 Wire Wire Line
-	2725 8800 2725 8875
+	2725 8875 2725 8800
 Wire Wire Line
 	2875 8725 2875 8825
 Connection ~ 2875 8750
@@ -2614,5 +2597,124 @@ $EndComp
 Wire Wire Line
 	13650 7550 13800 7550
 Wire Wire Line
-	13350 7550 12500 7550
+	12500 7550 13350 7550
+$Sheet
+S 6700 2725 925  250 
+U 5AC03C3F
+F0 "3.6V Regulator" 60
+F1 "Reg_3V6.sch" 60
+F2 "3V6OUT" I R 7625 2850 60 
+F3 "Vin" I L 6700 2800 60 
+F4 "EN_3V6" I L 6700 2900 60 
+$EndSheet
+$Sheet
+S 8325 2550 850  200 
+U 5AC09559
+F0 "3.1V Regulator" 60
+F1 "Reg_3V1.sch" 60
+F2 "3V1OUT" I R 9175 2650 60 
+F3 "3V6IN" I L 8325 2650 60 
+$EndSheet
+$Sheet
+S 8325 2975 850  175 
+U 5AC0D37E
+F0 "3.3V Regulator" 60
+F1 "Reg_3V3.sch" 60
+F2 "3V3OUT" I R 9175 3050 60 
+F3 "3V6IN" I L 8325 3050 60 
+$EndSheet
+$Sheet
+S 6850 2300 575  175 
+U 5AC0D472
+F0 "5V Regulator" 60
+F1 "Reg_5V0.sch" 60
+F2 "Vin" I L 6850 2375 60 
+F3 "5V0" I R 7425 2375 60 
+$EndSheet
+$Comp
+L Conn_01x02 J15
+U 1 1 5AC38434
+P 6550 3225
+F 0 "J15" H 6550 3325 50  0000 C CNN
+F 1 "Conn_01x02" H 6550 3025 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 6550 3225 50  0001 C CNN
+F 3 "" H 6550 3225 50  0001 C CNN
+	1    6550 3225
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6150 2800 6700 2800
+Wire Wire Line
+	6450 2375 6450 3025
+Connection ~ 6450 2800
+Text Label 7750 2375 0    60   ~ 0
+5V0
+Text Label 7850 2850 0    60   ~ 0
+3V6
+Text Label 9300 2650 0    60   ~ 0
+3V1
+Text Label 9300 3050 0    60   ~ 0
+3V3
+Wire Wire Line
+	7625 2850 8075 2850
+Wire Wire Line
+	8325 2650 8075 2650
+Wire Wire Line
+	8075 2650 8075 3050
+Wire Wire Line
+	8175 3050 8325 3050
+Connection ~ 8075 2850
+Wire Wire Line
+	9175 2650 9300 2650
+Wire Wire Line
+	9175 3050 9300 3050
+Wire Wire Line
+	7425 2375 7750 2375
+Wire Wire Line
+	6850 2375 6450 2375
+$Comp
+L Conn_01x02 J25
+U 1 1 5AC7F0EF
+P 8175 3250
+F 0 "J25" H 8175 3350 50  0000 C CNN
+F 1 "Conn_01x02" H 8175 3050 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 8175 3250 50  0001 C CNN
+F 3 "" H 8175 3250 50  0001 C CNN
+	1    8175 3250
+	0    1    1    0   
+$EndComp
+Text Label 6150 2800 2    60   ~ 0
+VIN
+Wire Wire Line
+	6150 2900 6700 2900
+Wire Wire Line
+	6550 2900 6550 3025
+Connection ~ 6550 2900
+Text Label 6150 2900 2    60   ~ 0
+EN_3V6
+Text Label 1075 3600 2    60   ~ 0
+VIN
+Wire Wire Line
+	1075 3600 1200 3600
+Wire Wire Line
+	1200 3700 1125 3700
+Wire Wire Line
+	1125 3700 1125 3600
+Connection ~ 1125 3600
+Text Label 2375 3700 0    60   ~ 0
+3V3
+Wire Wire Line
+	2300 3700 2375 3700
+Text Label 2375 1100 0    60   ~ 0
+3V3
+Wire Wire Line
+	2300 1100 2375 1100
+Text Label 725  1400 0    60   ~ 0
+~UB_CS
+Text Label 2400 2000 0    60   ~ 0
+EN_3V6
+Wire Wire Line
+	2300 2000 2400 2000
+Wire Wire Line
+	1200 1400 725  1400
 $EndSCHEMATC
