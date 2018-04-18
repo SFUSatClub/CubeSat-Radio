@@ -38,7 +38,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 15
+Sheet 5 15
 Title ""
 Date ""
 Rev ""
@@ -48,7 +48,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 5900 3000 1    60   Input ~ 0
+Text HLabel 5900 2575 1    60   Input ~ 0
 3V3
 $Comp
 L C C12
@@ -83,25 +83,25 @@ F 3 "" H 7150 4250 50  0000 C CNN
 	1    7150 4250
 	0    1    1    0   
 $EndComp
-Text Notes 5300 2375 0    60   ~ 0
+Text Notes 4575 2100 0    60   ~ 0
 CTRL
-Text Notes 5300 2250 0    60   ~ 0
+Text Notes 4575 1975 0    60   ~ 0
 TX/RX Truth Table
-Text Notes 5750 2375 0    60   ~ 0
+Text Notes 5025 2100 0    60   ~ 0
 Path
-Text Notes 5300 2500 0    60   ~ 0
+Text Notes 4575 2225 0    60   ~ 0
 0
-Text Notes 5300 2650 0    60   ~ 0
+Text Notes 4575 2375 0    60   ~ 0
 1\n
-Text Notes 5750 2500 0    60   ~ 0
+Text Notes 5025 2225 0    60   ~ 0
 B1
-Text Notes 5750 2650 0    60   ~ 0
+Text Notes 5025 2375 0    60   ~ 0
 B2
 $Comp
-L GND #PWR068
+L GND #PWR69
 U 1 1 5AA2DAAA
 P 5900 4725
-F 0 "#PWR068" H 5900 4475 50  0001 C CNN
+F 0 "#PWR69" H 5900 4475 50  0001 C CNN
 F 1 "GND" H 5900 4575 50  0000 C CNN
 F 2 "" H 5900 4725 50  0000 C CNN
 F 3 "" H 5900 4725 50  0000 C CNN
@@ -131,10 +131,10 @@ F 3 "" H 6175 3225 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR069
+L GND #PWR70
 U 1 1 5AA2DABF
 P 6175 3425
-F 0 "#PWR069" H 6175 3175 50  0001 C CNN
+F 0 "#PWR70" H 6175 3175 50  0001 C CNN
 F 1 "GND" H 6175 3275 50  0000 C CNN
 F 2 "" H 6175 3425 50  0000 C CNN
 F 3 "" H 6175 3425 50  0000 C CNN
@@ -177,10 +177,10 @@ F 3 "" H 7150 3450 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR070
+L GND #PWR72
 U 1 1 5AA2DAF1
 P 7300 3200
-F 0 "#PWR070" H 7300 2950 50  0001 C CNN
+F 0 "#PWR72" H 7300 2950 50  0001 C CNN
 F 1 "GND" H 7300 3050 50  0000 C CNN
 F 2 "" H 7300 3200 50  0000 C CNN
 F 3 "" H 7300 3200 50  0000 C CNN
@@ -188,10 +188,10 @@ F 3 "" H 7300 3200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR071
+L GND #PWR71
 U 1 1 5AA2DAF7
 P 7000 4800
-F 0 "#PWR071" H 7000 4550 50  0001 C CNN
+F 0 "#PWR71" H 7000 4550 50  0001 C CNN
 F 1 "GND" H 7000 4650 50  0000 C CNN
 F 2 "" H 7000 4800 50  0000 C CNN
 F 3 "" H 7000 4800 50  0000 C CNN
@@ -209,7 +209,7 @@ F 3 "" H 7150 4550 60  0001 C CNN
 	1    7150 4550
 	0    -1   -1   0   
 $EndComp
-Text Notes 2750 3025 0    60   ~ 0
+Text Notes 2025 2750 0    60   ~ 0
 For U6, U8, and U10, place these pads on the PCB\nsuch that they are in between the pads of C19, C20\nand C21 so a jumper can be placed at a 45 degree\nangle to test the RF path
 Wire Wire Line
 	7000 3750 6900 3750
@@ -228,21 +228,21 @@ Wire Wire Line
 Wire Wire Line
 	6900 4050 6900 4250
 Wire Notes Line
-	5275 2525 6150 2525
+	4550 2250 5425 2250
 Wire Notes Line
-	5275 2400 6150 2400
+	4550 2125 5425 2125
 Wire Notes Line
-	6150 2675 5275 2675
+	5425 2400 4550 2400
 Wire Notes Line
-	5275 2275 6150 2275
+	4550 2000 5425 2000
 Wire Notes Line
-	5275 2150 6150 2150
+	4550 1875 5425 1875
 Wire Notes Line
-	6150 2150 6150 2675
+	5425 1875 5425 2400
 Wire Notes Line
-	5275 2675 5275 2150
+	4550 2400 4550 1875
 Wire Notes Line
-	5700 2275 5700 2675
+	4975 2000 4975 2400
 Wire Wire Line
 	5250 4600 6400 4600
 Connection ~ 5500 4600
@@ -259,7 +259,7 @@ Wire Wire Line
 Wire Wire Line
 	4725 4000 4950 4000
 Wire Wire Line
-	5900 3000 5900 3400
+	5900 2575 5900 3400
 Wire Wire Line
 	6175 3075 5900 3075
 Connection ~ 5900 3075
@@ -270,12 +270,68 @@ Wire Wire Line
 	3925 4000 4425 4000
 Text HLabel 3925 4000 0    60   Input ~ 0
 A
-Text HLabel 7400 3750 2    60   Input ~ 0
-B1
 Text HLabel 7400 4250 2    60   Input ~ 0
+B1
+Text HLabel 7400 3750 2    60   Input ~ 0
 B2
-Text HLabel 5800 3200 1    60   Input ~ 0
+Text HLabel 4750 3050 0    60   Input ~ 0
 CTRL
 Wire Wire Line
-	5800 3200 5800 3400
+	5800 3050 5800 3400
+$Comp
+L 74LVC1G14SE-7 U17
+U 1 1 5AD752A6
+P 5125 3050
+F 0 "U17" H 5250 3325 50  0000 L BNN
+F 1 "74LVC1G14SE-7" H 5775 2775 50  0000 R TNN
+F 2 "" H 5125 3050 50  0001 C CNN
+F 3 "" H 5125 3050 50  0001 C CNN
+F 4 "74LVC1G14" H 5125 3050 50  0001 C CNN "Base Part Number"
+F 5 "Integrated Circuits (ICs) - Logic - Gates and Inverters" H 5125 3050 50  0001 C CNN "Categories"
+F 6 "32mA, 32mA" H 5125 3050 50  0001 C CNN "Current - Output High, Low"
+F 7 "200µA" H 5125 3050 50  0001 C CNN "Current - Quiescent (Max)"
+F 8 "Schmitt Trigger" H 5125 3050 50  0001 C CNN "Features"
+F 9 "Lead free / RoHS Compliant" H 5125 3050 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 10 "1.2 V ~ 3.33 V" H 5125 3050 50  0001 C CNN "Logic Level - High"
+F 11 "0.3 V ~ 1.45 V" H 5125 3050 50  0001 C CNN "Logic Level - Low"
+F 12 "Inverter" H 5125 3050 50  0001 C CNN "Logic Type"
+F 13 "Diodes Incorporated" H 5125 3050 50  0001 C CNN "Manufacturer 1"
+F 14 "74LVC1G14SE-7" H 5125 3050 50  0001 C CNN "Manufacturer Part Number 1"
+F 15 "12 Weeks" H 5125 3050 50  0001 C CNN "Manufacturer Standard Lead Time 1"
+F 16 "5ns @ 5V, 50pF" H 5125 3050 50  0001 C CNN "Max Propagation Delay @ V, Max CL"
+F 17 "Surface Mount" H 5125 3050 50  0001 C CNN "Mounting Type"
+F 18 "1" H 5125 3050 50  0001 C CNN "Number of Circuits"
+F 19 "1" H 5125 3050 50  0001 C CNN "Number of Inputs"
+F 20 "-40°C ~ 125°C" H 5125 3050 50  0001 C CNN "Operating Temperature"
+F 21 "5-TSSOP, SC-70-5, SOT-353" H 5125 3050 50  0001 C CNN "Package / Case"
+F 22 "Active" H 5125 3050 50  0001 C CNN "Part Status"
+F 23 "74LVC" H 5125 3050 50  0001 C CNN "Series"
+F 24 "Digi-Key" H 5125 3050 50  0001 C CNN "Supplier 1"
+F 25 "SOT-353" H 5125 3050 50  0001 C CNN "Supplier Device Package"
+F 26 "74LVC1G14SE-7CT-ND" H 5125 3050 50  0001 C CNN "Supplier Part Number 1"
+F 27 "1.65 V ~ 5.5 V" H 5125 3050 50  0001 C CNN "Voltage - Supply"
+	1    5125 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR68
+U 1 1 5AD75740
+P 5125 3400
+F 0 "#PWR68" H 5125 3150 50  0001 C CNN
+F 1 "GND" H 5125 3250 50  0000 C CNN
+F 2 "" H 5125 3400 50  0000 C CNN
+F 3 "" H 5125 3400 50  0000 C CNN
+	1    5125 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5425 3050 5800 3050
+Wire Wire Line
+	5125 2625 5900 2625
+Wire Wire Line
+	4750 3050 4825 3050
+NoConn ~ 4825 3200
+Wire Wire Line
+	5125 2625 5125 2700
+Connection ~ 5900 2625
 $EndSCHEMATC
