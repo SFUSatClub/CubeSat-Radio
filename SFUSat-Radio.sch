@@ -353,15 +353,15 @@ $EndComp
 $Comp
 L C C421
 U 1 1 5AA122A8
-P 13050 7800
-F 0 "C421" H 13075 7900 50  0000 L CNN
-F 1 "1.2pF" H 13075 7700 50  0000 L CNN
-F 2 "SFUSat:C_0402" H 13088 7650 50  0001 C CNN
-F 3 "" H 13050 7800 50  0001 C CNN
-F 4 "GJM1555C1H1R2BB01D" H 13050 7800 60  0001 C CNN "Part Number"
-F 5 "490-8085-1-ND" H 13050 7800 60  0001 C CNN "Digi-Key"
-F 6 "81-GJM1555C1H1R2BB01" H 13050 7800 60  0001 C CNN "Mouser"
-	1    13050 7800
+P 13650 7800
+F 0 "C421" H 13675 7900 50  0000 L CNN
+F 1 "1.2pF" H 13675 7700 50  0000 L CNN
+F 2 "SFUSat:C_0402" H 13688 7650 50  0001 C CNN
+F 3 "" H 13650 7800 50  0001 C CNN
+F 4 "GJM1555C1H1R2BB01D" H 13650 7800 60  0001 C CNN "Part Number"
+F 5 "490-8085-1-ND" H 13650 7800 60  0001 C CNN "Digi-Key"
+F 6 "81-GJM1555C1H1R2BB01" H 13650 7800 60  0001 C CNN "Mouser"
+	1    13650 7800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -419,15 +419,15 @@ $EndComp
 $Comp
 L C C420
 U 1 1 5AA12301
-P 12800 7800
-F 0 "C420" H 12825 7900 50  0000 L CNN
-F 1 "10pF" H 12825 7700 50  0000 L CNN
-F 2 "SFUSat:C_0402" H 12838 7650 50  0001 C CNN
-F 3 "" H 12800 7800 50  0001 C CNN
-F 4 "GJM1555C1H100JB01D" H 12800 7800 60  0001 C CNN "Part Number"
-F 5 "490-3113-1-ND" H 12800 7800 60  0001 C CNN "Digi-Key"
-F 6 "81-GJM1555C1H100JB01" H 12800 7800 60  0001 C CNN "Mouser"
-	1    12800 7800
+P 13400 7800
+F 0 "C420" H 13425 7900 50  0000 L CNN
+F 1 "10pF" H 13425 7700 50  0000 L CNN
+F 2 "SFUSat:C_0402" H 13438 7650 50  0001 C CNN
+F 3 "" H 13400 7800 50  0001 C CNN
+F 4 "GJM1555C1H100JB01D" H 13400 7800 60  0001 C CNN "Part Number"
+F 5 "490-3113-1-ND" H 13400 7800 60  0001 C CNN "Digi-Key"
+F 6 "81-GJM1555C1H100JB01" H 13400 7800 60  0001 C CNN "Mouser"
+	1    13400 7800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -475,15 +475,15 @@ $EndComp
 $Comp
 L L L405
 U 1 1 5AA12333
-P 12350 7550
-F 0 "L405" V 12300 7550 50  0000 C CNN
-F 1 "0R0" V 12425 7550 50  0000 C CNN
-F 2 "SFUSat:L_0603" H 12350 7550 50  0001 C CNN
-F 3 "" H 12350 7550 50  0001 C CNN
-F 4 "RMC1/16JPTP" V 12350 7550 60  0001 C CNN "Part Number"
-F 5 "N/A" V 12350 7550 60  0001 C CNN "Digi-Key"
-F 6 "791-RMC1/16JPTP" V 12350 7550 60  0001 C CNN "Mouser"
-	1    12350 7550
+P 12950 7550
+F 0 "L405" V 12900 7550 50  0000 C CNN
+F 1 "0R0" V 13025 7550 50  0000 C CNN
+F 2 "SFUSat:L_0603" H 12950 7550 50  0001 C CNN
+F 3 "" H 12950 7550 50  0001 C CNN
+F 4 "RMC1/16JPTP" V 12950 7550 60  0001 C CNN "Part Number"
+F 5 "N/A" V 12950 7550 60  0001 C CNN "Digi-Key"
+F 6 "791-RMC1/16JPTP" V 12950 7550 60  0001 C CNN "Mouser"
+	1    12950 7550
 	0    1    1    0   
 $EndComp
 $Sheet
@@ -836,9 +836,9 @@ Text Label 7675 6775 0    60   ~ 0
 LB_LP
 Text Label 8550 9750 0    60   ~ 0
 UB_LP
-Text Label 13700 9750 0    60   ~ 0
+Text Label 14950 9750 0    60   ~ 0
 UB_HP_TX
-Text Label 13800 7550 0    60   ~ 0
+Text Label 15000 7550 0    60   ~ 0
 LB_HP_TX
 Text Label 9200 7125 0    60   ~ 0
 LB_LP_TX
@@ -911,7 +911,7 @@ Text Label 5450 10475 2    60   ~ 0
 UB_RX0TX1
 Text Label 8250 6575 2    60   ~ 0
 LB_RX0TX1
-Text Label 16600 10000 2    60   ~ 0
+Text Label 16600 10400 2    60   ~ 0
 LB_RX0TX1
 Text Label 6300 750  2    60   ~ 0
 LB_RX0TX1
@@ -1288,67 +1288,65 @@ $EndComp
 $Comp
 L CD4555BPWR U3
 U 1 1 5AAEF9C5
-P 17100 10400
-F 0 "U3" H 16900 11025 50  0000 L BNN
-F 1 "CD4555BPWR" H 17125 9875 50  0000 L TNN
-F 2 "SFUSat:TSSOP-16" H 17100 10400 50  0001 C CNN
-F 3 "" H 17100 9750 50  0001 C CNN
-F 4 "4555" H 17100 10400 50  0001 C CNN "Base Part Number"
-F 5 "Integrated Circuits (ICs) - Logic - Signal Switches, Multiplexers, Decoders" H 17100 10400 50  0001 C CNN "Categories"
-F 6 "1 x 2:4" H 17100 10400 50  0001 C CNN "Circuit"
-F 7 "6.8mA, 6.8mA" H 17100 10400 50  0001 C CNN "Current - Output High, Low"
-F 8 "2" H 17100 10400 50  0001 C CNN "Independent Circuits"
-F 9 "Lead free / RoHS Compliant" H 17100 10400 50  0001 C CNN "Lead Free Status / RoHS Status"
-F 10 "Texas Instruments" H 17100 10400 50  0001 C CNN "Manufacturer 1"
-F 11 "CD4555BPWR" H 17100 10400 50  0001 C CNN "Manufacturer Part Number 1"
-F 12 "6 Weeks" H 17100 10400 50  0001 C CNN "Manufacturer Standard Lead Time 1"
-F 13 "Surface Mount" H 17100 10400 50  0001 C CNN "Mounting Type"
-F 14 "-55°C ~ 125°C" H 17100 10400 50  0001 C CNN "Operating Temperature"
-F 15 "16-TSSOP (0.173\", 4.40mm Width)" H 17100 10400 50  0001 C CNN "Package / Case"
-F 16 "Active" H 17100 10400 50  0001 C CNN "Part Status"
-F 17 "4000B" H 17100 10400 50  0001 C CNN "Series"
-F 18 "Digi-Key" H 17100 10400 50  0001 C CNN "Supplier 1"
-F 19 "16-TSSOP" H 17100 10400 50  0001 C CNN "Supplier Device Package"
-F 20 "296-31540-1-ND" H 17100 10400 50  0001 C CNN "Supplier Part Number 1"
-F 21 "Decoder/Demultiplexer" H 17100 10400 50  0001 C CNN "Type"
-F 22 "3 V ~ 18 V" H 17100 10400 50  0001 C CNN "Voltage - Supply"
-F 23 "Dual Supply" H 17100 10400 50  0001 C CNN "Voltage Supply Source"
-	1    17100 10400
+P 17100 10800
+F 0 "U3" H 16900 11425 50  0000 L BNN
+F 1 "CD4555BPWR" H 17125 10275 50  0000 L TNN
+F 2 "SFUSat:TSSOP-16" H 17100 10800 50  0001 C CNN
+F 3 "" H 17100 10150 50  0001 C CNN
+F 4 "4555" H 17100 10800 50  0001 C CNN "Base Part Number"
+F 5 "Integrated Circuits (ICs) - Logic - Signal Switches, Multiplexers, Decoders" H 17100 10800 50  0001 C CNN "Categories"
+F 6 "1 x 2:4" H 17100 10800 50  0001 C CNN "Circuit"
+F 7 "6.8mA, 6.8mA" H 17100 10800 50  0001 C CNN "Current - Output High, Low"
+F 8 "2" H 17100 10800 50  0001 C CNN "Independent Circuits"
+F 9 "Lead free / RoHS Compliant" H 17100 10800 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 10 "Texas Instruments" H 17100 10800 50  0001 C CNN "Manufacturer 1"
+F 11 "CD4555BPWR" H 17100 10800 50  0001 C CNN "Manufacturer Part Number 1"
+F 12 "6 Weeks" H 17100 10800 50  0001 C CNN "Manufacturer Standard Lead Time 1"
+F 13 "Surface Mount" H 17100 10800 50  0001 C CNN "Mounting Type"
+F 14 "-55°C ~ 125°C" H 17100 10800 50  0001 C CNN "Operating Temperature"
+F 15 "16-TSSOP (0.173\", 4.40mm Width)" H 17100 10800 50  0001 C CNN "Package / Case"
+F 16 "Active" H 17100 10800 50  0001 C CNN "Part Status"
+F 17 "4000B" H 17100 10800 50  0001 C CNN "Series"
+F 18 "Digi-Key" H 17100 10800 50  0001 C CNN "Supplier 1"
+F 19 "16-TSSOP" H 17100 10800 50  0001 C CNN "Supplier Device Package"
+F 20 "296-31540-1-ND" H 17100 10800 50  0001 C CNN "Supplier Part Number 1"
+F 21 "Decoder/Demultiplexer" H 17100 10800 50  0001 C CNN "Type"
+F 22 "3 V ~ 18 V" H 17100 10800 50  0001 C CNN "Voltage - Supply"
+F 23 "Dual Supply" H 17100 10800 50  0001 C CNN "Voltage Supply Source"
+	1    17100 10800
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR027
 U 1 1 5AAF1FA7
-P 16600 10700
-F 0 "#PWR027" H 16600 10450 50  0001 C CNN
-F 1 "GND" H 16600 10550 50  0000 C CNN
-F 2 "" H 16600 10700 50  0000 C CNN
-F 3 "" H 16600 10700 50  0000 C CNN
-	1    16600 10700
+P 16600 11100
+F 0 "#PWR027" H 16600 10850 50  0001 C CNN
+F 1 "GND" H 16600 10950 50  0000 C CNN
+F 2 "" H 16600 11100 50  0000 C CNN
+F 3 "" H 16600 11100 50  0000 C CNN
+	1    16600 11100
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR028
 U 1 1 5AAF6DF2
-P 17100 11200
-F 0 "#PWR028" H 17100 10950 50  0001 C CNN
-F 1 "GND" H 17100 11050 50  0000 C CNN
-F 2 "" H 17100 11200 50  0000 C CNN
-F 3 "" H 17100 11200 50  0000 C CNN
-	1    17100 11200
+P 17100 11600
+F 0 "#PWR028" H 17100 11350 50  0001 C CNN
+F 1 "GND" H 17100 11450 50  0000 C CNN
+F 2 "" H 17100 11600 50  0000 C CNN
+F 3 "" H 17100 11600 50  0000 C CNN
+	1    17100 11600
 	1    0    0    -1  
 $EndComp
-Text Label 16550 7900 2    60   ~ 0
+Text Label 17100 9550 2    60   ~ 0
 3V3
-Text Label 17100 9600 2    60   ~ 0
-3V3
-NoConn ~ 16700 10500
-NoConn ~ 16700 10400
-NoConn ~ 17500 10400
-NoConn ~ 17500 10500
-NoConn ~ 17500 10600
-NoConn ~ 17500 10700
-Text Label 16600 10100 2    60   ~ 0
+NoConn ~ 16700 10900
+NoConn ~ 16700 10800
+NoConn ~ 17500 10800
+NoConn ~ 17500 10900
+NoConn ~ 17500 11000
+NoConn ~ 17500 11100
+Text Label 16600 10500 2    60   ~ 0
 UB_RX0TX1
 Text Label 16050 8300 2    60   ~ 0
 LB_HP_RX
@@ -1356,12 +1354,12 @@ Text Label 16050 8400 2    60   ~ 0
 LB_HP_TX
 Text Label 16050 8500 2    60   ~ 0
 UB_HP_TX
-NoConn ~ 17500 10300
-Text Label 17600 10000 0    60   ~ 0
+NoConn ~ 17500 10700
+Text Label 17600 10400 0    60   ~ 0
 V1
-Text Label 17600 10100 0    60   ~ 0
+Text Label 17600 10500 0    60   ~ 0
 V2
-Text Label 17600 10200 0    60   ~ 0
+Text Label 17600 10600 0    60   ~ 0
 V3
 Text Label 17150 8600 0    60   ~ 0
 V1
@@ -1369,67 +1367,67 @@ Text Label 17150 8700 0    60   ~ 0
 V2
 Text Label 17150 8800 0    60   ~ 0
 V3
-Text Notes 17700 9250 0    60   ~ 0
+Text Notes 17750 9200 0    60   ~ 0
 UB_RX0TX1
-Text Notes 18300 9250 0    60   ~ 0
+Text Notes 18350 9200 0    60   ~ 0
 LB_RX0TX1
-Text Notes 18900 9250 0    60   ~ 0
+Text Notes 18950 9200 0    60   ~ 0
 NC
-Text Notes 19100 9250 0    60   ~ 0
+Text Notes 19150 9200 0    60   ~ 0
 J3
-Text Notes 19300 9250 0    60   ~ 0
+Text Notes 19350 9200 0    60   ~ 0
 J2
-Text Notes 19500 9250 0    60   ~ 0
+Text Notes 19550 9200 0    60   ~ 0
 J1
-Text Notes 17950 9350 0    60   ~ 0
+Text Notes 18000 9300 0    60   ~ 0
 0
-Text Notes 17950 9450 0    60   ~ 0
+Text Notes 18000 9400 0    60   ~ 0
 0
-Text Notes 17950 9550 0    60   ~ 0
+Text Notes 18000 9500 0    60   ~ 0
 1
-Text Notes 17950 9650 0    60   ~ 0
+Text Notes 18000 9600 0    60   ~ 0
 1
-Text Notes 18550 9350 0    60   ~ 0
+Text Notes 18600 9300 0    60   ~ 0
 0
-Text Notes 18550 9450 0    60   ~ 0
+Text Notes 18600 9400 0    60   ~ 0
 1
-Text Notes 18550 9550 0    60   ~ 0
+Text Notes 18600 9500 0    60   ~ 0
 0
-Text Notes 18550 9650 0    60   ~ 0
+Text Notes 18600 9600 0    60   ~ 0
 1
-Text Notes 18950 9350 0    60   ~ 0
+Text Notes 19000 9300 0    60   ~ 0
 0
-Text Notes 18950 9450 0    60   ~ 0
+Text Notes 19000 9400 0    60   ~ 0
 0
-Text Notes 18950 9550 0    60   ~ 0
+Text Notes 19000 9500 0    60   ~ 0
 0
-Text Notes 18950 9650 0    60   ~ 0
+Text Notes 19000 9600 0    60   ~ 0
 1
-Text Notes 19150 9350 0    60   ~ 0
+Text Notes 19200 9300 0    60   ~ 0
 0
-Text Notes 19150 9450 0    60   ~ 0
+Text Notes 19200 9400 0    60   ~ 0
 0
-Text Notes 19150 9550 0    60   ~ 0
+Text Notes 19200 9500 0    60   ~ 0
 1
-Text Notes 19150 9650 0    60   ~ 0
+Text Notes 19200 9600 0    60   ~ 0
 0
-Text Notes 19350 9350 0    60   ~ 0
+Text Notes 19400 9300 0    60   ~ 0
 0
-Text Notes 19350 9450 0    60   ~ 0
+Text Notes 19400 9400 0    60   ~ 0
 1
-Text Notes 19350 9550 0    60   ~ 0
+Text Notes 19400 9500 0    60   ~ 0
 0
-Text Notes 19350 9650 0    60   ~ 0
+Text Notes 19400 9600 0    60   ~ 0
 0
-Text Notes 19550 9350 0    60   ~ 0
+Text Notes 19600 9300 0    60   ~ 0
 1
-Text Notes 19550 9450 0    60   ~ 0
+Text Notes 19600 9400 0    60   ~ 0
 0
-Text Notes 19550 9550 0    60   ~ 0
+Text Notes 19600 9500 0    60   ~ 0
 0
-Text Notes 19550 9650 0    60   ~ 0
+Text Notes 19600 9600 0    60   ~ 0
 0
-Text Notes 17700 9150 0    60   ~ 0
+Text Notes 17750 9100 0    60   ~ 0
 Antenna feed select truth table
 $Comp
 L C_15p0_5%_50V_NP0_HIQ_0402 C515
@@ -1521,34 +1519,32 @@ Wire Wire Line
 Wire Wire Line
 	10400 7550 10250 7550
 Wire Wire Line
-	11350 7550 12200 7550
-Wire Wire Line
-	11500 8000 13050 8000
+	11350 7550 12800 7550
 Connection ~ 12250 8000
 Wire Wire Line
-	12250 8050 12250 8000
+	12250 7950 12250 8050
 Connection ~ 11750 8000
 Wire Wire Line
 	11750 7950 11750 8000
 Connection ~ 12000 8000
 Wire Wire Line
 	12000 7950 12000 8000
-Connection ~ 12800 8000
+Connection ~ 13400 8000
 Wire Wire Line
-	12800 7950 12800 8000
+	13400 7950 13400 8000
 Wire Wire Line
-	13050 8000 13050 7950
+	13650 8000 13650 7950
 Wire Wire Line
 	11500 7950 11500 8000
 Connection ~ 12100 7550
 Wire Wire Line
 	12100 7550 12100 7400
-Connection ~ 12800 7550
+Connection ~ 13400 7550
 Wire Wire Line
-	12800 7550 12800 7650
-Connection ~ 13050 7550
+	13400 7550 13400 7650
+Connection ~ 13650 7550
 Wire Wire Line
-	13050 7550 13050 7650
+	13650 7550 13650 7650
 Connection ~ 12000 7550
 Wire Wire Line
 	12000 7550 12000 7650
@@ -1581,24 +1577,24 @@ Connection ~ 9750 9750
 Wire Wire Line
 	9750 9900 9750 9750
 Wire Wire Line
-	12450 9750 13250 9750
+	13050 9750 14500 9750
 Connection ~ 12200 10200
 Wire Wire Line
-	12200 10200 12200 10250
+	12200 10150 12200 10250
 Wire Wire Line
-	13700 9750 13550 9750
+	14950 9750 14800 9750
 Connection ~ 11700 10200
 Connection ~ 11950 10200
-Connection ~ 12750 10200
+Connection ~ 13350 10200
 Connection ~ 12050 9750
 Wire Wire Line
 	12050 9750 12050 9600
-Connection ~ 12750 9750
+Connection ~ 13350 9750
 Wire Wire Line
-	12750 9850 12750 9750
-Connection ~ 13000 9750
+	13350 9850 13350 9750
+Connection ~ 13600 9750
 Wire Wire Line
-	13000 9750 13000 9850
+	13600 9750 13600 9850
 Connection ~ 11950 9750
 Wire Wire Line
 	11950 9750 11950 9850
@@ -1805,24 +1801,24 @@ Connection ~ 16450 9200
 Wire Wire Line
 	16350 9200 16350 9300
 Wire Wire Line
-	16700 10200 16600 10200
-Wire Wire Line
-	16600 10200 16600 10700
-Wire Wire Line
 	16700 10600 16600 10600
-Connection ~ 16600 10600
 Wire Wire Line
-	17100 11200 17100 11100
+	16600 10600 16600 11100
 Wire Wire Line
-	16600 10000 16700 10000
+	16700 11000 16600 11000
+Connection ~ 16600 11000
 Wire Wire Line
-	16700 10100 16600 10100
+	17100 11600 17100 11500
 Wire Wire Line
-	17500 10200 17600 10200
+	16600 10400 16700 10400
 Wire Wire Line
-	17500 10100 17600 10100
+	16700 10500 16600 10500
 Wire Wire Line
-	17500 10000 17600 10000
+	17500 10600 17600 10600
+Wire Wire Line
+	17500 10500 17600 10500
+Wire Wire Line
+	17500 10400 17600 10400
 Wire Wire Line
 	17150 8600 17050 8600
 Wire Wire Line
@@ -1830,37 +1826,37 @@ Wire Wire Line
 Wire Wire Line
 	17150 8800 17050 8800
 Wire Notes Line
-	19650 9150 17650 9150
+	19700 9100 17700 9100
 Wire Notes Line
-	17650 9250 19650 9250
+	17700 9200 19700 9200
 Wire Notes Line
-	17650 9350 19650 9350
+	17700 9300 19700 9300
 Wire Notes Line
-	17650 9450 19650 9450
+	17700 9400 19700 9400
 Wire Notes Line
-	19650 9550 17650 9550
+	19700 9500 17700 9500
 Wire Notes Line
-	17650 9650 19650 9650
+	17700 9600 19700 9600
 Wire Notes Line
-	19650 9650 19650 9050
+	19700 9600 19700 9000
 Wire Notes Line
-	17650 9050 17650 9650
+	17700 9000 17700 9600
 Wire Notes Line
-	18250 9150 18250 9650
+	18300 9100 18300 9600
 Wire Notes Line
-	18850 9150 18850 9650
+	18900 9100 18900 9600
 Wire Notes Line
-	19050 9150 19050 9650
+	19100 9100 19100 9600
 Wire Notes Line
-	19250 9150 19250 9650
+	19300 9100 19300 9600
 Wire Notes Line
-	19450 9150 19450 9650
+	19500 9100 19500 9600
 Wire Notes Line
-	19650 9050 17650 9050
+	19700 9000 17700 9000
 Wire Wire Line
-	13000 10200 13000 10150
+	13600 10200 13600 10150
 Wire Wire Line
-	12750 10200 12750 10150
+	13350 10200 13350 10150
 Wire Wire Line
 	11950 10200 11950 10150
 Wire Wire Line
@@ -1976,140 +1972,140 @@ Wire Wire Line
 $Comp
 L L_1n5_0.3nH_500mA_0603 L505
 U 1 1 5AB5746D
-P 12300 9750
-F 0 "L505" H 12300 9800 50  0000 C BNN
-F 1 "1.5nH" H 12300 9700 50  0000 C TNN
-F 2 "SFUSat-ind:L_0603" H 12300 9750 50  0001 C CNN
-F 3 "" H 12300 9750 50  0001 C CNN
-F 4 "Inductors, Coils, Chokes - Fixed Inductors" H 12300 9750 50  0001 C CNN "Categories"
-F 5 "500mA" H 12300 9750 50  0001 C CNN "Current Rating"
-F 6 "100 mOhm Max" H 12300 9750 50  0001 C CNN "DC Resistance (DCR)"
-F 7 "6GHz" H 12300 9750 50  0001 C CNN "Frequency - Self Resonant"
-F 8 "100MHz" H 12300 9750 50  0001 C CNN "Frequency - Test"
-F 9 "0.037\" (0.95mm)" H 12300 9750 50  0001 C CNN "Height - Seated (Max)"
-F 10 "1.5nH" H 12300 9750 50  0001 C CNN "Inductance"
-F 11 "Lead free / RoHS Compliant" H 12300 9750 50  0001 C CNN "Lead Free Status / RoHS Status"
-F 12 "Murata Electronics North America" H 12300 9750 50  0001 C CNN "Manufacturer 1"
-F 13 "LQG18HN1N5S00D" H 12300 9750 50  0001 C CNN "Manufacturer Part Number 1"
-F 14 "8 Weeks" H 12300 9750 50  0001 C CNN "Manufacturer Standard Lead Time 1"
-F 15 "Air" H 12300 9750 50  0001 C CNN "Material - Core"
-F 16 "Surface Mount" H 12300 9750 50  0001 C CNN "Mounting Type"
-F 17 "-40°C ~ 85°C" H 12300 9750 50  0001 C CNN "Operating Temperature"
-F 18 "0603 (1608 Metric)" H 12300 9750 50  0001 C CNN "Package / Case"
-F 19 "Active" H 12300 9750 50  0001 C CNN "Part Status"
-F 20 "12 @ 100MHz" H 12300 9750 50  0001 C CNN "Q @ Freq"
-F 21 "-" H 12300 9750 50  0001 C CNN "Ratings"
-F 22 "LQG18" H 12300 9750 50  0001 C CNN "Series"
-F 23 "Unshielded" H 12300 9750 50  0001 C CNN "Shielding"
-F 24 "0.063\" L x 0.032\" W (1.60mm x 0.80mm)" H 12300 9750 50  0001 C CNN "Size / Dimension"
-F 25 "Digi-Key" H 12300 9750 50  0001 C CNN "Supplier 1"
-F 26 "0603 (1608 Metric)" H 12300 9750 50  0001 C CNN "Supplier Device Package"
-F 27 "490-1100-1-ND" H 12300 9750 50  0001 C CNN "Supplier Part Number 1"
-F 28 "±0.3nH" H 12300 9750 50  0001 C CNN "Tolerance"
-F 29 "Multilayer" H 12300 9750 50  0001 C CNN "Type"
-	1    12300 9750
+P 12900 9750
+F 0 "L505" H 12900 9800 50  0000 C BNN
+F 1 "1.5nH" H 12900 9700 50  0000 C TNN
+F 2 "SFUSat-ind:L_0603" H 12900 9750 50  0001 C CNN
+F 3 "" H 12900 9750 50  0001 C CNN
+F 4 "Inductors, Coils, Chokes - Fixed Inductors" H 12900 9750 50  0001 C CNN "Categories"
+F 5 "500mA" H 12900 9750 50  0001 C CNN "Current Rating"
+F 6 "100 mOhm Max" H 12900 9750 50  0001 C CNN "DC Resistance (DCR)"
+F 7 "6GHz" H 12900 9750 50  0001 C CNN "Frequency - Self Resonant"
+F 8 "100MHz" H 12900 9750 50  0001 C CNN "Frequency - Test"
+F 9 "0.037\" (0.95mm)" H 12900 9750 50  0001 C CNN "Height - Seated (Max)"
+F 10 "1.5nH" H 12900 9750 50  0001 C CNN "Inductance"
+F 11 "Lead free / RoHS Compliant" H 12900 9750 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 12 "Murata Electronics North America" H 12900 9750 50  0001 C CNN "Manufacturer 1"
+F 13 "LQG18HN1N5S00D" H 12900 9750 50  0001 C CNN "Manufacturer Part Number 1"
+F 14 "8 Weeks" H 12900 9750 50  0001 C CNN "Manufacturer Standard Lead Time 1"
+F 15 "Air" H 12900 9750 50  0001 C CNN "Material - Core"
+F 16 "Surface Mount" H 12900 9750 50  0001 C CNN "Mounting Type"
+F 17 "-40°C ~ 85°C" H 12900 9750 50  0001 C CNN "Operating Temperature"
+F 18 "0603 (1608 Metric)" H 12900 9750 50  0001 C CNN "Package / Case"
+F 19 "Active" H 12900 9750 50  0001 C CNN "Part Status"
+F 20 "12 @ 100MHz" H 12900 9750 50  0001 C CNN "Q @ Freq"
+F 21 "-" H 12900 9750 50  0001 C CNN "Ratings"
+F 22 "LQG18" H 12900 9750 50  0001 C CNN "Series"
+F 23 "Unshielded" H 12900 9750 50  0001 C CNN "Shielding"
+F 24 "0.063\" L x 0.032\" W (1.60mm x 0.80mm)" H 12900 9750 50  0001 C CNN "Size / Dimension"
+F 25 "Digi-Key" H 12900 9750 50  0001 C CNN "Supplier 1"
+F 26 "0603 (1608 Metric)" H 12900 9750 50  0001 C CNN "Supplier Device Package"
+F 27 "490-1100-1-ND" H 12900 9750 50  0001 C CNN "Supplier Part Number 1"
+F 28 "±0.3nH" H 12900 9750 50  0001 C CNN "Tolerance"
+F 29 "Multilayer" H 12900 9750 50  0001 C CNN "Type"
+	1    12900 9750
 	1    0    0    -1  
 $EndComp
 $Comp
 L C_5p6_0.25pF_50V_NP0_HIQ_0402 C520
 U 1 1 5AB57EB2
-P 12750 10000
-F 0 "C520" H 12750 10050 50  0000 L BNN
-F 1 "5.6pF" H 12750 9950 50  0000 L TNN
-F 2 "SFUSat-cap:C_0402" H 12750 10000 50  0001 C CNN
-F 3 "" H 12750 10000 50  0001 C CNN
-F 4 "RF, Microwave, High Frequency" H 12750 10000 50  0001 C CNN "Applications"
-F 5 "5.6pF" H 12750 10000 50  0001 C CNN "Capacitance"
-F 6 "Capacitors - Ceramic Capacitors" H 12750 10000 50  0001 C CNN "Categories"
-F 7 "High Q, Low Loss" H 12750 10000 50  0001 C CNN "Features"
-F 8 "-" H 12750 10000 50  0001 C CNN "Height - Seated (Max)"
-F 9 "Lead free / RoHS Compliant" H 12750 10000 50  0001 C CNN "Lead Free Status / RoHS Status"
-F 10 "-" H 12750 10000 50  0001 C CNN "Lead Spacing"
-F 11 "-" H 12750 10000 50  0001 C CNN "Lead Style"
-F 12 "Murata Electronics North America" H 12750 10000 50  0001 C CNN "Manufacturer 1"
-F 13 "GJM1555C1H5R6CB01D" H 12750 10000 50  0001 C CNN "Manufacturer Part Number 1"
-F 14 "Surface Mount, MLCC" H 12750 10000 50  0001 C CNN "Mounting Type"
-F 15 "-55°C ~ 125°C" H 12750 10000 50  0001 C CNN "Operating Temperature"
-F 16 "0402 (1005 Metric)" H 12750 10000 50  0001 C CNN "Package / Case"
-F 17 "Active" H 12750 10000 50  0001 C CNN "Part Status"
-F 18 "-" H 12750 10000 50  0001 C CNN "Ratings"
-F 19 "GJM" H 12750 10000 50  0001 C CNN "Series"
-F 20 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 12750 10000 50  0001 C CNN "Size / Dimension"
-F 21 "Digi-Key" H 12750 10000 50  0001 C CNN "Supplier 1"
-F 22 "490-3103-1-ND" H 12750 10000 50  0001 C CNN "Supplier Part Number 1"
-F 23 "C0G, NP0" H 12750 10000 50  0001 C CNN "Temperature Coefficient"
-F 24 "0.022\" (0.55mm)" H 12750 10000 50  0001 C CNN "Thickness (Max)"
-F 25 "±0.25pF" H 12750 10000 50  0001 C CNN "Tolerance"
-F 26 "50V" H 12750 10000 50  0001 C CNN "Voltage - Rated"
-	1    12750 10000
+P 13350 10000
+F 0 "C520" H 13350 10050 50  0000 L BNN
+F 1 "5.6pF" H 13350 9950 50  0000 L TNN
+F 2 "SFUSat-cap:C_0402" H 13350 10000 50  0001 C CNN
+F 3 "" H 13350 10000 50  0001 C CNN
+F 4 "RF, Microwave, High Frequency" H 13350 10000 50  0001 C CNN "Applications"
+F 5 "5.6pF" H 13350 10000 50  0001 C CNN "Capacitance"
+F 6 "Capacitors - Ceramic Capacitors" H 13350 10000 50  0001 C CNN "Categories"
+F 7 "High Q, Low Loss" H 13350 10000 50  0001 C CNN "Features"
+F 8 "-" H 13350 10000 50  0001 C CNN "Height - Seated (Max)"
+F 9 "Lead free / RoHS Compliant" H 13350 10000 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 10 "-" H 13350 10000 50  0001 C CNN "Lead Spacing"
+F 11 "-" H 13350 10000 50  0001 C CNN "Lead Style"
+F 12 "Murata Electronics North America" H 13350 10000 50  0001 C CNN "Manufacturer 1"
+F 13 "GJM1555C1H5R6CB01D" H 13350 10000 50  0001 C CNN "Manufacturer Part Number 1"
+F 14 "Surface Mount, MLCC" H 13350 10000 50  0001 C CNN "Mounting Type"
+F 15 "-55°C ~ 125°C" H 13350 10000 50  0001 C CNN "Operating Temperature"
+F 16 "0402 (1005 Metric)" H 13350 10000 50  0001 C CNN "Package / Case"
+F 17 "Active" H 13350 10000 50  0001 C CNN "Part Status"
+F 18 "-" H 13350 10000 50  0001 C CNN "Ratings"
+F 19 "GJM" H 13350 10000 50  0001 C CNN "Series"
+F 20 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 13350 10000 50  0001 C CNN "Size / Dimension"
+F 21 "Digi-Key" H 13350 10000 50  0001 C CNN "Supplier 1"
+F 22 "490-3103-1-ND" H 13350 10000 50  0001 C CNN "Supplier Part Number 1"
+F 23 "C0G, NP0" H 13350 10000 50  0001 C CNN "Temperature Coefficient"
+F 24 "0.022\" (0.55mm)" H 13350 10000 50  0001 C CNN "Thickness (Max)"
+F 25 "±0.25pF" H 13350 10000 50  0001 C CNN "Tolerance"
+F 26 "50V" H 13350 10000 50  0001 C CNN "Voltage - Rated"
+	1    13350 10000
 	1    0    0    -1  
 $EndComp
 $Comp
 L C_500f0_0.25pF_50V_NP0_HIQ_0402 C521
 U 1 1 5AB5816E
-P 13000 10000
-F 0 "C521" H 13000 10050 50  0000 L BNN
-F 1 "0.5pF" H 13000 9950 50  0000 L TNN
-F 2 "SFUSat-cap:C_0402" H 13000 10000 50  0001 C CNN
-F 3 "" H 13000 10000 50  0001 C CNN
-F 4 "RF, Microwave, High Frequency" H 13000 10000 50  0001 C CNN "Applications"
-F 5 "0.5pF" H 13000 10000 50  0001 C CNN "Capacitance"
-F 6 "Capacitors - Ceramic Capacitors" H 13000 10000 50  0001 C CNN "Categories"
-F 7 "High Q, Low Loss" H 13000 10000 50  0001 C CNN "Features"
-F 8 "-" H 13000 10000 50  0001 C CNN "Height - Seated (Max)"
-F 9 "Lead free / RoHS Compliant" H 13000 10000 50  0001 C CNN "Lead Free Status / RoHS Status"
-F 10 "-" H 13000 10000 50  0001 C CNN "Lead Spacing"
-F 11 "-" H 13000 10000 50  0001 C CNN "Lead Style"
-F 12 "Murata Electronics North America" H 13000 10000 50  0001 C CNN "Manufacturer 1"
-F 13 "GJM1555C1HR50CB01D" H 13000 10000 50  0001 C CNN "Manufacturer Part Number 1"
-F 14 "Surface Mount, MLCC" H 13000 10000 50  0001 C CNN "Mounting Type"
-F 15 "-55°C ~ 125°C" H 13000 10000 50  0001 C CNN "Operating Temperature"
-F 16 "0402 (1005 Metric)" H 13000 10000 50  0001 C CNN "Package / Case"
-F 17 "Active" H 13000 10000 50  0001 C CNN "Part Status"
-F 18 "-" H 13000 10000 50  0001 C CNN "Ratings"
-F 19 "GJM" H 13000 10000 50  0001 C CNN "Series"
-F 20 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 13000 10000 50  0001 C CNN "Size / Dimension"
-F 21 "Digi-Key" H 13000 10000 50  0001 C CNN "Supplier 1"
-F 22 "490-3081-1-ND" H 13000 10000 50  0001 C CNN "Supplier Part Number 1"
-F 23 "C0G, NP0" H 13000 10000 50  0001 C CNN "Temperature Coefficient"
-F 24 "0.022\" (0.55mm)" H 13000 10000 50  0001 C CNN "Thickness (Max)"
-F 25 "±0.25pF" H 13000 10000 50  0001 C CNN "Tolerance"
-F 26 "50V" H 13000 10000 50  0001 C CNN "Voltage - Rated"
-	1    13000 10000
+P 13600 10000
+F 0 "C521" H 13600 10050 50  0000 L BNN
+F 1 "0.5pF" H 13600 9950 50  0000 L TNN
+F 2 "SFUSat-cap:C_0402" H 13600 10000 50  0001 C CNN
+F 3 "" H 13600 10000 50  0001 C CNN
+F 4 "RF, Microwave, High Frequency" H 13600 10000 50  0001 C CNN "Applications"
+F 5 "0.5pF" H 13600 10000 50  0001 C CNN "Capacitance"
+F 6 "Capacitors - Ceramic Capacitors" H 13600 10000 50  0001 C CNN "Categories"
+F 7 "High Q, Low Loss" H 13600 10000 50  0001 C CNN "Features"
+F 8 "-" H 13600 10000 50  0001 C CNN "Height - Seated (Max)"
+F 9 "Lead free / RoHS Compliant" H 13600 10000 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 10 "-" H 13600 10000 50  0001 C CNN "Lead Spacing"
+F 11 "-" H 13600 10000 50  0001 C CNN "Lead Style"
+F 12 "Murata Electronics North America" H 13600 10000 50  0001 C CNN "Manufacturer 1"
+F 13 "GJM1555C1HR50CB01D" H 13600 10000 50  0001 C CNN "Manufacturer Part Number 1"
+F 14 "Surface Mount, MLCC" H 13600 10000 50  0001 C CNN "Mounting Type"
+F 15 "-55°C ~ 125°C" H 13600 10000 50  0001 C CNN "Operating Temperature"
+F 16 "0402 (1005 Metric)" H 13600 10000 50  0001 C CNN "Package / Case"
+F 17 "Active" H 13600 10000 50  0001 C CNN "Part Status"
+F 18 "-" H 13600 10000 50  0001 C CNN "Ratings"
+F 19 "GJM" H 13600 10000 50  0001 C CNN "Series"
+F 20 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 13600 10000 50  0001 C CNN "Size / Dimension"
+F 21 "Digi-Key" H 13600 10000 50  0001 C CNN "Supplier 1"
+F 22 "490-3081-1-ND" H 13600 10000 50  0001 C CNN "Supplier Part Number 1"
+F 23 "C0G, NP0" H 13600 10000 50  0001 C CNN "Temperature Coefficient"
+F 24 "0.022\" (0.55mm)" H 13600 10000 50  0001 C CNN "Thickness (Max)"
+F 25 "±0.25pF" H 13600 10000 50  0001 C CNN "Tolerance"
+F 26 "50V" H 13600 10000 50  0001 C CNN "Voltage - Rated"
+	1    13600 10000
 	1    0    0    -1  
 $EndComp
 $Comp
 L C_39p0_5%_50V_NP0_0402 C522
 U 1 1 5AB59E70
-P 13400 9750
-F 0 "C522" V 13300 9750 50  0000 C BNN
-F 1 "39pF" V 13500 9750 50  0000 C TNN
-F 2 "SFUSat-cap:C_0402" H 13400 9750 50  0001 C CNN
-F 3 "" H 13400 9750 50  0001 C CNN
-F 4 "General Purpose" H 13400 9750 50  0001 C CNN "Applications"
-F 5 "39pF" H 13400 9750 50  0001 C CNN "Capacitance"
-F 6 "Capacitors - Ceramic Capacitors" H 13400 9750 50  0001 C CNN "Categories"
-F 7 "-" H 13400 9750 50  0001 C CNN "Features"
-F 8 "-" H 13400 9750 50  0001 C CNN "Height - Seated (Max)"
-F 9 "Lead free / RoHS Compliant" H 13400 9750 50  0001 C CNN "Lead Free Status / RoHS Status"
-F 10 "-" H 13400 9750 50  0001 C CNN "Lead Spacing"
-F 11 "-" H 13400 9750 50  0001 C CNN "Lead Style"
-F 12 "Murata Electronics North America" H 13400 9750 50  0001 C CNN "Manufacturer 1"
-F 13 "GRM1555C1H390JA01D" H 13400 9750 50  0001 C CNN "Manufacturer Part Number 1"
-F 14 "Surface Mount, MLCC" H 13400 9750 50  0001 C CNN "Mounting Type"
-F 15 "-55°C ~ 125°C" H 13400 9750 50  0001 C CNN "Operating Temperature"
-F 16 "0402 (1005 Metric)" H 13400 9750 50  0001 C CNN "Package / Case"
-F 17 "Active" H 13400 9750 50  0001 C CNN "Part Status"
-F 18 "-" H 13400 9750 50  0001 C CNN "Ratings"
-F 19 "GRM" H 13400 9750 50  0001 C CNN "Series"
-F 20 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 13400 9750 50  0001 C CNN "Size / Dimension"
-F 21 "Digi-Key" H 13400 9750 50  0001 C CNN "Supplier 1"
-F 22 "490-5871-1-ND" H 13400 9750 50  0001 C CNN "Supplier Part Number 1"
-F 23 "C0G, NP0" H 13400 9750 50  0001 C CNN "Temperature Coefficient"
-F 24 "0.022\" (0.55mm)" H 13400 9750 50  0001 C CNN "Thickness (Max)"
-F 25 "±5%" H 13400 9750 50  0001 C CNN "Tolerance"
-F 26 "50V" H 13400 9750 50  0001 C CNN "Voltage - Rated"
-	1    13400 9750
+P 14650 9750
+F 0 "C522" V 14550 9750 50  0000 C BNN
+F 1 "39pF" V 14750 9750 50  0000 C TNN
+F 2 "SFUSat-cap:C_0402" H 14650 9750 50  0001 C CNN
+F 3 "" H 14650 9750 50  0001 C CNN
+F 4 "General Purpose" H 14650 9750 50  0001 C CNN "Applications"
+F 5 "39pF" H 14650 9750 50  0001 C CNN "Capacitance"
+F 6 "Capacitors - Ceramic Capacitors" H 14650 9750 50  0001 C CNN "Categories"
+F 7 "-" H 14650 9750 50  0001 C CNN "Features"
+F 8 "-" H 14650 9750 50  0001 C CNN "Height - Seated (Max)"
+F 9 "Lead free / RoHS Compliant" H 14650 9750 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 10 "-" H 14650 9750 50  0001 C CNN "Lead Spacing"
+F 11 "-" H 14650 9750 50  0001 C CNN "Lead Style"
+F 12 "Murata Electronics North America" H 14650 9750 50  0001 C CNN "Manufacturer 1"
+F 13 "GRM1555C1H390JA01D" H 14650 9750 50  0001 C CNN "Manufacturer Part Number 1"
+F 14 "Surface Mount, MLCC" H 14650 9750 50  0001 C CNN "Mounting Type"
+F 15 "-55°C ~ 125°C" H 14650 9750 50  0001 C CNN "Operating Temperature"
+F 16 "0402 (1005 Metric)" H 14650 9750 50  0001 C CNN "Package / Case"
+F 17 "Active" H 14650 9750 50  0001 C CNN "Part Status"
+F 18 "-" H 14650 9750 50  0001 C CNN "Ratings"
+F 19 "GRM" H 14650 9750 50  0001 C CNN "Series"
+F 20 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 14650 9750 50  0001 C CNN "Size / Dimension"
+F 21 "Digi-Key" H 14650 9750 50  0001 C CNN "Supplier 1"
+F 22 "490-5871-1-ND" H 14650 9750 50  0001 C CNN "Supplier Part Number 1"
+F 23 "C0G, NP0" H 14650 9750 50  0001 C CNN "Temperature Coefficient"
+F 24 "0.022\" (0.55mm)" H 14650 9750 50  0001 C CNN "Thickness (Max)"
+F 25 "±5%" H 14650 9750 50  0001 C CNN "Tolerance"
+F 26 "50V" H 14650 9750 50  0001 C CNN "Voltage - Rated"
+	1    14650 9750
 	0    1    1    0   
 $EndComp
 $Comp
@@ -2147,7 +2143,7 @@ F 26 "50V" H 9400 9750 50  0001 C CNN "Voltage - Rated"
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	11300 9750 12150 9750
+	11300 9750 12750 9750
 Wire Wire Line
 	10300 9550 10350 9550
 Wire Wire Line
@@ -2387,43 +2383,43 @@ Wire Wire Line
 $Comp
 L C_27p0_5%_50V_NP0_HIQ_0402 C419
 U 1 1 5AC0920A
-P 12550 7800
-F 0 "C419" H 12550 7900 50  0000 L CNN
-F 1 "27pF" H 12550 7700 50  0000 L CNN
-F 2 "SFUSat-cap:C_0402" H 12550 7800 50  0001 C CNN
-F 3 "" H 12550 7800 50  0001 C CNN
-F 4 "General Purpose" H 12550 7800 50  0001 C CNN "Applications"
-F 5 "27pF" H 12550 7800 50  0001 C CNN "Capacitance"
-F 6 "Capacitors - Ceramic Capacitors" H 12550 7800 50  0001 C CNN "Categories"
-F 7 "-" H 12550 7800 50  0001 C CNN "Features"
-F 8 "-" H 12550 7800 50  0001 C CNN "Height - Seated (Max)"
-F 9 "Lead free / RoHS Compliant" H 12550 7800 50  0001 C CNN "Lead Free Status / RoHS Status"
-F 10 "-" H 12550 7800 50  0001 C CNN "Lead Spacing"
-F 11 "-" H 12550 7800 50  0001 C CNN "Lead Style"
-F 12 "Murata Electronics North America" H 12550 7800 50  0001 C CNN "Manufacturer 1"
-F 13 "GRM1555C1H270JA01D" H 12550 7800 50  0001 C CNN "Manufacturer Part Number 1"
-F 14 "Surface Mount, MLCC" H 12550 7800 50  0001 C CNN "Mounting Type"
-F 15 "-55°C ~ 125°C" H 12550 7800 50  0001 C CNN "Operating Temperature"
-F 16 "0402 (1005 Metric)" H 12550 7800 50  0001 C CNN "Package / Case"
-F 17 "Active" H 12550 7800 50  0001 C CNN "Part Status"
-F 18 "-" H 12550 7800 50  0001 C CNN "Ratings"
-F 19 "GRM" H 12550 7800 50  0001 C CNN "Series"
-F 20 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 12550 7800 50  0001 C CNN "Size / Dimension"
-F 21 "Digi-Key" H 12550 7800 50  0001 C CNN "Supplier 1"
-F 22 "490-5869-1-ND" H 12550 7800 50  0001 C CNN "Supplier Part Number 1"
-F 23 "C0G, NP0" H 12550 7800 50  0001 C CNN "Temperature Coefficient"
-F 24 "0.022\" (0.55mm)" H 12550 7800 50  0001 C CNN "Thickness (Max)"
-F 25 "±5%" H 12550 7800 50  0001 C CNN "Tolerance"
-F 26 "50V" H 12550 7800 50  0001 C CNN "Voltage - Rated"
-	1    12550 7800
+P 13150 7800
+F 0 "C419" H 13150 7900 50  0000 L CNN
+F 1 "27pF" H 13150 7700 50  0000 L CNN
+F 2 "SFUSat-cap:C_0402" H 13150 7800 50  0001 C CNN
+F 3 "" H 13150 7800 50  0001 C CNN
+F 4 "General Purpose" H 13150 7800 50  0001 C CNN "Applications"
+F 5 "27pF" H 13150 7800 50  0001 C CNN "Capacitance"
+F 6 "Capacitors - Ceramic Capacitors" H 13150 7800 50  0001 C CNN "Categories"
+F 7 "-" H 13150 7800 50  0001 C CNN "Features"
+F 8 "-" H 13150 7800 50  0001 C CNN "Height - Seated (Max)"
+F 9 "Lead free / RoHS Compliant" H 13150 7800 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 10 "-" H 13150 7800 50  0001 C CNN "Lead Spacing"
+F 11 "-" H 13150 7800 50  0001 C CNN "Lead Style"
+F 12 "Murata Electronics North America" H 13150 7800 50  0001 C CNN "Manufacturer 1"
+F 13 "GRM1555C1H270JA01D" H 13150 7800 50  0001 C CNN "Manufacturer Part Number 1"
+F 14 "Surface Mount, MLCC" H 13150 7800 50  0001 C CNN "Mounting Type"
+F 15 "-55°C ~ 125°C" H 13150 7800 50  0001 C CNN "Operating Temperature"
+F 16 "0402 (1005 Metric)" H 13150 7800 50  0001 C CNN "Package / Case"
+F 17 "Active" H 13150 7800 50  0001 C CNN "Part Status"
+F 18 "-" H 13150 7800 50  0001 C CNN "Ratings"
+F 19 "GRM" H 13150 7800 50  0001 C CNN "Series"
+F 20 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 13150 7800 50  0001 C CNN "Size / Dimension"
+F 21 "Digi-Key" H 13150 7800 50  0001 C CNN "Supplier 1"
+F 22 "490-5869-1-ND" H 13150 7800 50  0001 C CNN "Supplier Part Number 1"
+F 23 "C0G, NP0" H 13150 7800 50  0001 C CNN "Temperature Coefficient"
+F 24 "0.022\" (0.55mm)" H 13150 7800 50  0001 C CNN "Thickness (Max)"
+F 25 "±5%" H 13150 7800 50  0001 C CNN "Tolerance"
+F 26 "50V" H 13150 7800 50  0001 C CNN "Voltage - Rated"
+	1    13150 7800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12550 7950 12550 8000
-Connection ~ 12550 8000
+	13150 7950 13150 8000
+Connection ~ 13150 8000
 Wire Wire Line
-	12550 7650 12550 7550
-Connection ~ 12550 7550
+	13150 7650 13150 7550
+Connection ~ 13150 7550
 $Comp
 L C C416
 U 1 1 5AC0EC13
@@ -2436,24 +2432,24 @@ F 3 "" H 11750 7800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11450 10200 13000 10200
+	11450 10200 14350 10200
 $Comp
 L C C519
 U 1 1 5AC18B95
-P 12500 10000
-F 0 "C519" H 12500 10100 50  0000 L TNN
-F 1 "DNP" H 12500 9900 50  0000 L BNN
-F 2 "SFUSat:C_0402" H 12538 9850 50  0001 C CNN
-F 3 "" H 12500 10000 50  0001 C CNN
-	1    12500 10000
+P 13100 10000
+F 0 "C519" H 13100 10100 50  0000 L TNN
+F 1 "DNP" H 13100 9900 50  0000 L BNN
+F 2 "SFUSat:C_0402" H 13138 9850 50  0001 C CNN
+F 3 "" H 13100 10000 50  0001 C CNN
+	1    13100 10000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12500 10200 12500 10150
-Connection ~ 12500 10200
+	13100 10200 13100 10150
+Connection ~ 13100 10200
 Wire Wire Line
-	12500 9850 12500 9750
-Connection ~ 12500 9750
+	13100 9850 13100 9750
+Connection ~ 13100 9750
 $Comp
 L C_39p0_5%_50V_NP0_0402 C413
 U 1 1 5AC37CE9
@@ -2491,41 +2487,39 @@ $EndComp
 $Comp
 L C_39p0_5%_50V_NP0_0402 C422
 U 1 1 5AC3A9C8
-P 13500 7550
-F 0 "C422" V 13400 7550 50  0000 C BNN
-F 1 "39pF" V 13600 7550 50  0000 C TNN
-F 2 "SFUSat-cap:C_0402" H 13500 7550 50  0001 C CNN
-F 3 "" H 13500 7550 50  0001 C CNN
-F 4 "General Purpose" H 13500 7550 50  0001 C CNN "Applications"
-F 5 "39pF" H 13500 7550 50  0001 C CNN "Capacitance"
-F 6 "Capacitors - Ceramic Capacitors" H 13500 7550 50  0001 C CNN "Categories"
-F 7 "-" H 13500 7550 50  0001 C CNN "Features"
-F 8 "-" H 13500 7550 50  0001 C CNN "Height - Seated (Max)"
-F 9 "Lead free / RoHS Compliant" H 13500 7550 50  0001 C CNN "Lead Free Status / RoHS Status"
-F 10 "-" H 13500 7550 50  0001 C CNN "Lead Spacing"
-F 11 "-" H 13500 7550 50  0001 C CNN "Lead Style"
-F 12 "Murata Electronics North America" H 13500 7550 50  0001 C CNN "Manufacturer 1"
-F 13 "GRM1555C1H390JA01D" H 13500 7550 50  0001 C CNN "Manufacturer Part Number 1"
-F 14 "Surface Mount, MLCC" H 13500 7550 50  0001 C CNN "Mounting Type"
-F 15 "-55°C ~ 125°C" H 13500 7550 50  0001 C CNN "Operating Temperature"
-F 16 "0402 (1005 Metric)" H 13500 7550 50  0001 C CNN "Package / Case"
-F 17 "Active" H 13500 7550 50  0001 C CNN "Part Status"
-F 18 "-" H 13500 7550 50  0001 C CNN "Ratings"
-F 19 "GRM" H 13500 7550 50  0001 C CNN "Series"
-F 20 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 13500 7550 50  0001 C CNN "Size / Dimension"
-F 21 "Digi-Key" H 13500 7550 50  0001 C CNN "Supplier 1"
-F 22 "490-5871-1-ND" H 13500 7550 50  0001 C CNN "Supplier Part Number 1"
-F 23 "C0G, NP0" H 13500 7550 50  0001 C CNN "Temperature Coefficient"
-F 24 "0.022\" (0.55mm)" H 13500 7550 50  0001 C CNN "Thickness (Max)"
-F 25 "±5%" H 13500 7550 50  0001 C CNN "Tolerance"
-F 26 "50V" H 13500 7550 50  0001 C CNN "Voltage - Rated"
-	1    13500 7550
+P 14700 7550
+F 0 "C422" V 14600 7550 50  0000 C BNN
+F 1 "39pF" V 14800 7550 50  0000 C TNN
+F 2 "SFUSat-cap:C_0402" H 14700 7550 50  0001 C CNN
+F 3 "" H 14700 7550 50  0001 C CNN
+F 4 "General Purpose" H 14700 7550 50  0001 C CNN "Applications"
+F 5 "39pF" H 14700 7550 50  0001 C CNN "Capacitance"
+F 6 "Capacitors - Ceramic Capacitors" H 14700 7550 50  0001 C CNN "Categories"
+F 7 "-" H 14700 7550 50  0001 C CNN "Features"
+F 8 "-" H 14700 7550 50  0001 C CNN "Height - Seated (Max)"
+F 9 "Lead free / RoHS Compliant" H 14700 7550 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 10 "-" H 14700 7550 50  0001 C CNN "Lead Spacing"
+F 11 "-" H 14700 7550 50  0001 C CNN "Lead Style"
+F 12 "Murata Electronics North America" H 14700 7550 50  0001 C CNN "Manufacturer 1"
+F 13 "GRM1555C1H390JA01D" H 14700 7550 50  0001 C CNN "Manufacturer Part Number 1"
+F 14 "Surface Mount, MLCC" H 14700 7550 50  0001 C CNN "Mounting Type"
+F 15 "-55°C ~ 125°C" H 14700 7550 50  0001 C CNN "Operating Temperature"
+F 16 "0402 (1005 Metric)" H 14700 7550 50  0001 C CNN "Package / Case"
+F 17 "Active" H 14700 7550 50  0001 C CNN "Part Status"
+F 18 "-" H 14700 7550 50  0001 C CNN "Ratings"
+F 19 "GRM" H 14700 7550 50  0001 C CNN "Series"
+F 20 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 14700 7550 50  0001 C CNN "Size / Dimension"
+F 21 "Digi-Key" H 14700 7550 50  0001 C CNN "Supplier 1"
+F 22 "490-5871-1-ND" H 14700 7550 50  0001 C CNN "Supplier Part Number 1"
+F 23 "C0G, NP0" H 14700 7550 50  0001 C CNN "Temperature Coefficient"
+F 24 "0.022\" (0.55mm)" H 14700 7550 50  0001 C CNN "Thickness (Max)"
+F 25 "±5%" H 14700 7550 50  0001 C CNN "Tolerance"
+F 26 "50V" H 14700 7550 50  0001 C CNN "Voltage - Rated"
+	1    14700 7550
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	13650 7550 13800 7550
-Wire Wire Line
-	12500 7550 13350 7550
+	14850 7550 15000 7550
 $Sheet
 S 6700 2725 925  250 
 U 5AC03C3F
@@ -2581,7 +2575,7 @@ Text Label 7850 2850 0    60   ~ 0
 3V6
 Text Label 9300 2650 0    60   ~ 0
 3V1
-Text Label 9300 3050 0    60   ~ 0
+Text Label 9800 3050 0    60   ~ 0
 3V3
 Wire Wire Line
 	7625 2850 8075 2850
@@ -2590,12 +2584,12 @@ Wire Wire Line
 Wire Wire Line
 	8075 2650 8075 3050
 Wire Wire Line
-	8175 3050 8325 3050
+	8075 3050 8325 3050
 Connection ~ 8075 2850
 Wire Wire Line
 	9175 2650 9300 2650
 Wire Wire Line
-	9175 3050 9300 3050
+	9175 3050 9450 3050
 Wire Wire Line
 	7425 2375 7750 2375
 Wire Wire Line
@@ -2603,12 +2597,12 @@ Wire Wire Line
 $Comp
 L Conn_01x02 J25
 U 1 1 5AC7F0EF
-P 8175 3250
-F 0 "J25" H 8175 3350 50  0000 C CNN
-F 1 "Conn_01x02" H 8175 3050 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 8175 3250 50  0001 C CNN
-F 3 "" H 8175 3250 50  0001 C CNN
-	1    8175 3250
+P 9550 3300
+F 0 "J25" H 9550 3400 50  0000 C CNN
+F 1 "Conn_01x02" H 9550 3100 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 9550 3300 50  0001 C CNN
+F 3 "" H 9550 3300 50  0001 C CNN
+	1    9550 3300
 	0    1    1    0   
 $EndComp
 Text Label 6150 2800 2    60   ~ 0
@@ -2722,4 +2716,322 @@ F 3 "" H 4900 3300 50  0001 C CNN
 	1    4900 3300
 	0    1    1    0   
 $EndComp
+$Comp
+L C_100n0_20%_16V_X7R_0402 C?
+U 1 1 5AD992CF
+P 17400 9750
+F 0 "C?" H 17400 9800 50  0000 L BNN
+F 1 "100nF" H 17400 9700 50  0000 L TNN
+F 2 "SFUSat-cap:C_0402" H 17400 9750 50  0001 C CNN
+F 3 "" H 17400 9750 50  0001 C CNN
+F 4 "Automotive" H 17400 9750 50  0001 C CNN "Applications"
+F 5 "0.1µF" H 17400 9750 50  0001 C CNN "Capacitance"
+F 6 "Capacitors - Ceramic Capacitors" H 17400 9750 50  0001 C CNN "Categories"
+F 7 "-" H 17400 9750 50  0001 C CNN "Failure Rate"
+F 8 "-" H 17400 9750 50  0001 C CNN "Features"
+F 9 "-" H 17400 9750 50  0001 C CNN "Height - Seated (Max)"
+F 10 "Lead free / RoHS Compliant" H 17400 9750 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 11 "-" H 17400 9750 50  0001 C CNN "Lead Spacing"
+F 12 "-" H 17400 9750 50  0001 C CNN "Lead Style"
+F 13 "TDK Corporation" H 17400 9750 50  0001 C CNN "Manufacturer 1"
+F 14 "CGA2B1X7R1C104M050BC" H 17400 9750 50  0001 C CNN "Manufacturer Part Number 1"
+F 15 "20 Weeks" H 17400 9750 50  0001 C CNN "Manufacturer Standard Lead Time 1"
+F 16 "Surface Mount, MLCC" H 17400 9750 50  0001 C CNN "Mounting Type"
+F 17 "-55°C ~ 125°C" H 17400 9750 50  0001 C CNN "Operating Temperature"
+F 18 "0402 (1005 Metric)" H 17400 9750 50  0001 C CNN "Package / Case"
+F 19 "Active" H 17400 9750 50  0001 C CNN "Part Status"
+F 20 "AEC-Q200" H 17400 9750 50  0001 C CNN "Ratings"
+F 21 "CGA" H 17400 9750 50  0001 C CNN "Series"
+F 22 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 17400 9750 50  0001 C CNN "Size / Dimension"
+F 23 "Digi-Key" H 17400 9750 50  0001 C CNN "Supplier 1"
+F 24 "445-12242-1-ND" H 17400 9750 50  0001 C CNN "Supplier Part Number 1"
+F 25 "X7R" H 17400 9750 50  0001 C CNN "Temperature Coefficient"
+F 26 "0.022\" (0.55mm)" H 17400 9750 50  0001 C CNN "Thickness (Max)"
+F 27 "±20%" H 17400 9750 50  0001 C CNN "Tolerance"
+F 28 "16V" H 17400 9750 50  0001 C CNN "Voltage - Rated"
+	1    17400 9750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17100 9550 17100 10000
+$Comp
+L GND #PWR?
+U 1 1 5ADA065E
+P 17400 9950
+F 0 "#PWR?" H 17400 9700 50  0001 C CNN
+F 1 "GND" H 17400 9800 50  0000 C CNN
+F 2 "" H 17400 9950 50  0000 C CNN
+F 3 "" H 17400 9950 50  0000 C CNN
+	1    17400 9950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17400 9950 17400 9900
+Wire Wire Line
+	17400 9600 17100 9600
+Connection ~ 17100 9600
+Text Label 16550 7400 2    60   ~ 0
+3V3
+$Comp
+L C_100n0_20%_16V_X7R_0402 C?
+U 1 1 5ADA80FE
+P 16850 7600
+F 0 "C?" H 16850 7650 50  0000 L BNN
+F 1 "100nF" H 16850 7550 50  0000 L TNN
+F 2 "SFUSat-cap:C_0402" H 16850 7600 50  0001 C CNN
+F 3 "" H 16850 7600 50  0001 C CNN
+F 4 "Automotive" H 16850 7600 50  0001 C CNN "Applications"
+F 5 "0.1µF" H 16850 7600 50  0001 C CNN "Capacitance"
+F 6 "Capacitors - Ceramic Capacitors" H 16850 7600 50  0001 C CNN "Categories"
+F 7 "-" H 16850 7600 50  0001 C CNN "Failure Rate"
+F 8 "-" H 16850 7600 50  0001 C CNN "Features"
+F 9 "-" H 16850 7600 50  0001 C CNN "Height - Seated (Max)"
+F 10 "Lead free / RoHS Compliant" H 16850 7600 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 11 "-" H 16850 7600 50  0001 C CNN "Lead Spacing"
+F 12 "-" H 16850 7600 50  0001 C CNN "Lead Style"
+F 13 "TDK Corporation" H 16850 7600 50  0001 C CNN "Manufacturer 1"
+F 14 "CGA2B1X7R1C104M050BC" H 16850 7600 50  0001 C CNN "Manufacturer Part Number 1"
+F 15 "20 Weeks" H 16850 7600 50  0001 C CNN "Manufacturer Standard Lead Time 1"
+F 16 "Surface Mount, MLCC" H 16850 7600 50  0001 C CNN "Mounting Type"
+F 17 "-55°C ~ 125°C" H 16850 7600 50  0001 C CNN "Operating Temperature"
+F 18 "0402 (1005 Metric)" H 16850 7600 50  0001 C CNN "Package / Case"
+F 19 "Active" H 16850 7600 50  0001 C CNN "Part Status"
+F 20 "AEC-Q200" H 16850 7600 50  0001 C CNN "Ratings"
+F 21 "CGA" H 16850 7600 50  0001 C CNN "Series"
+F 22 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 16850 7600 50  0001 C CNN "Size / Dimension"
+F 23 "Digi-Key" H 16850 7600 50  0001 C CNN "Supplier 1"
+F 24 "445-12242-1-ND" H 16850 7600 50  0001 C CNN "Supplier Part Number 1"
+F 25 "X7R" H 16850 7600 50  0001 C CNN "Temperature Coefficient"
+F 26 "0.022\" (0.55mm)" H 16850 7600 50  0001 C CNN "Thickness (Max)"
+F 27 "±20%" H 16850 7600 50  0001 C CNN "Tolerance"
+F 28 "16V" H 16850 7600 50  0001 C CNN "Voltage - Rated"
+	1    16850 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16550 7400 16550 7900
+$Comp
+L GND #PWR?
+U 1 1 5ADA8105
+P 16850 7800
+F 0 "#PWR?" H 16850 7550 50  0001 C CNN
+F 1 "GND" H 16850 7650 50  0000 C CNN
+F 2 "" H 16850 7800 50  0000 C CNN
+F 3 "" H 16850 7800 50  0000 C CNN
+	1    16850 7800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16850 7800 16850 7750
+Wire Wire Line
+	16850 7450 16550 7450
+Connection ~ 16550 7450
+Wire Wire Line
+	14350 9850 14350 9750
+Wire Wire Line
+	14100 9850 14100 9750
+Connection ~ 14350 9750
+Wire Wire Line
+	13850 9750 13850 9850
+Wire Wire Line
+	13850 10200 13850 10150
+Connection ~ 13600 10200
+Wire Wire Line
+	14100 10200 14100 10150
+Connection ~ 13850 10200
+Wire Wire Line
+	14350 10200 14350 10150
+Connection ~ 14100 10200
+Connection ~ 13850 9750
+Connection ~ 14100 9750
+$Comp
+L C C529
+U 1 1 5ADAF3F9
+P 12200 10000
+F 0 "C529" H 12200 10050 50  0000 L BNN
+F 1 "DNP" H 12200 9950 50  0000 L TNN
+F 2 "SFUSat:C_0402" H 12238 9850 50  0001 C CNN
+F 3 "" H 12200 10000 50  0001 C CNN
+	1    12200 10000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12700 9850 12700 9750
+Connection ~ 12700 9750
+Wire Wire Line
+	12450 9850 12450 9750
+Connection ~ 12450 9750
+Wire Wire Line
+	12200 9850 12200 9750
+Connection ~ 12200 9750
+Wire Wire Line
+	12450 10150 12450 10200
+Connection ~ 12450 10200
+Wire Wire Line
+	12700 10150 12700 10200
+Connection ~ 12700 10200
+Wire Wire Line
+	13900 8000 13900 7950
+Wire Wire Line
+	14150 8000 14150 7950
+Connection ~ 13900 8000
+Wire Wire Line
+	14400 8000 14400 7950
+Connection ~ 14150 8000
+Wire Wire Line
+	13100 7550 14550 7550
+Wire Wire Line
+	14400 7650 14400 7550
+Connection ~ 14400 7550
+Wire Wire Line
+	14150 7650 14150 7550
+Connection ~ 14150 7550
+Wire Wire Line
+	13900 7650 13900 7550
+Connection ~ 13900 7550
+Wire Wire Line
+	11500 8000 14400 8000
+Connection ~ 13650 8000
+$Comp
+L C C429
+U 1 1 5ADB9DC5
+P 12250 7800
+F 0 "C429" H 12250 7900 50  0000 L CNN
+F 1 "DNP" H 12250 7700 50  0000 L CNN
+F 2 "SFUSat:C_0402" H 12288 7650 50  0001 C CNN
+F 3 "" H 12250 7800 50  0001 C CNN
+	1    12250 7800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12750 7550 12750 7650
+Wire Wire Line
+	12500 7550 12500 7650
+Connection ~ 12750 7550
+Wire Wire Line
+	12250 7550 12250 7650
+Connection ~ 12500 7550
+Connection ~ 12250 7550
+Wire Wire Line
+	12750 8000 12750 7950
+Wire Wire Line
+	12500 8000 12500 7950
+Connection ~ 12750 8000
+Connection ~ 12500 8000
+$Comp
+L C C530
+U 1 1 5ADC1E18
+P 12450 10000
+F 0 "C530" H 12450 10050 50  0000 L BNN
+F 1 "DNP" H 12450 9950 50  0000 L TNN
+F 2 "SFUSat:C_0402" H 12488 9850 50  0001 C CNN
+F 3 "" H 12450 10000 50  0001 C CNN
+	1    12450 10000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C531
+U 1 1 5ADC212C
+P 12700 10000
+F 0 "C531" H 12700 10050 50  0000 L BNN
+F 1 "DNP" H 12700 9950 50  0000 L TNN
+F 2 "SFUSat:C_0402" H 12738 9850 50  0001 C CNN
+F 3 "" H 12700 10000 50  0001 C CNN
+	1    12700 10000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C532
+U 1 1 5ADC23A3
+P 13850 10000
+F 0 "C532" H 13850 10050 50  0000 L BNN
+F 1 "DNP" H 13850 9950 50  0000 L TNN
+F 2 "SFUSat:C_0402" H 13888 9850 50  0001 C CNN
+F 3 "" H 13850 10000 50  0001 C CNN
+	1    13850 10000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C533
+U 1 1 5ADC2B82
+P 14100 10000
+F 0 "C533" H 14100 10050 50  0000 L BNN
+F 1 "DNP" H 14100 9950 50  0000 L TNN
+F 2 "SFUSat:C_0402" H 14138 9850 50  0001 C CNN
+F 3 "" H 14100 10000 50  0001 C CNN
+	1    14100 10000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C534
+U 1 1 5ADC2E03
+P 14350 10000
+F 0 "C534" H 14350 10050 50  0000 L BNN
+F 1 "DNP" H 14350 9950 50  0000 L TNN
+F 2 "SFUSat:C_0402" H 14388 9850 50  0001 C CNN
+F 3 "" H 14350 10000 50  0001 C CNN
+	1    14350 10000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C430
+U 1 1 5ADC5223
+P 12500 7800
+F 0 "C430" H 12500 7900 50  0000 L CNN
+F 1 "DNP" H 12500 7700 50  0000 L CNN
+F 2 "SFUSat:C_0402" H 12538 7650 50  0001 C CNN
+F 3 "" H 12500 7800 50  0001 C CNN
+	1    12500 7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C431
+U 1 1 5ADC5835
+P 12750 7800
+F 0 "C431" H 12750 7900 50  0000 L CNN
+F 1 "DNP" H 12750 7700 50  0000 L CNN
+F 2 "SFUSat:C_0402" H 12788 7650 50  0001 C CNN
+F 3 "" H 12750 7800 50  0001 C CNN
+	1    12750 7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C432
+U 1 1 5ADC610D
+P 13900 7800
+F 0 "C432" H 13900 7900 50  0000 L CNN
+F 1 "DNP" H 13900 7700 50  0000 L CNN
+F 2 "SFUSat:C_0402" H 13938 7650 50  0001 C CNN
+F 3 "" H 13900 7800 50  0001 C CNN
+	1    13900 7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C433
+U 1 1 5ADC63AE
+P 14150 7800
+F 0 "C433" H 14150 7900 50  0000 L CNN
+F 1 "DNP" H 14150 7700 50  0000 L CNN
+F 2 "SFUSat:C_0402" H 14188 7650 50  0001 C CNN
+F 3 "" H 14150 7800 50  0001 C CNN
+	1    14150 7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C434
+U 1 1 5ADC6640
+P 14400 7800
+F 0 "C434" H 14400 7900 50  0000 L CNN
+F 1 "DNP" H 14400 7700 50  0000 L CNN
+F 2 "SFUSat:C_0402" H 14438 7650 50  0001 C CNN
+F 3 "" H 14400 7800 50  0001 C CNN
+	1    14400 7800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 3050 9450 3100
+Wire Wire Line
+	9550 3100 9550 3050
+Wire Wire Line
+	9550 3050 9800 3050
 $EndSCHEMATC
