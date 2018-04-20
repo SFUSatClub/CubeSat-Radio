@@ -13,6 +13,7 @@ FR4-TG: 150 - 160
 Finished Copper: 1 oz.
 Inner Copper: 1 oz.
 Minimum slot size: plated: 0.6mm, non-plated: 0.8mm
+Minimum bridge width: 150um
 
 Stackup:
 ------------- Copper    1     35 um
