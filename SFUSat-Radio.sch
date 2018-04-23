@@ -3034,4 +3034,8 @@ Wire Wire Line
 	9550 3100 9550 3050
 Wire Wire Line
 	9550 3050 9800 3050
+Text Label 13500 9750 0    60   ~ 0
+UB_TEST_TX
+Text Label 13525 7550 0    60   ~ 0
+LB_TEST_TX
 $EndSCHEMATC
