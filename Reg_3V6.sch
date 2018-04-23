@@ -1190,4 +1190,12 @@ Text HLabel 1900 2800 0    60   Input ~ 0
 Vin
 Wire Wire Line
 	4700 2650 4700 2800
+Text Label 7250 2425 0    60   ~ 0
+FB
+Text Label 7450 3800 0    60   ~ 0
+BIAS
+Text Label 6475 1725 0    60   ~ 0
+SW
+Text Label 6500 3000 0    60   ~ 0
+BOOST
 $EndSCHEMATC
