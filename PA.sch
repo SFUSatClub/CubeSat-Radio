@@ -38,7 +38,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 15
+Sheet 4 15
 Title ""
 Date ""
 Rev ""
@@ -449,8 +449,8 @@ F 6 "771-PESD5Z33115" H 8950 4000 60  0001 C CNN "Mouser"
 $EndComp
 Text Notes 2400 7000 0    79   ~ 0
 R*05,R*06/R*07,R*08 * (Vref - Vsense) = Vout
-Text Notes 7900 3250 0    79   ~ 0
-0.28V to 3.1V
+Text Notes 7650 3250 0    79   ~ 0
+0.062V to 3.038V
 $Comp
 L GND #PWR053
 U 1 1 5A587B1E
