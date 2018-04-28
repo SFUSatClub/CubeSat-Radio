@@ -440,42 +440,6 @@ F 29 "0.3V @ 150mA" H 7000 3950 50  0001 C CNN "Voltage Dropout (Max)"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_100n0_5%_16V_X7R_0603 C38
-U 1 1 5AC1316D
-P 6225 3800
-F 0 "C38" H 6225 3850 50  0000 L BNN
-F 1 "100nF" H 6225 3750 50  0000 L TNN
-F 2 "SFUSat-cap:C_0603" H 6225 3800 50  0001 C CNN
-F 3 "" H 6225 3800 50  0001 C CNN
-F 4 "General Purpose" H 6225 3800 50  0001 C CNN "Applications"
-F 5 "0.1µF" H 6225 3800 50  0001 C CNN "Capacitance"
-F 6 "Capacitors - Ceramic Capacitors" H 6225 3800 50  0001 C CNN "Categories"
-F 7 "-" H 6225 3800 50  0001 C CNN "Failure Rate"
-F 8 "-" H 6225 3800 50  0001 C CNN "Features"
-F 9 "-" H 6225 3800 50  0001 C CNN "Height - Seated (Max)"
-F 10 "Lead free / RoHS Compliant" H 6225 3800 50  0001 C CNN "Lead Free Status / RoHS Status"
-F 11 "-" H 6225 3800 50  0001 C CNN "Lead Spacing"
-F 12 "-" H 6225 3800 50  0001 C CNN "Lead Style"
-F 13 "Yageo" H 6225 3800 50  0001 C CNN "Manufacturer 1"
-F 14 "CC0603JRX7R7BB104" H 6225 3800 50  0001 C CNN "Manufacturer Part Number 1"
-F 15 "37 Weeks" H 6225 3800 50  0001 C CNN "Manufacturer Standard Lead Time 1"
-F 16 "Surface Mount, MLCC" H 6225 3800 50  0001 C CNN "Mounting Type"
-F 17 "-55°C ~ 125°C" H 6225 3800 50  0001 C CNN "Operating Temperature"
-F 18 "0603 (1608 Metric)" H 6225 3800 50  0001 C CNN "Package / Case"
-F 19 "Active" H 6225 3800 50  0001 C CNN "Part Status"
-F 20 "-" H 6225 3800 50  0001 C CNN "Ratings"
-F 21 "CC" H 6225 3800 50  0001 C CNN "Series"
-F 22 "0.063\" L x 0.032\" W (1.60mm x 0.80mm)" H 6225 3800 50  0001 C CNN "Size / Dimension"
-F 23 "Digi-Key" H 6225 3800 50  0001 C CNN "Supplier 1"
-F 24 "311-1776-1-ND" H 6225 3800 50  0001 C CNN "Supplier Part Number 1"
-F 25 "X7R" H 6225 3800 50  0001 C CNN "Temperature Coefficient"
-F 26 "0.035\" (0.90mm)" H 6225 3800 50  0001 C CNN "Thickness (Max)"
-F 27 "±5%" H 6225 3800 50  0001 C CNN "Tolerance"
-F 28 "16V" H 6225 3800 50  0001 C CNN "Voltage - Rated"
-	1    6225 3800
-	1    0    0    -1  
-$EndComp
-$Comp
 L C_10n0_10%_10V_X5R_0402 C39
 U 1 1 5AC1318A
 P 7475 3950
@@ -622,4 +586,40 @@ Wire Wire Line
 Wire Wire Line
 	7400 4125 7475 4125
 Connection ~ 7475 4125
+$Comp
+L C_100n0_20%_16V_X7R_0402 C38
+U 1 1 5AE631BB
+P 6225 3800
+F 0 "C38" H 6225 3850 50  0000 L BNN
+F 1 "100nF" H 6225 3750 50  0000 L TNN
+F 2 "SFUSat-cap:C_0402" H 6225 3800 50  0001 C CNN
+F 3 "" H 6225 3800 50  0001 C CNN
+F 4 "Automotive" H 6225 3800 50  0001 C CNN "Applications"
+F 5 "0.1µF" H 6225 3800 50  0001 C CNN "Capacitance"
+F 6 "Capacitors - Ceramic Capacitors" H 6225 3800 50  0001 C CNN "Categories"
+F 7 "-" H 6225 3800 50  0001 C CNN "Failure Rate"
+F 8 "-" H 6225 3800 50  0001 C CNN "Features"
+F 9 "-" H 6225 3800 50  0001 C CNN "Height - Seated (Max)"
+F 10 "Lead free / RoHS Compliant" H 6225 3800 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 11 "-" H 6225 3800 50  0001 C CNN "Lead Spacing"
+F 12 "-" H 6225 3800 50  0001 C CNN "Lead Style"
+F 13 "TDK Corporation" H 6225 3800 50  0001 C CNN "Manufacturer 1"
+F 14 "CGA2B1X7R1C104M050BC" H 6225 3800 50  0001 C CNN "Manufacturer Part Number 1"
+F 15 "20 Weeks" H 6225 3800 50  0001 C CNN "Manufacturer Standard Lead Time 1"
+F 16 "Surface Mount, MLCC" H 6225 3800 50  0001 C CNN "Mounting Type"
+F 17 "-55°C ~ 125°C" H 6225 3800 50  0001 C CNN "Operating Temperature"
+F 18 "0402 (1005 Metric)" H 6225 3800 50  0001 C CNN "Package / Case"
+F 19 "Active" H 6225 3800 50  0001 C CNN "Part Status"
+F 20 "AEC-Q200" H 6225 3800 50  0001 C CNN "Ratings"
+F 21 "CGA" H 6225 3800 50  0001 C CNN "Series"
+F 22 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 6225 3800 50  0001 C CNN "Size / Dimension"
+F 23 "Digi-Key" H 6225 3800 50  0001 C CNN "Supplier 1"
+F 24 "445-12242-1-ND" H 6225 3800 50  0001 C CNN "Supplier Part Number 1"
+F 25 "X7R" H 6225 3800 50  0001 C CNN "Temperature Coefficient"
+F 26 "0.022\" (0.55mm)" H 6225 3800 50  0001 C CNN "Thickness (Max)"
+F 27 "±20%" H 6225 3800 50  0001 C CNN "Tolerance"
+F 28 "16V" H 6225 3800 50  0001 C CNN "Voltage - Rated"
+	1    6225 3800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
