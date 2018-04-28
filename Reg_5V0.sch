@@ -473,42 +473,6 @@ F 25 "10V" H 7475 3950 50  0001 C CNN "Voltage - Rated"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_1u0_10%_10V_X5R_0603 C40
-U 1 1 5AC131AA
-P 7725 3750
-F 0 "C40" H 7725 3800 50  0000 L BNN
-F 1 "1.0uF" H 7725 3700 50  0000 L TNN
-F 2 "SFUSat-cap:C_0603" H 7725 3750 50  0001 C CNN
-F 3 "" H 7725 3750 50  0001 C CNN
-F 4 "General Purpose" H 7725 3750 50  0001 C CNN "Applications"
-F 5 "1µF" H 7725 3750 50  0001 C CNN "Capacitance"
-F 6 "Capacitors - Ceramic Capacitors" H 7725 3750 50  0001 C CNN "Categories"
-F 7 "-" H 7725 3750 50  0001 C CNN "Failure Rate"
-F 8 "-" H 7725 3750 50  0001 C CNN "Features"
-F 9 "-" H 7725 3750 50  0001 C CNN "Height - Seated (Max)"
-F 10 "Lead free / RoHS Compliant" H 7725 3750 50  0001 C CNN "Lead Free Status / RoHS Status"
-F 11 "-" H 7725 3750 50  0001 C CNN "Lead Spacing"
-F 12 "-" H 7725 3750 50  0001 C CNN "Lead Style"
-F 13 "KEMET" H 7725 3750 50  0001 C CNN "Manufacturer 1"
-F 14 "C0603C105K8PACTU" H 7725 3750 50  0001 C CNN "Manufacturer Part Number 1"
-F 15 "52 Weeks" H 7725 3750 50  0001 C CNN "Manufacturer Standard Lead Time 1"
-F 16 "Surface Mount, MLCC" H 7725 3750 50  0001 C CNN "Mounting Type"
-F 17 "-55°C ~ 85°C" H 7725 3750 50  0001 C CNN "Operating Temperature"
-F 18 "0603 (1608 Metric)" H 7725 3750 50  0001 C CNN "Package / Case"
-F 19 "Active" H 7725 3750 50  0001 C CNN "Part Status"
-F 20 "-" H 7725 3750 50  0001 C CNN "Ratings"
-F 21 "C" H 7725 3750 50  0001 C CNN "Series"
-F 22 "0.063\" L x 0.032\" W (1.60mm x 0.80mm)" H 7725 3750 50  0001 C CNN "Size / Dimension"
-F 23 "Digi-Key" H 7725 3750 50  0001 C CNN "Supplier 1"
-F 24 "399-3118-1-ND" H 7725 3750 50  0001 C CNN "Supplier Part Number 1"
-F 25 "X5R" H 7725 3750 50  0001 C CNN "Temperature Coefficient"
-F 26 "0.035\" (0.90mm)" H 7725 3750 50  0001 C CNN "Thickness (Max)"
-F 27 "±10%" H 7725 3750 50  0001 C CNN "Tolerance"
-F 28 "10V" H 7725 3750 50  0001 C CNN "Voltage - Rated"
-	1    7725 3750
-	1    0    0    -1  
-$EndComp
-$Comp
 L GND #PWR0141
 U 1 1 5AC131B1
 P 6225 4000
@@ -620,6 +584,20 @@ F 26 "0.022\" (0.55mm)" H 6225 3800 50  0001 C CNN "Thickness (Max)"
 F 27 "±20%" H 6225 3800 50  0001 C CNN "Tolerance"
 F 28 "16V" H 6225 3800 50  0001 C CNN "Voltage - Rated"
 	1    6225 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C40
+U 1 1 5AE6EEC6
+P 7725 3750
+F 0 "C40" H 7750 3850 50  0000 L CNN
+F 1 "1uF" H 7750 3650 50  0000 L CNN
+F 2 "SFUSat:C_0402" H 7763 3600 50  0001 C CNN
+F 3 "" H 7725 3750 50  0001 C CNN
+F 4 "GRM155R61A105KE15D" H 7725 3750 60  0001 C CNN "Part Number"
+F 5 "490-12701-1-ND" H 7725 3750 60  0001 C CNN "Digi-Key"
+F 6 "81-GRM155R61A105KE1D" H 7725 3750 60  0001 C CNN "Mouser"
+	1    7725 3750
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
