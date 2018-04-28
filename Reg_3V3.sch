@@ -104,17 +104,6 @@ F 3 "" H 6475 3650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C35
-U 1 1 5AC0F0F5
-P 6675 3650
-F 0 "C35" H 6700 3750 50  0000 L CNN
-F 1 "2.2uF" H 6700 3550 50  0000 L CNN
-F 2 "SFUSat:C_0603" H 6713 3500 50  0001 C CNN
-F 3 "" H 6675 3650 50  0000 C CNN
-	1    6675 3650
-	1    0    0    -1  
-$EndComp
-$Comp
 L GND #PWR0136
 U 1 1 5AC0F0FC
 P 4925 3800
@@ -170,4 +159,38 @@ Text HLabel 7125 3150 2    60   Input ~ 0
 Connection ~ 4925 3150
 Text HLabel 4700 3150 0    60   Input ~ 0
 3V6IN
+$Comp
+L C_2u2_20%_6.3V_X5R_0402 C35
+U 1 1 5AE69880
+P 6675 3650
+F 0 "C35" H 6675 3700 50  0000 L BNN
+F 1 "2.2uF" H 6675 3600 50  0000 L TNN
+F 2 "SFUSat-cap:C_0402" H 6675 3650 50  0001 C CNN
+F 3 "" H 6675 3650 50  0001 C CNN
+F 4 "Automotive" H 6675 3650 50  0001 C CNN "Applications"
+F 5 "2.2µF" H 6675 3650 50  0001 C CNN "Capacitance"
+F 6 "Capacitors - Ceramic Capacitors" H 6675 3650 50  0001 C CNN "Categories"
+F 7 "-" H 6675 3650 50  0001 C CNN "Features"
+F 8 "-" H 6675 3650 50  0001 C CNN "Height - Seated (Max)"
+F 9 "Lead free / RoHS Compliant" H 6675 3650 50  0001 C CNN "Lead Free Status / RoHS Status"
+F 10 "-" H 6675 3650 50  0001 C CNN "Lead Spacing"
+F 11 "-" H 6675 3650 50  0001 C CNN "Lead Style"
+F 12 "Taiyo Yuden" H 6675 3650 50  0001 C CNN "Manufacturer 1"
+F 13 "JMK105BJ225MVHF" H 6675 3650 50  0001 C CNN "Manufacturer Part Number 1"
+F 14 "Surface Mount, MLCC" H 6675 3650 50  0001 C CNN "Mounting Type"
+F 15 "-55°C ~ 85°C" H 6675 3650 50  0001 C CNN "Operating Temperature"
+F 16 "0402 (1005 Metric)" H 6675 3650 50  0001 C CNN "Package / Case"
+F 17 "Active" H 6675 3650 50  0001 C CNN "Part Status"
+F 18 "AEC-Q200" H 6675 3650 50  0001 C CNN "Ratings"
+F 19 "M" H 6675 3650 50  0001 C CNN "Series"
+F 20 "0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 6675 3650 50  0001 C CNN "Size / Dimension"
+F 21 "Digi-Key" H 6675 3650 50  0001 C CNN "Supplier 1"
+F 22 "587-3710-1-ND" H 6675 3650 50  0001 C CNN "Supplier Part Number 1"
+F 23 "X5R" H 6675 3650 50  0001 C CNN "Temperature Coefficient"
+F 24 "0.022\" (0.55mm)" H 6675 3650 50  0001 C CNN "Thickness (Max)"
+F 25 "±20%" H 6675 3650 50  0001 C CNN "Tolerance"
+F 26 "6.3V" H 6675 3650 50  0001 C CNN "Voltage - Rated"
+	1    6675 3650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
