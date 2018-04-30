@@ -75,7 +75,7 @@
       (excludeedgelayer true)
       (linewidth 0.100000)
       (plotframeref false)
-      (viasonmask true)
+      (viasonmask false)
       (mode 1)
       (useauxorigin false)
       (hpglpennumber 1)
