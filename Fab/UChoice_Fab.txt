@@ -1,0 +1,56 @@
+SFUSat RF Board
+Revision: Rev. 3 *** For prototype fabrication ***
+
+Date:  June 11, 2018
+
+Layer Extension     Layer Description
+------------------------------------------------
+
+SFUSat-Radio-F.Paste.gbr    Top Paste Mask
+SFUSat-Radio-F.SilkS.gbr    Top Silkscreen
+SFUSat-Radio-F.Mask.gbr     Top Solder Mask
+SFUSat-Radio-F.Cu.gbr       Top Layer (Layer 1)
+SFUSat-Radio-GND.Cu.gbr	    Layer 2: Ground		
+SFUSat-Radio-PWR.Cu.gbr	    Layer 3: Power
+SFUSat-Radio-B.Cu.gbr       Bottom Layer (Layer 4)
+SFUSat-Radio-B.Mask.gbr     Bottom Solder Mask
+SFUSat-Radio-B.SilkS.gbr    Bottom Silkscreen
+SFUSat-Radio-drl_map.gbr    Drill Drawing
+SFUSat-Radio.drl	    NC Drill File
+SFUSat-Radio-Edge.Cuts.gbr  Board Outline
+SFUSat-Radio-all.pos	    Pick and Place File
+
+Stack-up: 4-layer 0.060” (+/- 10%) FR4. UL 94V-0 
+Copper: 1oz internal layers, 0.5oz + 0.5oz plating external layers
+
+------------- Copper    1     35 um
+============= Dielectric 1-2 0.175 mm
+------------- Copper    2     35 um
+============= Dielectric  2-3    1.13 mm
+------------- Copper    3     35 um
+============= Dielectric  3-4    0.175 mm
+------------- Copper    4     35 um
+
+Controlled Impedance: Yes, on layer 1
+									
+	Layer#	Impedance Type		Fin. Line	Line		Ref.Pnl		Tar. Desired	Tol.
+					mm		Spacing (mm)			Impedance		
+	1	Single-ended		0.321		N/A		2		50		±10%
+
+Finish: ENIG
+
+Soldermask: White. Soldermask required between all conductive areas, not allowed on solderable surfaces. Can modify openings if needed.  
+
+Silkscreen: Top, Black
+
+Panelization: TBD
+
+Contact
+-------
+Alex Naylor
+alex.r.naylor@gmail.com
+
+OR
+
+Tobi Nakamura
+tshiresn@sfu.ca
